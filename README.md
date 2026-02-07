@@ -1,7 +1,7 @@
 # RPCW2026
 **Id:** PG60263  
 **Nome:** Guilherme Pinto Pinho  
-**Lista de Resultados:** 
+**Lista de TPCs:** 
 - [TPC1](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC1)
 - TPC2
 - TPC3
