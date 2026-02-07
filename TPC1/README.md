@@ -13,3 +13,4 @@
 - O arquivo `historia.ttl` contém toda a representação ontológica, que pode ser carregada no Protégé ou em ferramentas de RDF/OWL.
 
 ## Lista de resultados
+[`historia.ttl`](https://github.com/Guilhermepp4/RPCW2026/blob/main/TPC1/historia.ttl)
