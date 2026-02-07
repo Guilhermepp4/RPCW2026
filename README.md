@@ -1,4 +1,6 @@
 # RPCW2026
+Este repositório reúne os trabalhos desenvolvidos no âmbito da Unidade Curricular de Representação e Processamento de Conhecimento na Web, lecionada no ano letivo de 2025/2026, integrada no Mestrado em Engenharia Informática da Universidade do Minho.
+
 **Id:** PG60263  
 **Nome:** Guilherme Pinto Pinho  
 **Lista de TPCs:** 
@@ -10,5 +12,3 @@
 - TPC6
 - TPC7
 - TPC8  
-
-Este repositório reúne os trabalhos desenvolvidos no âmbito da Unidade Curricular de Representação e Processamento de Conhecimento na Web, lecionada no ano letivo de 2025/2026, integrada no Mestrado em Engenharia Informática da Universidade do Minho.
