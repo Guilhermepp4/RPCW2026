@@ -17,3 +17,4 @@ Foram criados indivíduos representando filmes concretos (Cars, Madagascar 2, Tw
 
 ## Lista de resultados
 [`cinema.ttl`](https://github.com/Guilhermepp4/RPCW2026/blob/main/TPC2/cinema.ttl)
+[`cinema_inferida`](https://github.com/Guilhermepp4/RPCW2026/blob/main/TPC2/cinema_inferida)
