@@ -5,7 +5,7 @@ Este repositório reúne os trabalhos desenvolvidos no âmbito da Unidade Curric
 **Nome:** Guilherme Pinto Pinho  
 **Lista de TPCs:** 
 - [TPC1](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC1)
-- TPC2
+- [TPC2](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC2)
 - TPC3
 - TPC4
 - TPC5
