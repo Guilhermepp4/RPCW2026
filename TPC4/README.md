@@ -15,6 +15,7 @@ Para o Povoamento da ontologia foi desenvolvido um script em Python [`importInfo
 ### 2.1. Quem foram os clientes?
 Query:
 ```sparql
+
 ```
 Resposta:
 ```
