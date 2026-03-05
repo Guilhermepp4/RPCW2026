@@ -15,7 +15,10 @@ Para o Povoamento da ontologia foi desenvolvido um script em Python [`importInfo
 ### 2.1. Liste todos os livros que existem na linha temporal original (LinhaOriginal)
 Query:
 ```sparql
-
+SELECT DISTINCT ?nomeLivro WHERE {
+    ?nomeLivro :existeEm ?linhaO .
+    ?linhaO a :LinhaOriginal .
+} order by ?nomeLivro
 ```
 Resposta:
 ```
@@ -23,7 +26,12 @@ Resposta:
 ### 2.2. Identifique os livros que existem em mais do que uma linha temporal
 Query:
 ```sparql
-
+SELECT DISTINCT ?nomeLivro WHERE {
+    ?nomeLivro :existeEm ?linhaO ;
+    		   :existeEm ?linha1 .
+    ?linhaO a :LinhaOriginal .
+    ?linha1 a :LinhaAlternativa .
+} order by ?nomeLivro
 ```
 Resposta:
 ```
@@ -31,12 +39,20 @@ Resposta:
 ### 2.3. Liste todos os livros classificados como LivroParadoxal
 Query:
 ```sparql
+SELECT DISTINCT ?nomeLivro WHERE {
+    ?nomeLivro a :LivroParadoxal .
+} order by ?nomeLivro
 ```
 Resposta:
 
 ### 2.4. Para cada LivroHistorico, indique os eventos históricos que esse livro refere
 Query:
 ```sparql
+SELECT ?nomeLivro ?evento WHERE {
+    ?nomeLivro a :LivroHistórico ;
+    		   :refere ?evento .
+    ?evento a :EventoHistórico .
+} order by ?nomeLivro
 ```
 Resposta:
 ```
@@ -45,6 +61,11 @@ Resposta:
 ### 2.5. Identifique livros classificados como LivroHistorico que referem eventos futuros
 Query:
 ```sparql
+SELECT ?nomeLivro ?evento WHERE {
+    ?nomeLivro a :LivroHistórico ;
+    		   :refere ?evento .
+    ?evento a :EventoFuturo .
+} order by ?nomeLivro
 ```
 Resposta:
 ```

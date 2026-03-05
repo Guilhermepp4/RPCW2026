@@ -1,58 +1,80 @@
 import json
 from rdflib import Graph, Namespace, RDF, URIRef, Literal
 
-# Namespace
-EX = Namespace("http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas")
+# namespace da ontologia
+BASE = "http://rpcw.di.uminho.pt/2026/untitled-ontology-13/"
+ONT = Namespace(BASE)
 
-# Criar grafo
 g = Graph()
-g.parse("biblioteca_Temporal.ttl", format="turtle")
-g.bind("", EX)
+g.parse("bibliotecatemporal.ttl", format="turtle")
 
-def importI(file): 
-    # Carregar JSON
-    with open(file, "r", encoding="utf-8") as f:
+g.bind("", ONT)
+
+
+# mapeamento de tipos JSON -> classes da ontologia
+class_map = {
+    "LivroHistorico": "LivroHistórico",
+    "EventoHistorico": "EventoHistórico"
+}
+
+
+def get_class(tipo):
+    if tipo in class_map:
+        return ONT[class_map[tipo]]
+    return ONT[tipo]
+
+
+def process_dataset(file):
+
+    with open(file, encoding="utf-8") as f:
         data = json.load(f)
 
     for item in data:
-        subject = EX[item["id"]]
 
-        # Tipo (classe)
-        if "tipo" in item:
-            g.add((subject, RDF.type, EX[item["tipo"]]))
+        subj = ONT[item["id"]]
 
-        # TrabalhaEm
-        if "trabalhaEm" in item:
-            g.add((subject, EX.trabalhaEm, EX[item["trabalhaEm"]]))
+        # classe
+        classe = get_class(item["tipo"])
+        g.add((subj, RDF.type, classe))
 
-        # EscritoPor
-        if "escritoPor" in item:
-            g.add((subject, EX.escritoPor, EX[item["escritoPor"]]))
-
-        # PertenceA
-        if "pertenceA" in item:
-            g.add((subject, EX.pertenceA, EX[item["pertenceA"]]))
-
-        # RefereEvento
-        if "refereEvento" in item:
-            g.add((subject, EX.refereEvento, EX[item["refereEvento"]]))
-
-        # Nome (literal)
+        # nome literal
         if "nome" in item:
-            g.add((subject, EX.nome, Literal(item["nome"])))
+            g.add((subj, ONT.nome, Literal(item["nome"])))
 
-        # ExisteEm (pode ser lista ou string)
+        # bibliotecario trabalha em biblioteca
+        if "trabalhaEm" in item:
+            g.add((subj, ONT.trabalhaEm, ONT[item["trabalhaEm"]]))
+
+        # livro -> autor
+        if "escritoPor" in item:
+            g.add((subj, ONT.escritoPor, ONT[item["escritoPor"]]))
+
+        # livro pertence a biblioteca
+        if "pertenceA" in item:
+            g.add((subj, ONT.pertenceA, ONT[item["pertenceA"]]))
+
+        # livro refere evento
+        if "refereEvento" in item:
+            g.add((subj, ONT.refere, ONT[item["refereEvento"]]))
+
+        # existeEm pode ser lista
         if "existeEm" in item:
-            if isinstance(item["existeEm"], list):
-                for linha in item["existeEm"]:
-                    g.add((subject, EX.existeEm, EX[linha]))
+
+            val = item["existeEm"]
+
+            if isinstance(val, list):
+                for v in val:
+                    g.add((subj, ONT.existeEm, ONT[v]))
             else:
-                g.add((subject, EX.existeEm, EX[item["existeEm"]]))
+                g.add((subj, ONT.existeEm, ONT[val]))
 
-importI("dataset_temporal_100.json")
-importI("dataset_temporal_v2_100.json")
 
-# Guardar novamente TTL
-g.serialize(destination="biblioteca_Temporal_Povoada.ttl", format="turtle")
+# processar datasets
+process_dataset("dataset_temporal_100.json")
+process_dataset("dataset_temporal_v2_100.json")
 
-print("Importação concluída com sucesso.")
+
+# guardar resultado
+g.serialize("bibliotecaTemporalFinal.ttl", format="turtle")
+
+print("Ontologia povoada criada: bibliotecaTemporalFinal.ttl")

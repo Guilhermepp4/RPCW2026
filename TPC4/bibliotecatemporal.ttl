@@ -1,78 +1,83 @@
-@prefix : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas/> .
+@prefix : <http://rpcw.di.uminho.pt/2026/untitled-ontology-13/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas/> .
+@base <http://rpcw.di.uminho.pt/2026/untitled-ontology-13/> .
 
-<http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas> rdf:type owl:Ontology .
+<http://rpcw.di.uminho.pt/2026/untitled-ontology-13> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#escritoPor
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/escritoPor
 :escritoPor rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Livro ;
             rdfs:range :Autor .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#existeEm
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/existeEm
 :existeEm rdf:type owl:ObjectProperty ;
           rdfs:domain :Livro ;
           rdfs:range :LinhaTemporal .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#ocorremEm
-:ocorremEm rdf:type owl:ObjectProperty ;
-           rdfs:domain :Evento ;
-           rdfs:range :LinhaTemporal .
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/ocorreEm
+:ocorreEm rdf:type owl:ObjectProperty ;
+          rdfs:domain :Evento ;
+          rdfs:range :LinhaTemporal .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#pertenceA
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/pertenceA
 :pertenceA rdf:type owl:ObjectProperty ;
            rdfs:domain :Livro ;
            rdfs:range :Biblioteca .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#refereEvento
-:refereEvento rdf:type owl:ObjectProperty ;
-              rdfs:domain :Livro ;
-              rdfs:range :Evento .
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/refere
+:refere rdf:type owl:ObjectProperty ;
+        rdfs:domain :Livro ;
+        rdfs:range :Evento .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#requisitam
-:requisitam rdf:type owl:ObjectProperty ;
-            rdfs:domain :Leitor ;
-            rdfs:range :Livro .
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/requisita
+:requisita rdf:type owl:ObjectProperty ;
+           rdfs:domain :Leitor ;
+           rdfs:range :Livro .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#trabalhaEm
-:trabalhaEm rdf:type owl:ObjectProperty ;
-            rdfs:domain :Bibliotecario ;
-            rdfs:range :Biblioteca .
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/temLivro
+:temLivro rdf:type owl:ObjectProperty ;
+          rdfs:domain :Evento ;
+          rdfs:range :Livro .
+
+
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/trabalhaEm
+:trabalhaEm rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Agente
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Agente
 :Agente rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Autor
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Autor
 :Autor rdf:type owl:Class ;
        rdfs:subClassOf :Pessoa .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Biblioteca
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Biblioteca
 :Biblioteca rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Bibliotecario
-:Bibliotecario rdf:type owl:Class ;
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Bibliotecário
+:Bibliotecário rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( :Pessoa
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty :trabalhaEm ;
@@ -84,49 +89,54 @@
                                    ] .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Emprestimo
-:Emprestimo rdf:type owl:Class .
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Empréstimo
+:Empréstimo rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#EntidadeTemporal
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/EntidadeTemporal
 :EntidadeTemporal rdf:type owl:Class ;
                   rdfs:subClassOf :Agente .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Evento
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Evento
 :Evento rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#EventoFuturo
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/EventoFuturo
 :EventoFuturo rdf:type owl:Class ;
               rdfs:subClassOf :Evento .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#EventoHistorico
-:EventoHistorico rdf:type owl:Class ;
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/EventoHistórico
+:EventoHistórico rdf:type owl:Class ;
                  rdfs:subClassOf :Evento .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Leitor
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Leitor
 :Leitor rdf:type owl:Class ;
         rdfs:subClassOf :Pessoa .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#LinhaAlternativa
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/LinhaAlternativa
 :LinhaAlternativa rdf:type owl:Class ;
                   rdfs:subClassOf :LinhaTemporal .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#LinhaOriginal
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/LinhaOriginal
 :LinhaOriginal rdf:type owl:Class ;
                rdfs:subClassOf :LinhaTemporal .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#LinhaTemporal
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/LinhaParadoxal
+:LinhaParadoxal rdf:type owl:Class ;
+                rdfs:subClassOf :LinhaTemporal .
+
+
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/LinhaTemporal
 :LinhaTemporal rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Livro
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Livro
 :Livro rdf:type owl:Class ;
        owl:equivalentClass [ rdf:type owl:Restriction ;
                              owl:onProperty :existeEm ;
@@ -135,34 +145,34 @@
                            ] .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#LivroFiccional
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/LivroFiccional
 :LivroFiccional rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( :Livro
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty :refereEvento ;
+                                                             owl:onProperty :refere ;
                                                              owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                                 owl:complementOf :EventoHistorico
+                                                                                 owl:complementOf :EventoHistórico
                                                                                ]
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                owl:disjointWith :LivroHistorico .
+                owl:disjointWith :LivroHistórico .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#LivroHistorico
-:LivroHistorico rdf:type owl:Class ;
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/LivroHistórico
+:LivroHistórico rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( :Livro
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty :refereEvento ;
-                                                             owl:allValuesFrom :EventoHistorico
+                                                             owl:onProperty :refere ;
+                                                             owl:allValuesFrom :EventoHistórico
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
                                     ] .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#LivroParadoxal
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/LivroParadoxal
 :LivroParadoxal rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( :Livro
                                                            [ rdf:type owl:Restriction ;
@@ -178,7 +188,7 @@
                                     ] .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Pessoa
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Pessoa
 :Pessoa rdf:type owl:Class ;
         rdfs:subClassOf :Agente .
 
@@ -187,23 +197,23 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Biblioteca_Entre_Ontem_e_Amanha
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Biblioteca_Entre_Ontem_e_Amanha
 :Biblioteca_Entre_Ontem_e_Amanha rdf:type owl:NamedIndividual ,
                                           :Biblioteca .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Cronos
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Cronos
 :Cronos rdf:type owl:NamedIndividual ,
                  :Autor ,
-                 :Bibliotecario .
+                 :Bibliotecário .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Linha_T0
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Linha_T0
 :Linha_T0 rdf:type owl:NamedIndividual ,
                    :LinhaOriginal .
 
 
-###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/2/bibliotecas#Linha_T1
+###  http://rpcw.di.uminho.pt/2026/untitled-ontology-13/Linha_T1
 :Linha_T1 rdf:type owl:NamedIndividual ,
                    :LinhaAlternativa .
 
