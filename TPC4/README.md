@@ -85,54 +85,60 @@ SELECT ?autor ?nomeAutor WHERE {
     OPTIONAL {?autor :nome ?nomeAutor}
 }
 ```
-Resposta:
-```
-```
 
 ### 2.8. Liste todos os livros que existem em pelo menos uma linha temporal alternativa (LinhaAlternativa)
 Query:
 ```sparql
-```
-Resposta:
-```
+SELECT ?livro WHERE {
+    ?linha a :LinhaAlternativa .
+    ?livro :existeEm ?linha .
+}
 ```
 
 ### 2.9. Indique todos os bibliotecários e a biblioteca onde trabalham
 Query:
 ```sparql
-```
-Resposta:
-```
+SELECT ?pessoa ?biblioteca WHERE {
+    ?pessoa a :Bibliotecário ;
+    		:trabalhaEm ?biblioteca .
+}
 ```
 
 ### 2.10. Liste todos os livros escritos por Cronos e indique em que linhas temporais esses livros existem
 Query:
 ```sparql
-```
-Resposta:
-```
+SELECT ?livro ?linha WHERE {
+    ?livro :escritoPor :Cronos ;
+    		:existeEm ?linha .
+    ?linha a :LinhaTemporal .
+}
+
 ```
 
 ### 2.11. Identifique livros que não referem nenhum evento
 Query:
 ```sparql
-```
-Resposta:
-```
+SELECT ?livro (count(?evento) as ?numEvento)WHERE {
+    Optional {?livro :refereEvento ?evento }
+} group by ?livro
+having (?numEvento = 0)
 ```
 
 ### 2.12. Verifique se existe algum livro sem linha temporal associada
 Query:
 ```sparql
-```
-Resposta:
-```
+SELECT ?livro (count(?linha) as ?numEvento)WHERE {
+    ?linha a :LinhaTemporal .
+    Optional {?livro :existeEm ?linha }
+} group by ?livro
+having (?numEvento = 0)
 ```
 
 ### 2.13. Identifique autores que sejam também leitores (caso essa propriedade esteja modelada)
 Query:
 ```sparql
-```
-Resposta:
-```
+SELECT ?pessoa WHERE {
+    ?pessoa a :Autor ;
+            a :Leitor .
+}
 ```
