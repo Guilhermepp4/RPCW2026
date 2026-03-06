@@ -20,68 +20,70 @@ SELECT DISTINCT ?nomeLivro WHERE {
     ?linhaO a :LinhaOriginal .
 } order by ?nomeLivro
 ```
-Resposta:
-```
-```
+
 ### 2.2. Identifique os livros que existem em mais do que uma linha temporal
 Query:
 ```sparql
-SELECT DISTINCT ?nomeLivro WHERE {
-    ?nomeLivro :existeEm ?linhaO ;
-    		   :existeEm ?linha1 .
-    ?linhaO a :LinhaOriginal .
-    ?linha1 a :LinhaAlternativa .
-} order by ?nomeLivro
+SELECT DISTINCT ?nomeLivro (count(?linhaO) as ?numlinhas) WHERE {
+    ?linhaO a :LinhaTemporal .
+    ?nomeLivro :existeEm ?linhaO .
+} 
+group by ?nomeLivro
+HAVING (?numlinhas > 1)
+ORDER BY DESC(?numLinhas) 
 ```
-Resposta:
-```
-```
+
 ### 2.3. Liste todos os livros classificados como LivroParadoxal
 Query:
 ```sparql
-SELECT DISTINCT ?nomeLivro WHERE {
-    ?nomeLivro a :LivroParadoxal .
-} order by ?nomeLivro
+SELECT DISTINCT ?livro ?nomeLivro WHERE {
+    ?livro a :LivroParadoxal .
+    OPTIONAL { ?livro :nome ?nomeLivro } .
+}
 ```
-Resposta:
 
 ### 2.4. Para cada LivroHistorico, indique os eventos históricos que esse livro refere
 Query:
 ```sparql
-SELECT ?nomeLivro ?evento WHERE {
-    ?nomeLivro a :LivroHistórico ;
-    		   :refere ?evento .
-    ?evento a :EventoHistórico .
-} order by ?nomeLivro
-```
-Resposta:
-```
+SELECT ?livro ?nomeLivro ?evento WHERE {
+    ?livro a :LivroHistorico ;
+    	   :refereEvento ?evento .
+    ?evento a :EventoHistorico .
+    OPTIONAL {?livro :nome ?nomeLivro}
+}
 ```
 
 ### 2.5. Identifique livros classificados como LivroHistorico que referem eventos futuros
 Query:
 ```sparql
-SELECT ?nomeLivro ?evento WHERE {
-    ?nomeLivro a :LivroHistórico ;
-    		   :refere ?evento .
+SELECT ?livro ?nomeLivro ?evento WHERE {
+    ?livro a :LivroHistorico ;
+    	   :refereEvento ?evento .
     ?evento a :EventoFuturo .
-} order by ?nomeLivro
-```
-Resposta:
-```
+    OPTIONAL {?livro :nome ?nomeLivro}
+} 
 ```
 
 ### 2.6. Liste os autores e o número de livros que escreveram, ordenando o resultado por número de livros em ordem decrescente
 Query:
 ```sparql
-```
-Resposta:
-```
+SELECT ?autor ?nomeAutor (count(?livro) as ?numLivro) WHERE {
+    ?autor a :Autor .
+    ?livro :escritoPor ?autor .
+    OPTIONAL {?autor :nome ?nomeAutor}
+} GROUP BY ?autor ?nomeAutor
+order by desc(?numLivro)
 ```
 
 ### 2.7. Identifique os autores que escreveram pelo menos um livro paradoxal
 Query:
 ```sparql
+SELECT ?autor ?nomeAutor WHERE {
+    ?autor a :Autor .
+    ?livro :escritoPor ?autor .
+    ?livro a :LivroParadoxal .
+    OPTIONAL {?autor :nome ?nomeAutor}
+}
 ```
 Resposta:
 ```
