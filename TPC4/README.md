@@ -4,12 +4,44 @@ Este trabalho consistiu na criação, povoamento e exploração de uma ontologia
 ## Resultados
 ### 1. Manifesto
 ### 1.1. Modelar a Ontologia
-A primeira parte do tpc consistiu em modelar a ontologia utilizando a ferramenta **Protégé**, resultando no ficheiro [`biblioteca_Temporal.ttl`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/biblioteca_Temporal.ttl)
+A primeira parte do tpc consistiu em modelar a ontologia utilizando a ferramenta **Protégé**, resultando no ficheiro [`biblioteca_Temporal.ttl`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/files/biblioteca_Temporal.ttl)
 
 ### 1.2. Povoamento da ontologia
-Em seguida foi disponibilizado dois ficheiros [`dataset_temporal_100.json`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/dataset_temporal_100.json) e [`dataset_temporal_v2_100.json`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/dataset_temporal_v2_100.josn) com o objetivo de povoar a ontologia previamente criada.
-### 1.2.1. Povoamento
-Para o Povoamento da ontologia foi desenvolvido um script em Python [`importInfo.py`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/importInfo.py) que criou automaticamente indivíduos das classes definidas na ontologia e estabeleceu as relações entre os novos indivíduos.
+Após a criação da ontologia base, foi desenvolvido um script em Python[`importarInfo.py`] com o objetivo de popular automaticamente a ontologia com indivíduos presentes nos datasets fornecidos [`dataset_temporal_100.json`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/datasets/dataset_temporal_100.json) e [dataset_temporal_v2_100](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/datasets/dataset_temporal_v2_100.json).
+
+Para este efeito foi utilizada a biblioteca **rdflib**, que permite manipular grafos RDF de forma programática. O script começa por carregar a ontologia base a partir do ficheiro [`biblioeca_Temporal.ttl`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/files/biblioteca_Temporal.ttl), utilizando o formato Turtle. De seguida é definido o namespace da ontologia, que é utilizado para criar os URIs dos indivíduos e propriedades.
+
+O script percorre todos os objetos presentes nestes datasets e cria os respetivos indivíduos no grafo RDF.
+
+Para cada elemento do dataset são realizadas as seguintes operações:
+
+- Criação do indivíduo com base no identificador (id) presente no dataset.
+
+- Associação da classe correspondente ao tipo (tipo) através da propriedade rdf:type.
+
+- Adição de propriedades literais, como o nome do indivíduo.
+
+- Adição de propriedades de objeto que ligam os indivíduos entre si, como:
+
+  - trabalhaEm
+
+  - escritoPor
+
+  - pertenceA
+
+  - refere
+
+  - existeEm
+
+Adicionalmente, o script trata propriedades que podem ter múltiplos valores, como existeEm, verificando se o valor é uma lista e adicionando todas as relações necessárias ao grafo.
+Após o processamento dos datasets, o grafo RDF resultante é serializado e guardado num novo ficheiro Turtle [`biblioteca_Temporal_Final.ttl`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/files/biblioteca_Temporal_Final.ttl), contendo a ontologia já povoada com os indivíduos.
+
+### 1.3. Limitações
+
+Durante o desenvolvimento do trabalho foram identificadas algumas limitações relacionadas principalmente com a estrutura e conteúdo dos datasets fornecidos.
+Uma das limitações encontradas foi a ausência de indivíduos pertencentes diretamente à classe Livro nos datasets utilizados. Em vez disso, os dados apenas contêm indivíduos de subclasses específicas, como por exemplo LivroHistorico. Esta situação impossibilita testar diretamente consultas ou restrições que dependam explicitamente da existência de indivíduos da classe genérica Livro.
+Adicionalmente, algumas das condições definidas no enunciado envolvem relações complexas entre diferentes entidades e contextos temporais. De forma a garantir que as queries SPARQL funcionassem corretamente com os dados disponíveis, foi necessário simplificar ou remover algumas condições nas consultas, mantendo apenas os critérios essenciais para a obtenção dos resultados pretendidos.
+Estas decisões permitiram garantir a correta execução das queries e a coerência dos resultados obtidos, embora algumas restrições mais específicas não possam ser completamente verificadas com os dados disponíveis.
 
 ### 2. Queries SPARQL
 ### 2.1. Liste todos os livros que existem na linha temporal original (LinhaOriginal)

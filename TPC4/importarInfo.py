@@ -6,7 +6,7 @@ BASE = "http://rpcw.di.uminho.pt/2026/untitled-ontology-13/"
 ONT = Namespace(BASE)
 
 g = Graph()
-g.parse("bibliotecatemporal.ttl", format="turtle")
+g.parse("files/biblioteca_Temporal.ttl", format="turtle")
 
 g.bind("", ONT)
 
@@ -70,11 +70,11 @@ def process_dataset(file):
 
 
 # processar datasets
-process_dataset("dataset_temporal_100.json")
-process_dataset("dataset_temporal_v2_100.json")
+process_dataset("datasets/dataset_temporal_100.json")
+process_dataset("datasets/dataset_temporal_v2_100.json")
 
 
 # guardar resultado
-g.serialize("bibliotecaTemporalFinal.ttl", format="turtle")
+g.serialize("files/biblioteca_Temporal_Final.ttl", format="turtle")
 
-print("Ontologia povoada criada: bibliotecaTemporalFinal.ttl")
+print("Ontologia povoada criada: biblioteca_Temporal_Final.ttl")
