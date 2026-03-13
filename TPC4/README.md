@@ -7,7 +7,7 @@ Este trabalho consistiu na criação, povoamento e exploração de uma ontologia
 A primeira parte do tpc consistiu em modelar a ontologia utilizando a ferramenta **Protégé**, resultando no ficheiro [`biblioteca_Temporal.ttl`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/files/biblioteca_Temporal.ttl)
 
 ### 1.2. Povoamento da ontologia
-Após a criação da ontologia base, foi desenvolvido um script em Python[`importarInfo.py`] com o objetivo de popular automaticamente a ontologia com indivíduos presentes nos datasets fornecidos [`dataset_temporal_100.json`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/datasets/dataset_temporal_100.json) e [dataset_temporal_v2_100](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/datasets/dataset_temporal_v2_100.json).
+Após a criação da ontologia base, foi desenvolvido um script em Python[`importarInfo.py`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/importarInfo.py) com o objetivo de popular automaticamente a ontologia com indivíduos presentes nos datasets fornecidos [`dataset_temporal_100.json`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/datasets/dataset_temporal_100.json) e [`dataset_temporal_v2_100`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/datasets/dataset_temporal_v2_100.json).
 
 Para este efeito foi utilizada a biblioteca **rdflib**, que permite manipular grafos RDF de forma programática. O script começa por carregar a ontologia base a partir do ficheiro [`biblioeca_Temporal.ttl`](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4/files/biblioteca_Temporal.ttl), utilizando o formato Turtle. De seguida é definido o namespace da ontologia, que é utilizado para criar os URIs dos indivíduos e propriedades.
 
