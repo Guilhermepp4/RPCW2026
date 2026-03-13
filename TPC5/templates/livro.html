@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ livro.titulo }}{% endblock %}
+
+{% block content %}
+
+<div class="w3-container w3-black w3-center w3-allerta">
+  <p class="w3-xxxlarge">{{ livro.titulo }}</p>
+</div>
+<p></p>
+<div class="w3-container">
+  <table class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+    <tr>
+      <td><b>Id do Livro</b></td>
+      <td>{{ livro.id }}</td>
+    </tr>
+    <tr>
+      <td><b>Título</b></td>
+      <td>{{ livro.titulo }}</td>
+    </tr>
+    <tr>
+      <td><b>Tipo</b></td>
+      <td class="w3-panel w3-blue w3-round-xlarge">{{ livro.tipo }}</td>
+    </tr>
+    <tr>
+      <td><b>Autor</b></td>
+      <td>{{ livro.autor }}</td>
+    </tr>
+    <tr>
+      <td><b>País</b></td>
+      <td>{{ livro.pais }}</td>
+    </tr>
+  </table>
+</div>
+{% if livro.linhas %}
+<div class="w3-container">
+  <h3>Linhas Temporais</h3>
+
+  <table class="w3-table-all">
+    {% for linha in livro.linhas.values() %}
+    <tr>
+        <td><b>Nome da Linha</b></td>
+        <td>{{ linha.id }}</td>
+    </tr>
+    <tr>
+        <td><b>Tipo da Linha</b></td>
+        <td>{{ linha.tipo }}</td>
+    </tr>
+    {% if not loop.last %}
+    <td colspan="2" style="text-align:center;"></td>
+    {% endif %}
+    {% endfor %}
+  </table>
+</div>
+
+{% endif %}
+
+{% if livro.eventos %}
+
+<div class="w3-container">
+  <h3><i class="fa fa-bolt"></i> Eventos</h3>
+
+  <table class="w3-table-all">
+    {% for evento in livro.eventos.values() %}
+    <tr>
+        <td><b>Id Evento</b></td>
+        <td>{{ evento.id }}</td>
+    </tr>
+    <tr>
+        <td><b>Nome</b></td>
+        <td>{{ evento.nome }}</td>
+    </tr>
+    <tr>
+        <td><b>Descrição</b></td>
+        <td>{{ evento.descricao }}</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center;">
+            {% if loop.last %}
+            <a href="/livros" class="w3-button w3-white w3-border w3-border-black w3-round-large" style="text-decoration:none"><i class="fa fa-home"></i>
+                Go back to Catálogo
+            </a>
+            {% endif %}
+        </td>
+    </tr>
+    <p> 
+    {% endfor %}
+  </table>
+</div>
+
+{% endif %}
+
+{% endblock %}
