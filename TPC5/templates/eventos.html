@@ -18,18 +18,13 @@
                 </tr>
             </thead>
             <tbody>
-                {% for l in livros %}
+                {% for l in livros.values() %}
                 <tr>
                     <td>
                         <a href="/livro/{{l.id}}" class="w3-text-teal" style="text-decoration:none">
-                            <b>{{ l.titulo }}</b>
+                            <b>{{ l.Id }}</b>
                         </a>
                     </td>
-                    <td>
-                        <span class="w3-tag w3-round {{ l.color }}">{{ l.tipo }}</span>
-                    </td>
-                    <td>{{ l.autor }}</td>
-                    <td>{{ l.pais }}</td>
                 </tr>
                 {% endfor %}
             </tbody>

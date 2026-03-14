@@ -98,41 +98,52 @@ def livroRoute(id_livro):
           
     return render_template("livro.html", livro = livro)
 
-# @app.route('/eventos')
-# def index():
-#     q= """
-#     PREFIX : <http://example.org/biblioteca-temporal#>
-#     SELECT ?eventoId ?eventoTipo ?designacao ?descricao ?Livro ?tituloLivro WHERE {
-#         ?idEvento a ?tipoEvento ;
-#         Filter(?tipoEvento IN (:EventoHistorico, :EventoFuturo, :Evento))
-#         Optional {?idEvento :designacao ?designacao ;}
-#         Optional {?idEvento :descricao ?descricao .}
-#         ?livro a :Livro ;
-#             :refereEvento ?idEvento .
-#         Optional {?livro :titulo ?tituloLivro }
-#         BIND(STRAFTER(STR(?idEvento), "#") AS ?eventoId)
-#         BIND(STRAFTER(STR(?tipoEvento), "#") AS ?eventoTipo)
-#         BIND(STRAFTER(STR(?livro), "#") AS ?Livro)
-#     }   
-#     """
-#     res = execute_query(q)
-#     livros = []
+@app.route('/eventos')
+def eventosRoute():
+    q= """
+    PREFIX : <http://example.org/biblioteca-temporal#>
+    SELECT ?eventoId ?eventoTipo ?designacao ?descricao ?Livro WHERE {
+        ?idEvento a ?tipoEvento ;
+        Filter(?tipoEvento IN (:EventoHistorico, :EventoFuturo, :Evento))
+        Optional {?idEvento :designacao ?designacao ;}
+        Optional {?idEvento :descricao ?descricao .}
+        ?livro a :Livro ;
+            :refereEvento ?idEvento .
+        BIND(STRAFTER(STR(?idEvento), "#") AS ?eventoId)
+        BIND(STRAFTER(STR(?tipoEvento), "#") AS ?eventoTipo)
+        BIND(STRAFTER(STR(?livro), "#") AS ?Livro)
+    }   
+    """
+    res = execute_query(q)
+    livro = {}
+    if not res or not res["results"]["bindings"]:
+        return "Eventos não encontrados", 404
 
-#     for Evento in res['results']['bindings']:
-#         l = { "id": Evento['idEvento']['value'],
-#                         "tipo": Evento['tipoEvento']['value'],
-#                         "livro": Evento['livro']['value'],
-#                         "tituloLivro": Evento['tituloLivro']['value']
-#             }
-#         if "designacao" in Evento:
-#             l["designação"] = Evento['designacao']['value']
-#         if "descricao" in Evento:
-#             l["descrição"] = Evento['descricao']['value']
+    eventos = res['results']['bindings'] 
+    for evento in eventos:
+        evento1 = evento['eventoId']['value']
+        if evento1 not in livro:
+            livro[evento1] = {
+                "Id": evento.get("eventoId", {}).get("value", "Id Desconhecido"),
+                "Tipo": evento["eventoTipo"]["value"],
+                "Designação": [],
+                "Descrição": set(),
+                "Livros": set(),
+            }
 
-
-#         livros.append(l)
         
-#     return render_template("eventos.html", livros = livros)
+        
+        if evento['designacao']['value']:
+            livro[evento1]["Designação"] = evento["designacao"]["value"],
+        if evento['descricao']['value']:
+            if evento['descricao']['value'] not in livro[evento1]['Descrição']:
+                livro[evento1]["Descrição"].add(evento['descricao']['value'])
+        if evento['Livro']['value'] not in livro[evento1]['Livros']:
+            livro[evento1]["Livros"].add(evento['Livro']['value'])
+
+        for l in livro.values():
+            print(l['Id'])
+    return render_template("eventos.html", livros = livro)
 
 if __name__ == '__main__':
     app.run(debug = True)
