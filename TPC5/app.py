@@ -130,9 +130,7 @@ def eventosRoute():
                 "Descrição": set(),
                 "Livros": set(),
             }
-
-        
-        
+    
         if evento['designacao']['value']:
             livro[evento1]["Designação"] = evento["designacao"]["value"],
         if evento['descricao']['value']:
@@ -141,8 +139,6 @@ def eventosRoute():
         if evento['Livro']['value'] not in livro[evento1]['Livros']:
             livro[evento1]["Livros"].add(evento['Livro']['value'])
 
-        for l in livro.values():
-            print(l['Id'])
     return render_template("eventos.html", livros = livro)
 
 if __name__ == '__main__':
