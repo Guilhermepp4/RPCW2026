@@ -1,0 +1,50 @@
+{
+    "head": {
+        "vars": [
+            "LinhaTipo",
+            "Livros",
+            "Titulo",
+            "LivroTipo"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "LinhaTipo": {
+                    "type": "literal",
+                    "value": "LinhaOriginal"
+                },
+                "Livros": {
+                    "type": "literal",
+                    "value": "Livro_001, Livro_002, Livro_007, Livro_009, Livro_013, Livro_014, Livro_015, Livro_016, Livro_023, Livro_025, Livro_031, Livro_034, Livro_036, Livro_037, Livro_039, Livro_043, Livro_048, Livro_050, Livro_052, Livro_Paradoxo, Livro_Temporal_003, Livro_Temporal_005, Livro_Temporal_007, Livro_Temporal_008, Livro_Temporal_011, Livro_Temporal_013, Livro_Temporal_015, Livro_Temporal_018, Livro_Temporal_019, Livro_Temporal_026, Livro_Temporal_029, Livro_Temporal_030, Livro_Temporal_037, Livro_Temporal_038, Livro_Temporal_040, Livro_Temporal_041, Livro_Temporal_043, Livro_Temporal_045, Livro_Temporal_047, Livro_Temporal_050, Livro_Tempo_Fragmentado, Livro_004, Livro_011, Livro_018, Livro_021, Livro_024, Livro_026, Livro_027, Livro_028, Livro_032, Livro_035, Livro_041, Livro_042, Livro_045, Livro_047, Livro_051, Livro_Imperios_Antigos, Livro_Origens_da_Civilizacao, Livro_Paradoxo, Livro_Paradoxo_Maximo, Livro_Temporal_001, Livro_Temporal_002, Livro_Temporal_004, Livro_Temporal_006, Livro_Temporal_012, Livro_Temporal_014, Livro_Temporal_020, Livro_Temporal_022, Livro_Temporal_023, Livro_Temporal_024, Livro_Temporal_025, Livro_Temporal_027, Livro_Temporal_028, Livro_Temporal_031, Livro_Temporal_032, Livro_Temporal_036"
+                },
+                "Titulo": {
+                    "type": "literal",
+                    "value": "O Fim da Eternidade| Ubik| Eu, Robot| A Mão Esquerda das Trevas| Micromundo: A Guerra Invisível| Economia em Colapso| Fragmentos do Muro| Crónicas de Marte| Vinte Mil Léguas sob o Tempo| O Robô da Meia-Noite| Pedra Filosofal e o Crash| Odisseia de Ontem| Primeiros Homens na Lua| Mão Esquerda das Trevas II| Câmara dos Segredos Temporais| Livro do Desassossego Galáctico| Valis: A Fome Zero| Rama II: O Descobrimento| Homenagem à Catalunha Futura| O Paradoxo de Ontem| Encontro com Rama| Eu, Robô II| Cidades Invisíveis: Roma| Kindred: Laços de Sangue| As Cavernas de Aço| A Ilha do Dr. Moreau| O Fim da Eternidade II| O Barão Trepador| O Conto da Aia II| Ubik II| O Visconde Cortado ao Meio| Fundação II| Um Mundo Devastado| Semente de Estrela| O Sol Nu II| O Homem no Castelo Alto II| Do Androids Dream of Electric Sheep? II| Um Amigo de Kafka| Alias Grace| A Ilha das Vozes| Tempo Fragmentado| Fundação| A Máquina do Tempo e o Vapor| Relatório de 1929| A Revolução das Engrenagens| Caminhos do Ferro| O Sol Nu| O Dia em que o Muro Caiu| Realidades Alternadas| Viagem ao Centro do Tempo| A Ordem de Fénix Histórica| O Prisioneiro de Azkaban Original| O Cálice de Fogo e Cinzas| Da Terra à Lua: Factos| Ode Triunfal aos Descobrimentos| Relíquias da Morte Original| Impérios Antigos e Quedas| Origens da Civilização| O Paradoxo de Ontem| O Paradoxo Máximo do Futuro| As Cidades Invisíveis| O Aleph| O Conto da Aia| A Máquina de Wells| Primeiros Homens na Lua II| Solaris II| Ficções| O Aleph II| Fundação e Império| Segunda Fundação| Ciberíada II| O Cavaleiro Inexistente| Parábola dos Talentos| Odisseia 2010| Se um Viajante numa Noite de Inverno| As Fontes do Paraíso"
+                },
+                "LivroTipo": {
+                    "type": "literal",
+                    "value": "LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico, LivroHistorico"
+                }
+            },
+            {
+                "LinhaTipo": {
+                    "type": "literal",
+                    "value": "LinhaAlternativa"
+                },
+                "Livros": {
+                    "type": "literal",
+                    "value": "Livro_001, Livro_002, Livro_007, Livro_009, Livro_013, Livro_014, Livro_015, Livro_016, Livro_023, Livro_025, Livro_031, Livro_034, Livro_036, Livro_037, Livro_039, Livro_043, Livro_048, Livro_050, Livro_052, Livro_Ecos_do_Amanha, Livro_Ecos_do_Amanha, Livro_Paradoxo, Livro_Temporal_003, Livro_Temporal_005, Livro_Temporal_007, Livro_Temporal_008, Livro_Temporal_011, Livro_Temporal_013, Livro_Temporal_015, Livro_Temporal_018, Livro_Temporal_019, Livro_Temporal_026, Livro_Temporal_029, Livro_Temporal_030, Livro_Temporal_037, Livro_Temporal_038, Livro_Temporal_040, Livro_Temporal_041, Livro_Temporal_043, Livro_Temporal_045, Livro_Temporal_047, Livro_Temporal_050, Livro_Tempo_Fragmentado, Livro_Historia_Alternativa, Livro_Paradoxo, Livro_003, Livro_005, Livro_006, Livro_008, Livro_010, Livro_012, Livro_017, Livro_019, Livro_020, Livro_022, Livro_029, Livro_030, Livro_033, Livro_038, Livro_040, Livro_044, Livro_046, Livro_049, Livro_053, Livro_Autobiografia_Impossivel, Livro_Ecos_do_Amanha, Livro_Ecos_do_Amanha, Livro_Temporal_009, Livro_Temporal_010, Livro_Temporal_016, Livro_Temporal_017, Livro_Temporal_021, Livro_Temporal_033, Livro_Temporal_034, Livro_Temporal_035, Livro_Temporal_039, Livro_Temporal_042, Livro_Temporal_044, Livro_Temporal_046, Livro_Temporal_048, Livro_Temporal_049, Livro_Marte_2050, Livro_Os_Visitantes"
+                },
+                "Titulo": {
+                    "type": "literal",
+                    "value": "O Fim da Eternidade| Ubik| Eu, Robot| A Mão Esquerda das Trevas| Micromundo: A Guerra Invisível| Economia em Colapso| Fragmentos do Muro| Crónicas de Marte| Vinte Mil Léguas sob o Tempo| O Robô da Meia-Noite| Pedra Filosofal e o Crash| Odisseia de Ontem| Primeiros Homens na Lua| Mão Esquerda das Trevas II| Câmara dos Segredos Temporais| Livro do Desassossego Galáctico| Valis: A Fome Zero| Rama II: O Descobrimento| Homenagem à Catalunha Futura| Ecos do Amanhã| Ecos do Amanhã| O Paradoxo de Ontem| Encontro com Rama| Eu, Robô II| Cidades Invisíveis: Roma| Kindred: Laços de Sangue| As Cavernas de Aço| A Ilha do Dr. Moreau| O Fim da Eternidade II| O Barão Trepador| O Conto da Aia II| Ubik II| O Visconde Cortado ao Meio| Fundação II| Um Mundo Devastado| Semente de Estrela| O Sol Nu II| O Homem no Castelo Alto II| Do Androids Dream of Electric Sheep? II| Um Amigo de Kafka| Alias Grace| A Ilha das Vozes| Tempo Fragmentado| O Paradoxo de Ontem| Do Androids Dream of Electric Sheep?| Solaris| 2001: Odisseia no Espaço| O Homem no Castelo Alto| Ciberíada| Vozes do Espaço Profundo| O Homem Invisível e Outras Máquinas| Mensagem das Estrelas| Eu, Autómato| Sentinela do Infinito| Guerra dos Mundos| O Guardador de Rebanhos Temporais| A Cidade e as Estrelas| 1984: O Futuro| Revolução dos Bichos Futuristas| A Ilha do Dr. Moreau| Planeta dos Descontentes| Máquina de Parar o Mundo| Animais Fantásticos e o Nano-Amanhã| Autobiografia de um Viajante| Ecos do Amanhã| Ecos do Amanhã| Guerra dos Mundos II| Xenogénese| Parábola do Semeador| A Mão Esquerda das Trevas| O Livro de Areia| O Fim da Infância| O Testamento de Offred| Os Despossuídos| Amanhã Mais Além| Despertar| A Curva do Tempo| Fluam, Minhas Lágrimas, Disse o Policial| Ritos de Passagem| A Máquina do Tempo III| Marte 2050: A Nova Fronteira| Os Visitantes do Espaço"
+                },
+                "LivroTipo": {
+                    "type": "literal",
+                    "value": "LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroParadoxal, LivroHistorico, LivroHistorico, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional, LivroFiccional"
+                }
+            }
+        ]
+    }
+}

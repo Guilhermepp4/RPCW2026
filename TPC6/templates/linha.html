@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}Eventos{% endblock %}
+
+{% block content %}
+    <div class="w3-container w3-teal w3-padding-16">
+        <h2><i class="fa fa-clock-o w3-margin-right"></i>Linhas Temporal {{ line.keys()|list|first }}</h2>
+    </div>
+
+    <div class="w3-container w3-padding-32">
+        <table class="w3-table-all w3-card-4 w3-hoverable">
+            <thead>
+                <tr class="w3-light-blue">
+                    <th>Linha Id</th>
+                    <th>Tipo da Linha</th>
+                    <th>Livros Existentes</th>
+                    <th>Titulo</th>
+                    <th>Tipo de Livro</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for l in line.values() %}
+                    {% for livro in l.Livros_Existentes.values() %}
+                    <tr>
+                        <td>
+                            <b>{{ l.Linha_Id }}</b>
+                        </td>
+
+                        <td><b>{{ l.Tipo_de_Linha }}</b></td>
+
+                        <td>
+                            <b>{{ livro.Livro }}</b>
+                        </td>
+                        
+                        <td>
+                            <a href="/livro/{{livro.Livro}}" class="w3-tag w3-light-grey w3-round w3-hover-teal" style="text-decoration:none">
+                                <b>{{ livro.Titulo }}</b>
+                            </a>
+                        </td>
+
+                        <td><b>{{ livro.Tipo_De_Livro }}</b></td>
+                    </tr>
+                    {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

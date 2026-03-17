@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ livro.titulo }}{% endblock %}
+
+{% block content %}
+
+<div class="w3-container w3-black w3-center w3-padding-16">
+  <h1 class="w3-xxxlarge">{{ livro.titulo }}</h1>
+</div>
+
+<div class="w3-container w3-margin-top">
+
+  <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+
+      <p><b>Id do Livro:</b> {{ livro.id }}</p>
+
+      <p><b>Título:</b> {{ livro.titulo }}</p>
+
+      <p>
+        <b>Tipo:</b>
+        {% if livro.tipo == "LivroParadoxal" %}
+          {% set cor = "w3-red" %}
+        {% elif livro.tipo == "LivroHistorico" %}
+          {% set cor = "w3-yellow" %}
+        {% elif livro.tipo == "LivroFiccional" %}
+          {% set cor = "w3-orange" %}
+        {% endif %}
+
+          <span class="w3-tag {{ cor }} w3-round-xlarge">
+        {{ livro.tipo }}
+
+        </span>
+      </p>
+
+      <p><b>Autor:</b> {{ livro.autor }}</p>
+
+      <p><b>País:</b> {{ livro.pais }}</p>
+
+  </div>
+
+</div>
+{% if livro.linhas %}
+<div class="w3-container">
+  <h3>
+  <a href="/linhas" class="w3-text-black w3-hover-text-teal" style="text-decoration:none">
+    <i class="fa fa-clock-o"></i> Linhas Temporais
+  </a>
+  </h3>
+  {% for linha in livro.linhas.values() %}
+      <div class="w3-card w3-margin-bottom w3-padding">
+        <tr>
+          <h4 class="w3-text-teal">
+            <a href="/linha/{{linha.id}}" class="w3-text-black w3-hover-text-teal" style="text-decoration:none">
+              <i class="fa fa-clock-o"></i> {{ linha.id }}
+            </a>
+          </h4>
+          <p>Tipo da Linha:   
+            {% if linha.tipo == "LinhaOriginal" %}      
+              <span class="w3-tag w3-green w3-round-xlarge">
+            {% else %}  
+              <span class="w3-tag w3-blue w3-round-xlarge">
+            {% endif %}
+            {{ linha.tipo }}
+            </span>
+          </p>
+      </div>
+      {% endfor %}
+</div>
+
+{% endif %}
+
+{% if livro.eventos %}
+
+<div class="w3-container">
+  <h3>
+  <a href="/eventos" class="w3-text-black w3-hover-text-teal" style="text-decoration:none">
+    <i class="fa fa-bolt"></i> Eventos
+  </a>
+  </h3>
+
+  {% for evento in livro.eventos.values() %}
+  <div class="w3-card w3-margin-bottom w3-padding">
+
+      <h4 class="w3-text-teal">
+        <i class="fa fa-bolt"></i> {{ evento.id }}
+      </h4>
+
+      <p><b>ID:</b> {{ evento.nome }}</p>
+
+      <p>{{ evento.descricao }}</p>
+
+  </div>
+  {% endfor %}
+
+  <div class="w3-center w3-margin-top">
+      <a href="/livros" class="w3-button w3-white w3-border w3-border-black w3-round-large">
+        <i class="fa fa-home"></i> Go back to Catálogo
+      </a>
+  </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
