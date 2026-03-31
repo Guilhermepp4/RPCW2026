@@ -22,13 +22,13 @@ def uri_safe(name: str) -> str:
     return re.sub(r'[\s]+', '_', name.strip()).replace("(", "").replace(")", "")
 
 g = Graph()
-g.parse("medical.ttl", format="turtle")
+g.parse("Ontologias/medical.ttl", format="turtle")
 g.bind("", EX)
 
 print("\nA processar Disease_Syntoms.csv...")
 doenças_vistas = set()
 
-with open("Disease_Syntoms.csv", newline='', encoding='utf-8') as f:
+with open("Files/Disease_Syntoms.csv", newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
         disease_name = row["Disease"].strip()
@@ -56,7 +56,7 @@ with open("Disease_Syntoms.csv", newline='', encoding='utf-8') as f:
 
 # ── Disease_Description.csv ──────────────────────────────────────────────────
 print("A processar Disease_Description.csv...")
-with open("Disease_Description.csv", newline='', encoding='utf-8') as f:
+with open("Files/Disease_Description.csv", newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
         disease_name = row["Disease"].strip()
@@ -71,12 +71,12 @@ with open("Disease_Description.csv", newline='', encoding='utf-8') as f:
         g.add((disease_uri, EX.description, Literal(description)))
 
 # ── gravar checkpoint 1 ──────────────────────────────────────────────────────
-g.serialize(destination="med_doencas.ttl", format="turtle")
+g.serialize(destination="Ontologias/med_doencas.ttl", format="turtle")
 print(f"\n✓ Gravado: med_doencas.ttl  ({len(g)} triplos)")
 
 # ── Disease_Treatment.csv ────────────────────────────────────────────────────
 print("\nA processar Disease_Treatment.csv...")
-with open("Disease_Treatment.csv", newline='', encoding='utf-8') as f:
+with open("Files/Disease_Treatment.csv", newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
         disease_name = row["Disease"].strip()
@@ -100,5 +100,5 @@ with open("Disease_Treatment.csv", newline='', encoding='utf-8') as f:
             g.add((disease_uri, EX.hasTreatment, trt_uri))
 
 # ── gravar checkpoint 2 ──────────────────────────────────────────────────────
-g.serialize(destination="med_tratamentos.ttl", format="turtle")
+g.serialize(destination="Ontologias/med_tratamentos.ttl", format="turtle")
 print(f"✓ Gravado: med_tratamentos.ttl  ({len(g)} triplos)")

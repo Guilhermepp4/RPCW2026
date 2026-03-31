@@ -17,15 +17,13 @@ NS     = Namespace(BASE)
 def uri_safe(name: str) -> str:
     return re.sub(r'[\s]+', '_', name.strip()).replace("(", "").replace(")", "")
 
-# ── carregar ontologia com doenças + tratamentos ─────────────────────────────
 g = Graph()
-g.parse("med_tratamentos.ttl", format="turtle")
+g.parse("Ontologias/med_tratamentos.ttl", format="turtle")
 g.bind("", NS)
 print(f"Ontologia carregada: {len(g)} triplos")
 
-# ── doentes.json ─────────────────────────────────────────────────────────────
 print("\nA processar doentes.json...")
-with open("doentes.json", encoding='utf-8') as f:
+with open("Files/doentes.json", encoding='utf-8') as f:
     doentes = json.load(f)
 
 for i, doente in enumerate(doentes, start=1):
@@ -48,6 +46,6 @@ for i, doente in enumerate(doentes, start=1):
         g.add((patient_uri, NS.exhibitsSymptom, sym_uri))
 
 # ── gravar ───────────────────────────────────────────────────────────────────
-g.serialize(destination="med_doentes.ttl", format="turtle")
+g.serialize(destination="Ontologias/med_doentes.ttl", format="turtle")
 print(f"✓ Gravado: med_doentes.ttl  ({len(g)} triplos)")
 print(f"  Doentes adicionados: {len(doentes)}")
