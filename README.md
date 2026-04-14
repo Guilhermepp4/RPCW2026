@@ -10,5 +10,4 @@ Este repositório reúne os trabalhos desenvolvidos no âmbito da Unidade Curric
 - [TPC4](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC4)
 - [TPC5](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC5)
 - [TPC6](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC6)
-- [TPC7](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC7)
-- [TPC8](https://github.com/Guilhermepp4/RPCW2026/tree/main/TPC8)
+- [Ficha-Medicina](https://github.com/Guilhermepp4/RPCW2026/tree/main/Ficha-Medicina)
