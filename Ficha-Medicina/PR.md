@@ -136,8 +136,8 @@ python export.py Ontologias/med_doentes.ttl --repo Medicina
 ## 🔎 Queries SPARQL
 
 Foram desenvolvidas queries para exploração dos dados.
-
 Ver Ficheiro [`sparql.txt`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Ficha-Medicina/sparql.txt)
+
 ---
 
 ## 📅 Data
