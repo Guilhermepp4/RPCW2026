@@ -1,0 +1,309 @@
+dtmn;nuts1_dsg;nuts1_cod;nuts2_dsg;nuts2_cod;nuts3_dsg;nuts3_cod;distrito_ilha_dsg;município_dsg;area_ha;area_km2;perim_km;altitude_max_m;altitude_min_m
+"0101";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Águeda;33527.44;335.27;105;762;4
+"0102";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Albergaria-a-Velha;15882.5;158.83;82;425;0
+"0103";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Anadia;21663.48;216.63;75;525;13
+"0104";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Aveiro;Arouca;32910.52;329.11;118;1222;50
+"0105";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Aveiro;19757.57;197.58;77;78;0
+"0106";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Aveiro;Castelo de Paiva;11500.53;115.01;61;694;25
+"0107";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Aveiro;Espinho;2105.68;21.06;24;100;0
+"0108";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Estarreja;10817.33;108.17;68;130;0
+"0109";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Aveiro;Santa Maria da Feira;21587.65;215.88;88;450;25
+"0110";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Ílhavo;7347.55;73.48;41;61;0
+"0111";Continente;"1";Centro;"19";Região de Coimbra;"192";Aveiro;Mealhada;11065.66;110.66;65;568;25
+"0112";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Murtosa;7308.78;73.09;47;17;0
+"0113";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Aveiro;Oliveira de Azeméis;16110.41;161.1;86;645;25
+"0114";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Oliveira do Bairro;8731.99;87.32;52;78;5
+"0115";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Ovar;14770.25;147.7;71;225;0
+"0116";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Aveiro;São João da Madeira;794.3;7.94;13;276;150
+"0117";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Sever do Vouga;12987.56;129.88;68;841;25
+"0118";Continente;"1";Centro;"19";Região de Aveiro;"191";Aveiro;Vagos;16491.5;164.92;60;68;0
+"0119";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Aveiro;Vale de Cambra;14733.47;147.33;69;1046;75
+"0201";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Aljustrel;45847.41;458.47;112;258;63
+"0202";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Almodôvar;77788.03;777.88;199;577;150
+"0203";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Alvito;26485.32;264.85;81;315;100
+"0204";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Barrancos;16841.73;168.42;106;412;125
+"0205";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Beja;114647.55;1146.48;208;284;25
+"0206";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Castro Verde;56944.23;569.44;163;288;125
+"0207";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Cuba;17208.72;172.09;80;309;150
+"0208";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Ferreira do Alentejo;64820.68;648.21;137;277;24
+"0209";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Mértola;129287.34;1292.87;266;371;25
+"0210";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Moura;95845.55;958.46;220;584;75
+"0211";Continente;"1";Alentejo;1C;Alentejo Litoral;1C1;Beja;Odemira;172060.15;1720.6;291;515;0
+"0212";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Ourique;66331.36;663.31;225;377;65
+"0213";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Serpa;110563.34;1105.63;179;523;25
+"0214";Continente;"1";Alentejo;1C;Baixo Alentejo;1C2;Beja;Vidigueira;31661.09;316.61;125;412;75
+"0301";Continente;"1";Norte;"11";Cávado;"112";Braga;Amares;8195.41;81.95;53;901;24
+"0302";Continente;"1";Norte;"11";Cávado;"112";Braga;Barcelos;37890.14;378.9;109;488;9
+"0303";Continente;"1";Norte;"11";Cávado;"112";Braga;Braga;18339.95;183.4;67;572;22
+"0304";Continente;"1";Norte;"11";Ave;"119";Braga;Cabeceiras de Basto;24182.16;241.82;82;1200;150
+"0305";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Braga;Celorico de Basto;18107.02;181.07;71;851;75
+"0306";Continente;"1";Norte;"11";Cávado;"112";Braga;Esposende;9540.98;95.41;56;281;0
+"0307";Continente;"1";Norte;"11";Ave;"119";Braga;Fafe;21908.11;219.08;77;894;175
+"0308";Continente;"1";Norte;"11";Ave;"119";Braga;Guimarães;24099.96;241;115;613;83
+"0309";Continente;"1";Norte;"11";Ave;"119";Braga;Póvoa de Lanhoso;13465.29;134.65;75;743;50
+"0310";Continente;"1";Norte;"11";Cávado;"112";Braga;Terras de Bouro;27746.07;277.46;92;1525;75
+"0311";Continente;"1";Norte;"11";Ave;"119";Braga;Vieira do Minho;21644.35;216.44;83;1262;75
+"0312";Continente;"1";Norte;"11";Ave;"119";Braga;Vila Nova de Famalicão;20159.26;201.59;81;462;25
+"0313";Continente;"1";Norte;"11";Cávado;"112";Braga;Vila Verde;22866.52;228.67;81;789;21
+"0314";Continente;"1";Norte;"11";Ave;"119";Braga;Vizela;2469.83;24.7;34;478;125
+"0401";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Alfândega da Fé;32194.64;321.95;93;1199;150
+"0402";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Bragança;117357.27;1173.57;199;1489;325
+"0403";Continente;"1";Norte;"11";Douro;11D;Bragança;Carrazeda de Ansiães;27924.09;279.24;88;898;75
+"0404";Continente;"1";Norte;"11";Douro;11D;Bragança;Freixo de Espada à Cinta;24414.29;244.14;101;885;124
+"0405";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Macedo de Cavaleiros;69914.08;699.14;175;1263;225
+"0406";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Miranda do Douro;48718.31;487.18;146;911;400
+"0407";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Mirandela;65895.67;658.96;149;941;175
+"0408";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Mogadouro;76064.93;760.65;174;997;150
+"0409";Continente;"1";Norte;"11";Douro;11D;Bragança;Torre de Moncorvo;53155.67;531.56;148;920;100
+"0410";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Vila Flor;26581.14;265.81;92;837;123
+"0411";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Vimioso;48158.51;481.59;130;955;250
+"0412";Continente;"1";Norte;"11";Terras de Trás-os-Montes;11E;Bragança;Vinhais;69475.09;694.75;158;1273;275
+"0501";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Castelo Branco;Belmonte;11875.91;118.76;59;890;446
+"0502";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Castelo Branco;143819.15;1438.19;256;1227;121
+"0503";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Castelo Branco;Covilhã;55560.06;555.6;139;1993;375
+"0504";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Castelo Branco;Fundão;70019.79;700.2;193;1227;275
+"0505";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Idanha-a-Nova;141633.51;1416.34;212;828;125
+"0506";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Oleiros;47109.31;471.09;148;1085;250
+"0507";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Penamacor;56370.69;563.71;164;1076;300
+"0508";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Proença-a-Nova;39539.96;395.4;146;954;114
+"0509";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Sertã;44673.17;446.73;126;1084;125
+"0510";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Vila de Rei;19154.6;191.55;74;594;125
+"0511";Continente;"1";Centro;"19";Beira Baixa;"195";Castelo Branco;Vila Velha de Ródão;32991.16;329.91;115;570;50
+"0601";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Arganil;33283.93;332.84;148;1418;75
+"0602";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Cantanhede;39088.02;390.88;132;137;0
+"0603";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Coimbra;31939.94;319.4;137;500;9
+"0604";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Condeixa-a-Nova;13867.47;138.67;73;466;12
+"0605";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Figueira da Foz;37905.26;379.05;107;257;0
+"0606";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Góis;26330.19;263.3;111;1204;150
+"0607";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Lousã;13840.01;138.4;56;1205;75
+"0608";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Mira;12403.38;124.03;49;64;0
+"0609";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Miranda do Corvo;12637.79;126.38;73;940;50
+"0610";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Montemor-o-Velho;22896.23;228.96;99;127;2
+"0611";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Oliveira do Hospital;23451.66;234.52;102;1244;150
+"0612";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Pampilhosa da Serra;39646.24;396.46;169;1418;300
+"0613";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Penacova;21673.23;216.73;87;550;36
+"0614";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Penela;13480;134.8;92;873;150
+"0615";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Soure;26506.07;265.06;116;532;6
+"0616";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Tábua;19978.58;199.79;83;518;143
+"0617";Continente;"1";Centro;"19";Região de Coimbra;"192";Coimbra;Vila Nova de Poiares;8445.3;84.45;52;458;42
+"0701";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Alandroal;54267.81;542.68;167;416;111
+"0702";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Arraiolos;68374.55;683.75;177;412;150
+"0703";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Borba;14518.65;145.19;86;550;250
+"0704";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Estremoz;51379.95;513.8;187;653;205
+"0705";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Évora;130707.58;1307.08;300;441;150
+"0706";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Montemor-o-Novo;123296.65;1232.97;278;424;25
+"0707";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Mora;44395.02;443.95;143;206;38
+"0708";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Mourão;27862.98;278.63;123;286;100
+"0709";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Portel;60100.57;601.01;141;424;100
+"0710";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Redondo;36950.87;369.51;127;653;187
+"0711";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Reguengos de Monsaraz;46399.72;464;114;363;100
+"0712";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Vendas Novas;22238.88;222.39;89;190;25
+"0713";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Viana do Alentejo;39367.29;393.67;130;374;72
+"0714";Continente;"1";Alentejo;1C;Alentejo Central;1C4;Évora;Vila Viçosa;19485.89;194.86;114;475;165
+"0801";Continente;"1";Algarve;"15";Algarve;"150";Faro;Albufeira;14066.42;140.66;82;227;0
+"0802";Continente;"1";Algarve;"15";Algarve;"150";Faro;Alcoutim;57536.33;575.36;170;379;25
+"0803";Continente;"1";Algarve;"15";Algarve;"150";Faro;Aljezur;32349.95;323.5;147;370;0
+"0804";Continente;"1";Algarve;"15";Algarve;"150";Faro;Castro Marim;30084.37;300.84;102;276;0
+"0805";Continente;"1";Algarve;"15";Algarve;"150";Faro;Faro;20256.79;202.57;98;410;0
+"0806";Continente;"1";Algarve;"15";Algarve;"150";Faro;Lagoa;8825.45;88.25;58;103;0
+"0807";Continente;"1";Algarve;"15";Algarve;"150";Faro;Lagos;21299.27;212.99;88;255;0
+"0808";Continente;"1";Algarve;"15";Algarve;"150";Faro;Loulé;76366.91;763.67;209;589;0
+"0809";Continente;"1";Algarve;"15";Algarve;"150";Faro;Monchique;39530.43;395.3;142;902;25
+"0810";Continente;"1";Algarve;"15";Algarve;"150";Faro;Olhão;13086.38;130.86;60;410;0
+"0811";Continente;"1";Algarve;"15";Algarve;"150";Faro;Portimão;18206.29;182.06;83;325;0
+"0812";Continente;"1";Algarve;"15";Algarve;"150";Faro;São Brás de Alportel;15336.92;153.37;87;530;125
+"0813";Continente;"1";Algarve;"15";Algarve;"150";Faro;Silves;68006.23;680.06;167;426;0
+"0814";Continente;"1";Algarve;"15";Algarve;"150";Faro;Tavira;60696.7;606.97;161;541;0
+"0815";Continente;"1";Algarve;"15";Algarve;"150";Faro;Vila do Bispo;17906.06;179.06;97;156;0
+"0816";Continente;"1";Algarve;"15";Algarve;"150";Faro;Vila Real de Santo António;6125;61.25;61;225;0
+"0901";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Guarda;Aguiar da Beira;20676.57;206.77;67;989;450
+"0902";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Almeida;51798.46;517.98;119;845;500
+"0903";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Celorico da Beira;24721.63;247.22;81;1256;375
+"0904";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Figueira de Castelo Rodrigo;50857.46;508.57;112;976;124
+"0905";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Fornos de Algodres;13145.05;131.45;79;915;325
+"0906";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Gouveia;30061.17;300.61;98;1626;250
+"0907";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Guarda;71209.58;712.1;162;1287;441
+"0908";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Manteigas;12197.55;121.98;65;1993;518
+"0909";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Mêda;28604.92;286.05;100;945;225
+"0910";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Pinhel;48452.12;484.52;156;926;150
+"0911";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Sabugal;82269.82;822.7;182;1223;450
+"0912";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Seia;43568.83;435.69;118;1993;175
+"0913";Continente;"1";Centro;"19";Beiras e Serra da Estrela;"196";Guarda;Trancoso;36152.47;361.52;120;986;425
+"0914";Continente;"1";Norte;"11";Douro;11D;Guarda;Vila Nova de Foz Côa;39815.18;398.15;125;814;82
+"1001";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Leiria;Alcobaça;40814.09;408.14;168;504;0
+"1002";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Alvaiázere;16047.76;160.48;74;618;96
+"1003";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Ansião;17609.42;176.09;83;533;175
+"1004";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Batalha;10341.6;103.42;64;523;50
+"1005";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Leiria;Bombarral;9128.55;91.29;61;205;11
+"1006";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Leiria;Caldas da Rainha;25569.47;255.69;106;255;0
+"1007";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Castanheira de Pêra;6677.45;66.77;45;1205;350
+"1008";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Figueiró dos Vinhos;17344;173.44;106;1009;125
+"1009";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Leiria;56508.87;565.09;158;410;0
+"1010";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Marinha Grande;18725.19;187.25;74;165;0
+"1011";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Leiria;Nazaré;8243.43;82.43;59;177;0
+"1012";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Leiria;Óbidos;14155.44;141.55;73;222;0
+"1013";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Pedrógão Grande;12874.75;128.75;69;779;150
+"1014";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Leiria;Peniche;7754.98;77.55;61;165;0
+"1015";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Pombal;62600.28;626;135;560;0
+"1016";Continente;"1";Centro;"19";Região de Leiria;"193";Leiria;Porto de Mós;26183.41;261.83;97;615;50
+"1101";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Lisboa;Alenquer;30421.92;304.22;101;666;2
+"1102";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Lisboa;Arruda dos Vinhos;7795.93;77.96;73;395;44
+"1103";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Lisboa;Azambuja;26265.65;262.66;121;194;2
+"1104";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Lisboa;Cadaval;17489.3;174.89;64;665;46
+"1105";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Cascais;9740.17;97.4;72;475;0
+"1106";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Lisboa;10005.43;100.05;50;228;0
+"1107";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Loures;16723.99;167.24;90;409;0
+"1108";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Lisboa;Lourinhã;14717.2;147.17;69;201;0
+"1109";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Mafra;29165.5;291.66;126;431;0
+"1110";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Oeiras;4588.31;45.88;43;199;0
+"1111";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Sintra;31922.73;319.23;115;528;0
+"1112";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Lisboa;Sobral de Monte Agraço;5210.32;52.1;68;442;125
+"1113";Continente;"1";Oeste e Vale do Tejo;1D;Oeste;"1D1";Lisboa;Torres Vedras;40714.89;407.15;117;394;0
+"1114";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Vila Franca de Xira;31819.39;318.19;137;378;0
+"1115";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Amadora;2378.47;23.78;30;258;50
+"1116";Continente;"1";Grande Lisboa;1A;Grande Lisboa;1A0;Lisboa;Odivelas;2654.36;26.54;32;339;24
+"1201";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Alter do Chão;36206.62;362.07;108;413;147
+"1202";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Arronches;31464.72;314.65;97;584;236
+"1203";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Avis;60596.51;605.97;178;245;75
+"1204";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Campo Maior;24720.16;247.2;76;341;173
+"1205";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Castelo de Vide;26491.24;264.91;102;825;125
+"1206";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Crato;39806.88;398.07;128;445;150
+"1207";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Elvas;63128.86;631.29;148;496;150
+"1208";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Fronteira;24859.58;248.6;103;371;150
+"1209";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Gavião;29459.45;294.59;100;312;50
+"1210";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Marvão;15489.9;154.9;68;1027;200
+"1211";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Monforte;42024.82;420.25;120;402;225
+"1212";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Nisa;57567.84;575.68;154;463;50
+"1213";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Ponte de Sor;83982.1;839.82;178;285;46
+"1214";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Portalegre;44713.64;447.14;122;1027;250
+"1215";Continente;"1";Alentejo;1C;Alto Alentejo;1C3;Portalegre;Sousel;27932.18;279.32;119;454;150
+"1301";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Porto;Amarante;30133.15;301.33;118;1348;50
+"1302";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Porto;Baião;17452.83;174.53;74;1416;50
+"1303";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Porto;Felgueiras;11573.75;115.74;58;575;145
+"1304";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Gondomar;13191.76;131.92;80;470;5
+"1305";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Porto;Lousada;9608.01;96.08;56;578;175
+"1306";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Maia;8295.39;82.95;70;255;35
+"1307";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Porto;Marco de Canaveses;20188.98;201.89;95;962;8
+"1308";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Matosinhos;6241.97;62.42;59;134;0
+"1309";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Porto;Paços de Ferreira;7099.29;70.99;46;570;175
+"1310";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Paredes;15675.69;156.76;79;519;25
+"1311";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Porto;Penafiel;21224.27;212.24;85;586;22
+"1312";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Porto;4142.02;41.42;36;157;0
+"1313";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Póvoa de Varzim;8220.59;82.21;63;202;0
+"1314";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Santo Tirso;13655.52;136.56;69;535;36
+"1315";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Valongo;7512.45;75.12;53;385;50
+"1316";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Vila do Conde;14902.77;149.03;68;235;0
+"1317";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Vila Nova de Gaia;16846.43;168.46;77;262;0
+"1318";Continente;"1";Norte;"11";Área Metropolitana do Porto;11A;Porto;Trofa;7200.3;72;43;250;25
+"1401";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Abrantes;71469.08;714.69;183;317;18
+"1402";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Alcanena;12732.86;127.33;85;678;43
+"1403";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Almeirim;22212.05;222.12;84;171;5
+"1404";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Alpiarça;9536.33;95.36;46;132;9
+"1405";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Benavente;52138.39;521.38;124;78;0
+"1406";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Cartaxo;15817.28;158.17;72;130;3
+"1407";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Chamusca;74589.61;745.9;145;200;11
+"1408";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Constância;8036.58;80.37;51;224;22
+"1409";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Coruche;111572.03;1115.72;231;264;7
+"1410";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Entroncamento;1372.81;13.73;17;87;25
+"1411";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Ferreira do Zêzere;19038.03;190.38;94;451;125
+"1412";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Golegã;8431.67;84.32;49;95;14
+"1413";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Mação;39997.98;399.98;147;643;47
+"1414";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Rio Maior;27276.45;272.76;99;497;25
+"1415";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Salvaterra de Magos;24393.2;243.93;73;105;2
+"1416";Continente;"1";Oeste e Vale do Tejo;1D;Lezíria do Tejo;"1D3";Santarém;Santarém;55253.58;552.54;180;529;3
+"1417";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Sardoal;9214.72;92.15;52;452;75
+"1418";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Tomar;35120.44;351.2;116;350;32
+"1419";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Torres Novas;26999.68;270;86;678;13
+"1420";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Vila Nova da Barquinha;4952.97;49.53;46;201;19
+"1421";Continente;"1";Oeste e Vale do Tejo;1D;Médio Tejo;"1D2";Santarém;Ourém;41668;416.68;128;678;95
+"1501";Continente;"1";Alentejo;1C;Alentejo Litoral;1C1;Setúbal;Alcácer do Sal;149987.3;1499.87;213;254;0
+"1502";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Alcochete;12836.48;128.36;106;61;0
+"1503";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Almada;7000.89;70.01;66;125;0
+"1504";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Barreiro;3639.07;36.39;46;76;0
+"1505";Continente;"1";Alentejo;1C;Alentejo Litoral;1C1;Setúbal;Grândola;82593.66;825.94;227;325;0
+"1506";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Moita;5525.98;55.26;42;58;0
+"1507";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Montijo;34861.64;348.62;149;135;0
+"1508";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Palmela;46512.01;465.12;157;391;0
+"1509";Continente;"1";Alentejo;1C;Alentejo Litoral;1C1;Setúbal;Santiago do Cacém;105969.29;1059.69;214;370;0
+"1510";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Seixal;9545.17;95.45;50;81;0
+"1511";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Sesimbra;19571.75;195.72;87;380;0
+"1512";Continente;"1";Península de Setúbal;1B;Península de Setúbal;1B0;Setúbal;Setúbal;23032.5;230.33;101;501;0
+"1513";Continente;"1";Alentejo;1C;Alentejo Litoral;1C1;Setúbal;Sines;20330.17;203.3;112;250;0
+"1601";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Arcos de Valdevez;44759.64;447.6;109;1416;17
+"1602";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Caminha;13652.14;136.52;67;805;0
+"1603";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Melgaço;23824.58;238.25;102;1336;25
+"1604";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Monção;21130.85;211.31;71;1114;9
+"1605";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Paredes de Coura;13818.59;138.19;57;883;125
+"1606";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Ponte da Barca;18211.37;182.11;83;1359;25
+"1607";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Ponte de Lima;32025.46;320.25;98;835;3
+"1608";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Valença;11712.86;117.13;47;784;0
+"1609";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Viana do Castelo;31902.01;319.02;98;823;0
+"1610";Continente;"1";Norte;"11";Alto Minho;"111";Viana do Castelo;Vila Nova de Cerveira;10846.66;108.47;53;638;0
+"1701";Continente;"1";Norte;"11";Douro;11D;Vila Real;Alijó;29759.89;297.6;97;1000;75
+"1702";Continente;"1";Norte;"11";Alto Tâmega e Barroso;11B;Vila Real;Boticas;32195.66;321.96;122;1270;250
+"1703";Continente;"1";Norte;"11";Alto Tâmega e Barroso;11B;Vila Real;Chaves;59122.95;591.23;166;1050;300
+"1704";Continente;"1";Norte;"11";Douro;11D;Vila Real;Mesão Frio;2664.87;26.65;35;1038;50
+"1705";Continente;"1";Norte;"11";Ave;"119";Vila Real;Mondim de Basto;17207.52;172.08;70;1307;100
+"1706";Continente;"1";Norte;"11";Alto Tâmega e Barroso;11B;Vila Real;Montalegre;80545.71;805.46;195;1527;175
+"1707";Continente;"1";Norte;"11";Douro;11D;Vila Real;Murça;18937.11;189.37;93;1031;175
+"1708";Continente;"1";Norte;"11";Douro;11D;Vila Real;Peso da Régua;9486.01;94.86;81;1397;50
+"1709";Continente;"1";Norte;"11";Alto Tâmega e Barroso;11B;Vila Real;Ribeira de Pena;21745.98;217.46;98;1286;153
+"1710";Continente;"1";Norte;"11";Douro;11D;Vila Real;Sabrosa;15692.45;156.92;91;1100;75
+"1711";Continente;"1";Norte;"11";Douro;11D;Vila Real;Santa Marta de Penaguião;6928.13;69.28;67;1416;75
+"1712";Continente;"1";Norte;"11";Alto Tâmega e Barroso;11B;Vila Real;Valpaços;54873.93;548.74;148;1148;225
+"1713";Continente;"1";Norte;"11";Alto Tâmega e Barroso;11B;Vila Real;Vila Pouca de Aguiar;43706.62;437.07;110;1205;225
+"1714";Continente;"1";Norte;"11";Douro;11D;Vila Real;Vila Real;37880.28;378.8;120;1350;125
+"1801";Continente;"1";Norte;"11";Douro;11D;Viseu;Armamar;11723.73;117.24;61;955;75
+"1802";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Carregal do Sal;11689.21;116.89;56;375;150
+"1803";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Castro Daire;37904.13;379.04;147;1375;200
+"1804";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Viseu;Cinfães;23928.76;239.29;93;1381;12
+"1805";Continente;"1";Norte;"11";Douro;11D;Viseu;Lamego;16542.11;165.42;82;1122;50
+"1806";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Mangualde;21925.56;219.26;85;766;225
+"1807";Continente;"1";Norte;"11";Douro;11D;Viseu;Moimenta da Beira;21996.9;219.97;88;1011;375
+"1808";Continente;"1";Centro;"19";Região de Coimbra;"192";Viseu;Mortágua;25117.82;251.18;82;768;75
+"1809";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Nelas;12571.48;125.71;55;484;150
+"1810";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Oliveira de Frades;14534.62;145.35;103;1062;50
+"1811";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Penalva do Castelo;13433.92;134.34;62;724;325
+"1812";Continente;"1";Norte;"11";Douro;11D;Viseu;Penedono;13370.75;133.71;64;1000;450
+"1813";Continente;"1";Norte;"11";Tâmega e Sousa;11C;Viseu;Resende;12334.93;123.35;58;1218;50
+"1814";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Santa Comba Dão;11194.77;111.95;60;352;137
+"1815";Continente;"1";Norte;"11";Douro;11D;Viseu;São João da Pesqueira;26610.85;266.11;100;994;75
+"1816";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;São Pedro do Sul;34895.09;348.95;123;1119;75
+"1817";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Sátão;20194.11;201.94;78;859;375
+"1818";Continente;"1";Norte;"11";Douro;11D;Viseu;Sernancelhe;22861.22;228.61;99;964;475
+"1819";Continente;"1";Norte;"11";Douro;11D;Viseu;Tabuaço;13385.67;133.86;70;985;75
+"1820";Continente;"1";Norte;"11";Douro;11D;Viseu;Tarouca;10008.49;100.08;73;1102;325
+"1821";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Tondela;37121.73;371.22;108;1075;133
+"1822";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Vila Nova de Paiva;17553.28;175.53;69;1036;550
+"1823";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Viseu;50710.14;507.1;123;899;200
+"1824";Continente;"1";Centro;"19";Viseu Dão Lafões;"194";Viseu;Vouzela;19369.46;193.69;76;1043;125
+"3101";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Calheta;11151.13;111.51;63;1640;0
+"3102";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Câmara de Lobos;5216.73;52.17;46;1862;0
+"3103";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Funchal;7622.19;76.22;84;1818;0
+"3104";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Machico;6825.22;68.25;107;1480;0
+"3105";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Ponta do Sol;4626.44;46.26;34;1620;0
+"3106";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Porto Moniz;8292.49;82.92;57;1640;0
+"3107";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Ribeira Brava;6545.66;65.46;42;1725;0
+"3108";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Santa Cruz;8131.03;81.31;106;1415;0
+"3109";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;Santana;9547.07;95.47;56;1862;0
+"3110";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha da Madeira;São Vicente;7883.9;78.84;41;1725;0
+"3201";Região Autónoma da Madeira;"3";Região Autónoma da Madeira;"30";Região Autónoma da Madeira;"300";Ilha de Porto Santo;Porto Santo;4268.21;42.68;107;517;0
+"4101";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de Santa Maria;Vila do Porto;9688.74;96.89;78;587;0
+"4201";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Miguel;Lagoa;4559.32;45.59;45;947;0
+"4202";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Miguel;Nordeste;10146.8;101.47;53;1103;0
+"4203";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Miguel;Ponta Delgada;23298.65;232.99;102;873;0
+"4204";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Miguel;Povoação;10640.77;106.41;64;1103;0
+"4205";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Miguel;Ribeira Grande;18015.13;180.15;120;877;0
+"4206";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Miguel;Vila Franca do Campo;7796.82;77.97;58;947;0
+"4301";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha Terceira;Angra do Heroísmo;23899.66;239;105;1021;0
+"4302";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha Terceira;Praia da Vitória;16127.06;161.27;90;808;0
+"4401";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha da Graciosa;Santa Cruz da Graciosa;6065.78;60.66;44;402;0
+"4501";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Jorge;Calheta de São Jorge;12626.4;126.26;74;942;0
+"4502";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha de São Jorge;Velas;11738.38;117.38;79;1053;0
+"4601";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha do Pico;Lajes do Pico;15531.09;155.31;96;2351;0
+"4602";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha do Pico;Madalena;14712.33;147.12;65;2351;0
+"4603";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha do Pico;São Roque do Pico;14236.1;142.36;82;2351;0
+"4701";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha do Faial;Horta;17305.53;173.06;80;1043;0
+"4801";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha das Flores;Lajes das Flores;7004.79;70.05;51;830;0
+"4802";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha das Flores;Santa Cruz das Flores;7091.44;70.91;52;914;0
+"4901";Região Autónoma dos Açores;"2";Região Autónoma dos Açores;"20";Região Autónoma dos Açores;"200";Ilha do Corvo;Corvo;1711.45;17.11;21;718;0

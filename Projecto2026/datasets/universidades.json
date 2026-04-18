@@ -1,0 +1,2586 @@
+{
+    "Universidades": {
+        "Universidade de Aveiro": {
+            "id": "0300",
+            "Nome": "Universidade de Aveiro"
+        },
+        "Escola Superior de Saúde Norte da Cruz Vermelha Portuguesa": {
+            "id": "4089",
+            "Nome": "Escola Superior de Saúde Norte da Cruz Vermelha Portuguesa"
+        },
+        "Instituto Superior de Ciências da Informação e da Administração": {
+            "id": "4277",
+            "Nome": "Instituto Superior de Ciências da Informação e da Administração"
+        },
+        "Instituto Superior de Entre Douro e Vouga": {
+            "id": "4283",
+            "Nome": "Instituto Superior de Entre Douro e Vouga"
+        },
+        "Instituto Politécnico de Beja": {
+            "id": "3021",
+            "Nome": "Instituto Politécnico de Beja"
+        },
+        "Universidade do Minho": {
+            "id": "1000",
+            "Nome": "Universidade do Minho"
+        },
+        "Instituto Politécnico do Cávado e do Ave": {
+            "id": "3033",
+            "Nome": "Instituto Politécnico do Cávado e do Ave"
+        },
+        "Universidade Católica Portuguesa": {
+            "id": "2223",
+            "Nome": "Universidade Católica Portuguesa"
+        },
+        "Universidade Lusíada - Centro Universitário Lusíada - Norte - Vila Nova de Famalicão": {
+            "id": "2450",
+            "Nome": "Universidade Lusíada - Centro Universitário Lusíada - Norte - Vila Nova de Famalicão"
+        },
+        "Escola Superior de Educação de Fafe": {
+            "id": "4076",
+            "Nome": "Escola Superior de Educação de Fafe"
+        },
+        "Escola Superior de Tecnologias de Fafe": {
+            "id": "4115",
+            "Nome": "Escola Superior de Tecnologias de Fafe"
+        },
+        "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Saúde do Vale do Ave": {
+            "id": "4108",
+            "Nome": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Saúde do Vale do Ave"
+        },
+        "ISAVE": {
+            "id": "4460",
+            "Nome": "ISAVE"
+        },
+        "Instituto Politécnico de Bragança": {
+            "id": "3041",
+            "Nome": "Instituto Politécnico de Bragança"
+        },
+        "Universidade da Beira Interior": {
+            "id": "0400",
+            "Nome": "Universidade da Beira Interior"
+        },
+        "Instituto Politécnico de Castelo Branco": {
+            "id": "3051",
+            "Nome": "Instituto Politécnico de Castelo Branco"
+        },
+        "Universidade de Coimbra": {
+            "id": "0508",
+            "Nome": "Universidade de Coimbra"
+        },
+        "Instituto Politécnico de Coimbra": {
+            "id": "3061",
+            "Nome": "Instituto Politécnico de Coimbra"
+        },
+        "Escola Universitária Vasco da Gama": {
+            "id": "4126",
+            "Nome": "Escola Universitária Vasco da Gama"
+        },
+        "Instituto Superior Miguel Torga": {
+            "id": "4500",
+            "Nome": "Instituto Superior Miguel Torga"
+        },
+        "Universidade de Évora": {
+            "id": "0603",
+            "Nome": "Universidade de Évora"
+        },
+        "Universidade do Algarve": {
+            "id": "0201",
+            "Nome": "Universidade do Algarve"
+        },
+        "Instituto Superior Manuel Teixeira Gomes": {
+            "id": "4375",
+            "Nome": "Instituto Superior Manuel Teixeira Gomes"
+        },
+        "Instituto Politécnico Jean Piaget do Sul": {
+            "id": "4603",
+            "Nome": "Instituto Politécnico Jean Piaget do Sul"
+        },
+        "Instituto Politécnico da Guarda": {
+            "id": "3091",
+            "Nome": "Instituto Politécnico da Guarda"
+        },
+        "Instituto Politécnico de Leiria": {
+            "id": "3103",
+            "Nome": "Instituto Politécnico de Leiria"
+        },
+        "Instituto Superior D. Dinis": {
+            "id": "4292",
+            "Nome": "Instituto Superior D. Dinis"
+        },
+        "ISCTE": {
+            "id": "6800",
+            "Nome": "ISCTE"
+        },
+        "Universidade de Lisboa": {
+            "id": "1501",
+            "Nome": "Universidade de Lisboa"
+        },
+        "Universidade Nova de Lisboa": {
+            "id": "0908",
+            "Nome": "Universidade Nova de Lisboa"
+        },
+        "Escola Superior de Hotelaria e Turismo do Estoril": {
+            "id": "7110",
+            "Nome": "Escola Superior de Hotelaria e Turismo do Estoril"
+        },
+        "Escola Superior Náutica Infante D. Henrique": {
+            "id": "7105",
+            "Nome": "Escola Superior Náutica Infante D. Henrique"
+        },
+        "Instituto Politécnico de Lisboa": {
+            "id": "3113",
+            "Nome": "Instituto Politécnico de Lisboa"
+        },
+        "Instituto Superior de Ciências Policiais e Segurança Interna": {
+            "id": "7530",
+            "Nome": "Instituto Superior de Ciências Policiais e Segurança Interna"
+        },
+        "Instituto Universitário Militar": {
+            "id": "7712",
+            "Nome": "Instituto Universitário Militar"
+        },
+        "Atlântica": {
+            "id": "2710",
+            "Nome": "Atlântica"
+        },
+        "Centro Universitário Lusófona": {
+            "id": "2910",
+            "Nome": "Centro Universitário Lusófona"
+        },
+        "Instituto Superior de Gestão": {
+            "id": "4300",
+            "Nome": "Instituto Superior de Gestão"
+        },
+        "ISPA": {
+            "id": "4450",
+            "Nome": "ISPA"
+        },
+        "Universidade Autónoma de Lisboa Luís de Camões": {
+            "id": "2100",
+            "Nome": "Universidade Autónoma de Lisboa Luís de Camões"
+        },
+        "Universidade Europeia": {
+            "id": "4350",
+            "Nome": "Universidade Europeia"
+        },
+        "Universidade Lusíada - Centro Universitário Lusíada - Lisboa": {
+            "id": "2410",
+            "Nome": "Universidade Lusíada - Centro Universitário Lusíada - Lisboa"
+        },
+        "Academia Nacional Superior de Orquestra": {
+            "id": "4002",
+            "Nome": "Academia Nacional Superior de Orquestra"
+        },
+        "Escola Superior de Actividades Imobiliárias": {
+            "id": "4020",
+            "Nome": "Escola Superior de Actividades Imobiliárias"
+        },
+        "Escola Superior de Educação de João de Deus": {
+            "id": "4080",
+            "Nome": "Escola Superior de Educação de João de Deus"
+        },
+        "Escola Superior de Enfermagem São Francisco das Misericórdias": {
+            "id": "4096",
+            "Nome": "Escola Superior de Enfermagem São Francisco das Misericórdias"
+        },
+        "Escola Superior de Saúde do Alcoitão": {
+            "id": "4105",
+            "Nome": "Escola Superior de Saúde do Alcoitão"
+        },
+        "Escola Superior de Saúde Atlântica": {
+            "id": "4590",
+            "Nome": "Escola Superior de Saúde Atlântica"
+        },
+        "Escola Superior de Saúde da Cruz Vermelha Portuguesa": {
+            "id": "4091",
+            "Nome": "Escola Superior de Saúde da Cruz Vermelha Portuguesa"
+        },
+        "Instituto Politécnico da Lusofonia": {
+            "id": "4612",
+            "Nome": "Instituto Politécnico da Lusofonia"
+        },
+        "Instituto Português de Administração de Marketing de Lisboa": {
+            "id": "4156",
+            "Nome": "Instituto Português de Administração de Marketing de Lisboa"
+        },
+        "Instituto Superior de Tecnologias Avançadas de Lisboa": {
+            "id": "4530",
+            "Nome": "Instituto Superior de Tecnologias Avançadas de Lisboa"
+        },
+        "ISCE": {
+            "id": "4270",
+            "Nome": "ISCE"
+        },
+        "ISEC Lisboa": {
+            "id": "4298",
+            "Nome": "ISEC Lisboa"
+        },
+        "Instituto Politécnico de Portalegre": {
+            "id": "3125",
+            "Nome": "Instituto Politécnico de Portalegre"
+        },
+        "Universidade do Porto": {
+            "id": "1102",
+            "Nome": "Universidade do Porto"
+        },
+        "Instituto Politécnico do Porto": {
+            "id": "3131",
+            "Nome": "Instituto Politécnico do Porto"
+        },
+        "Escola Superior Artística do Porto": {
+            "id": "4010",
+            "Nome": "Escola Superior Artística do Porto"
+        },
+        "Instituto Superior de Serviço Social do Porto": {
+            "id": "4520",
+            "Nome": "Instituto Superior de Serviço Social do Porto"
+        },
+        "Instituto Universitário de Ciências da Saúde": {
+            "id": "4650",
+            "Nome": "Instituto Universitário de Ciências da Saúde"
+        },
+        "Universidade Fernando Pessoa": {
+            "id": "2750",
+            "Nome": "Universidade Fernando Pessoa"
+        },
+        "Universidade Lusíada - Centro Universitário Lusíada - Norte - Porto": {
+            "id": "2440",
+            "Nome": "Universidade Lusíada - Centro Universitário Lusíada - Norte - Porto"
+        },
+        "Universidade da Maia": {
+            "id": "4630",
+            "Nome": "Universidade da Maia"
+        },
+        "Universidade Portucalense Infante D. Henrique": {
+            "id": "2500",
+            "Nome": "Universidade Portucalense Infante D. Henrique"
+        },
+        "Escola Superior de Artes e Design": {
+            "id": "4069",
+            "Nome": "Escola Superior de Artes e Design"
+        },
+        "Escola Superior de Educação de Paula Frassinetti": {
+            "id": "4085",
+            "Nome": "Escola Superior de Educação de Paula Frassinetti"
+        },
+        "Escola Superior de Negócios Atlântico": {
+            "id": "4141",
+            "Nome": "Escola Superior de Negócios Atlântico"
+        },
+        "Escola Superior de Saúde da Fundação «Fernando Pessoa»": {
+            "id": "4620",
+            "Nome": "Escola Superior de Saúde da Fundação «Fernando Pessoa»"
+        },
+        "Escola Superior de Saúde de Santa Maria": {
+            "id": "4097",
+            "Nome": "Escola Superior de Saúde de Santa Maria"
+        },
+        "Instituto Politécnico Jean Piaget do Norte": {
+            "id": "4627",
+            "Nome": "Instituto Politécnico Jean Piaget do Norte"
+        },
+        "Instituto Politécnico da Maia": {
+            "id": "4581",
+            "Nome": "Instituto Politécnico da Maia"
+        },
+        "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Enfermagem do Tâmega e Sousa": {
+            "id": "4113",
+            "Nome": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Enfermagem do Tâmega e Sousa"
+        },
+        "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Tecnologias da Saúde do Tâmega e Sousa": {
+            "id": "4109",
+            "Nome": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Tecnologias da Saúde do Tâmega e Sousa"
+        },
+        "Instituto Português de Administração de Marketing do Porto": {
+            "id": "4155",
+            "Nome": "Instituto Português de Administração de Marketing do Porto"
+        },
+        "Instituto Superior de Administração e Gestão": {
+            "id": "4200",
+            "Nome": "Instituto Superior de Administração e Gestão"
+        },
+        "Instituto Superior de Ciências Educativas do Douro": {
+            "id": "4271",
+            "Nome": "Instituto Superior de Ciências Educativas do Douro"
+        },
+        "Instituto Superior de Ciências Empresariais e do Turismo": {
+            "id": "4280",
+            "Nome": "Instituto Superior de Ciências Empresariais e do Turismo"
+        },
+        "Instituto Superior Politécnico Gaya": {
+            "id": "4442",
+            "Nome": "Instituto Superior Politécnico Gaya"
+        },
+        "Instituto Superior de Tecnologias Avançadas do Porto": {
+            "id": "4640",
+            "Nome": "Instituto Superior de Tecnologias Avançadas do Porto"
+        },
+        "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Gestão": {
+            "id": "4571",
+            "Nome": "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Gestão"
+        },
+        "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Tecnologia": {
+            "id": "4572",
+            "Nome": "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Tecnologia"
+        },
+        "Instituto Politécnico de Santarém": {
+            "id": "3141",
+            "Nome": "Instituto Politécnico de Santarém"
+        },
+        "Instituto Politécnico de Tomar": {
+            "id": "3241",
+            "Nome": "Instituto Politécnico de Tomar"
+        },
+        "ISLA Santarém - Instituto Politécnico - Escola Superior de Engenharia e Tecnologia": {
+            "id": "4662",
+            "Nome": "ISLA Santarém - Instituto Politécnico - Escola Superior de Engenharia e Tecnologia"
+        },
+        "ISLA Santarém - Instituto Politécnico - Escola Superior de Gestão": {
+            "id": "4661",
+            "Nome": "ISLA Santarém - Instituto Politécnico - Escola Superior de Gestão"
+        },
+        "Instituto Politécnico de Setúbal": {
+            "id": "3153",
+            "Nome": "Instituto Politécnico de Setúbal"
+        },
+        "Instituto Superior de Estudos Interculturais e Transdisciplinares de Almada": {
+            "id": "4306",
+            "Nome": "Instituto Superior de Estudos Interculturais e Transdisciplinares de Almada"
+        },
+        "Instituto Universitário Egas Moniz": {
+            "id": "4260",
+            "Nome": "Instituto Universitário Egas Moniz"
+        },
+        "Escola Superior de Saúde Egas Moniz": {
+            "id": "4106",
+            "Nome": "Escola Superior de Saúde Egas Moniz"
+        },
+        "Instituto Politécnico de Viana do Castelo": {
+            "id": "3161",
+            "Nome": "Instituto Politécnico de Viana do Castelo"
+        },
+        "Universidade de Trás-os-Montes e Alto Douro": {
+            "id": "1201",
+            "Nome": "Universidade de Trás-os-Montes e Alto Douro"
+        },
+        "Escola Superior de Saúde Cruz Vermelha Portuguesa": {
+            "id": "4110",
+            "Nome": "Escola Superior de Saúde Cruz Vermelha Portuguesa"
+        },
+        "Instituto Politécnico de Viseu": {
+            "id": "3185",
+            "Nome": "Instituto Politécnico de Viseu"
+        },
+        "Instituto Superior de Estudos Interculturais e Transdisciplinares de Viseu": {
+            "id": "4308",
+            "Nome": "Instituto Superior de Estudos Interculturais e Transdisciplinares de Viseu"
+        },
+        "Universidade dos Açores": {
+            "id": "0140",
+            "Nome": "Universidade dos Açores"
+        },
+        "Universidade dos Açores - Escola Superior de Saúde - Angra do Heroísmo": {
+            "id": "7092",
+            "Nome": "Universidade dos Açores - Escola Superior de Saúde - Angra do Heroísmo"
+        },
+        "Universidade dos Açores - Escola Superior de Saúde - Ponta Delgada": {
+            "id": "7093",
+            "Nome": "Universidade dos Açores - Escola Superior de Saúde - Ponta Delgada"
+        },
+        "Universidade da Madeira": {
+            "id": "1306",
+            "Nome": "Universidade da Madeira"
+        },
+        "Escola Superior de Enfermagem de São José de Cluny": {
+            "id": "4098",
+            "Nome": "Escola Superior de Enfermagem de São José de Cluny"
+        }
+    },
+    "Escolas": [
+        {
+            "Nome": "Universidade de Aveiro",
+            "Instituicao": "Universidade de Aveiro",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Design, Gestão e Tecnologia da Produção de Aveiro-Norte",
+            "Instituicao": "Universidade de Aveiro",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde de Aveiro",
+            "Instituicao": "Universidade de Aveiro",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão de Águeda",
+            "Instituicao": "Universidade de Aveiro",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Contabilidade e Administração de Aveiro",
+            "Instituicao": "Universidade de Aveiro",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Norte da Cruz Vermelha Portuguesa",
+            "Instituicao": "Escola Superior de Saúde Norte da Cruz Vermelha Portuguesa",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Ciências da Informação e da Administração",
+            "Instituicao": "Instituto Superior de Ciências da Informação e da Administração",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Entre Douro e Vouga",
+            "Instituicao": "Instituto Superior de Entre Douro e Vouga",
+            "Distrito": "Aveiro",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior Agrária",
+            "Instituicao": "Instituto Politécnico de Beja",
+            "Distrito": "Beja",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação",
+            "Instituicao": "Instituto Politécnico de Beja",
+            "Distrito": "Beja",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Instituto Politécnico de Beja",
+            "Distrito": "Beja",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e de Gestão",
+            "Instituicao": "Instituto Politécnico de Beja",
+            "Distrito": "Beja",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Universidade do Minho",
+            "Instituicao": "Universidade do Minho",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Design",
+            "Instituicao": "Instituto Politécnico do Cávado e do Ave",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Desporto, Bem-Estar e Sistemas Biomédicos",
+            "Instituicao": "Instituto Politécnico do Cávado e do Ave",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Gestão",
+            "Instituicao": "Instituto Politécnico do Cávado e do Ave",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Hotelaria e Turismo",
+            "Instituicao": "Instituto Politécnico do Cávado e do Ave",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia",
+            "Instituicao": "Instituto Politécnico do Cávado e do Ave",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Enfermagem",
+            "Instituicao": "Universidade do Minho",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Filosofia e Ciências Sociais",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade Lusíada - Centro Universitário Lusíada - Norte - Vila Nova de Famalicão",
+            "Instituicao": "Universidade Lusíada - Centro Universitário Lusíada - Norte - Vila Nova de Famalicão",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Educação de Fafe",
+            "Instituicao": "Escola Superior de Educação de Fafe",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologias de Fafe",
+            "Instituicao": "Escola Superior de Tecnologias de Fafe",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Saúde do Vale do Ave",
+            "Instituicao": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Saúde do Vale do Ave",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Saúde",
+            "Instituicao": "ISAVE",
+            "Distrito": "Braga",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior Agrária de Bragança",
+            "Instituicao": "Instituto Politécnico de Bragança",
+            "Distrito": "Bragança",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Comunicação, Administração e Turismo de Mirandela",
+            "Instituicao": "Instituto Politécnico de Bragança",
+            "Distrito": "Bragança",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação de Bragança",
+            "Instituicao": "Instituto Politécnico de Bragança",
+            "Distrito": "Bragança",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde de Bragança",
+            "Instituicao": "Instituto Politécnico de Bragança",
+            "Distrito": "Bragança",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e de Gestão de Bragança",
+            "Instituicao": "Instituto Politécnico de Bragança",
+            "Distrito": "Bragança",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Universidade da Beira Interior",
+            "Instituicao": "Universidade da Beira Interior",
+            "Distrito": "Castelo Branco",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior Agrária de Castelo Branco",
+            "Instituicao": "Instituto Politécnico de Castelo Branco",
+            "Distrito": "Castelo Branco",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Artes Aplicadas",
+            "Instituicao": "Instituto Politécnico de Castelo Branco",
+            "Distrito": "Castelo Branco",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação de Castelo Branco",
+            "Instituicao": "Instituto Politécnico de Castelo Branco",
+            "Distrito": "Castelo Branco",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Gestão de Idanha-a-Nova",
+            "Instituicao": "Instituto Politécnico de Castelo Branco",
+            "Distrito": "Castelo Branco",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Dr. Lopes Dias",
+            "Instituicao": "Instituto Politécnico de Castelo Branco",
+            "Distrito": "Castelo Branco",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia de Castelo Branco",
+            "Instituicao": "Instituto Politécnico de Castelo Branco",
+            "Distrito": "Castelo Branco",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências do Desporto e Educação Física",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências e Tecnologia",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências e Tecnologia (Campus Figueira da Foz)",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Direito",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Economia",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Farmácia",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Letras",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Medicina",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Psicologia e de Ciências da Educação",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior Agrária de Coimbra",
+            "Instituicao": "Instituto Politécnico de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação de Coimbra",
+            "Instituicao": "Instituto Politécnico de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão de Oliveira do Hospital",
+            "Instituicao": "Instituto Politécnico de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia da Saúde de Coimbra",
+            "Instituicao": "Instituto Politécnico de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Contabilidade e Administração de Coimbra",
+            "Instituicao": "Instituto Politécnico de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Engenharia de Coimbra",
+            "Instituicao": "Instituto Politécnico de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Enfermagem",
+            "Instituicao": "Universidade de Coimbra",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Universitária Vasco da Gama",
+            "Instituicao": "Escola Universitária Vasco da Gama",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior Miguel Torga",
+            "Instituicao": "Instituto Superior Miguel Torga",
+            "Distrito": "Coimbra",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Ciências Humanas e Sociais",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências e Tecnologia",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Economia",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Medicina e Ciências Biomédicas",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação e Comunicação",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Gestão, Hotelaria e Turismo",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Gestão, Hotelaria e Turismo (Portimão)",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Engenharia",
+            "Instituicao": "Universidade do Algarve",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior Manuel Teixeira Gomes",
+            "Instituicao": "Instituto Superior Manuel Teixeira Gomes",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Jean Piaget do Algarve",
+            "Instituicao": "Instituto Politécnico Jean Piaget do Sul",
+            "Distrito": "Faro",
+            "Região": "Algarve",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Educação, Comunicação e Desporto",
+            "Instituicao": "Instituto Politécnico da Guarda",
+            "Distrito": "Guarda",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde da Guarda",
+            "Instituicao": "Instituto Politécnico da Guarda",
+            "Distrito": "Guarda",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão",
+            "Instituicao": "Instituto Politécnico da Guarda",
+            "Distrito": "Guarda",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Turismo e Hotelaria",
+            "Instituicao": "Instituto Politécnico da Guarda",
+            "Distrito": "Guarda",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Artes e Design",
+            "Instituicao": "Instituto Politécnico de Leiria",
+            "Distrito": "Leiria",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação e Ciências Sociais",
+            "Instituicao": "Instituto Politécnico de Leiria",
+            "Distrito": "Leiria",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Instituto Politécnico de Leiria",
+            "Distrito": "Leiria",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão",
+            "Instituicao": "Instituto Politécnico de Leiria",
+            "Distrito": "Leiria",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Turismo e Tecnologia do Mar",
+            "Instituicao": "Instituto Politécnico de Leiria",
+            "Distrito": "Leiria",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior D. Dinis",
+            "Instituicao": "Instituto Superior D. Dinis",
+            "Distrito": "Leiria",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Universitário de Lisboa",
+            "Instituicao": "ISCTE",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Universitário de Lisboa (Sintra)",
+            "Instituicao": "ISCTE",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Arquitetura",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Belas-Artes",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Direito",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Farmácia",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Letras",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Medicina",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Medicina Dentária",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Medicina Veterinária",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Motricidade Humana",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Psicologia",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto de Educação",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto de Geografia e Ordenamento do Território",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Agronomia",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Ciências Sociais e Políticas",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Economia e Gestão",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior Técnico",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior Técnico (Tagus Park)",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Nacional de Saúde Pública",
+            "Instituicao": "Universidade Nova de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências Médicas",
+            "Instituicao": "Universidade Nova de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências Sociais e Humanas",
+            "Instituicao": "Universidade Nova de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Direito",
+            "Instituicao": "Universidade Nova de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Economia",
+            "Instituicao": "Universidade Nova de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Estatística e Gestão de Informação",
+            "Instituicao": "Universidade Nova de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Hotelaria e Turismo do Estoril",
+            "Instituicao": "Escola Superior de Hotelaria e Turismo do Estoril",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior Náutica Infante D. Henrique",
+            "Instituicao": "Escola Superior Náutica Infante D. Henrique",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Comunicação Social",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Dança",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Música",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde de Lisboa",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Teatro e Cinema",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Contabilidade e Administração de Lisboa",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Engenharia de Lisboa",
+            "Instituicao": "Instituto Politécnico de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Enfermagem",
+            "Instituicao": "Universidade de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Ciências Policiais e Segurança Interna",
+            "Instituicao": "Instituto Superior de Ciências Policiais e Segurança Interna",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Militar e Policial",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Academia da Força Aérea",
+            "Instituicao": "Instituto Universitário Militar",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Militar e Policial",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Academia Militar",
+            "Instituicao": "Instituto Universitário Militar",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Militar e Policial",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Universitário",
+            "Instituicao": "Atlântica",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Lisboa",
+            "Instituicao": "Centro Universitário Lusófona",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Gestão",
+            "Instituicao": "Instituto Superior de Gestão",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Universitário de Ciências Psicológicas, Sociais e da Vida",
+            "Instituicao": "ISPA",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade Autónoma de Lisboa Luís de Camões",
+            "Instituicao": "Universidade Autónoma de Lisboa Luís de Camões",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Ciências Económicas e Empresariais",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Ciências Humanas",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Direito",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Medicina",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Teologia",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto de Ciências da Saúde",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto de Estudos Políticos",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade Europeia",
+            "Instituicao": "Universidade Europeia",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade Lusíada - Centro Universitário Lusíada - Lisboa",
+            "Instituicao": "Universidade Lusíada - Centro Universitário Lusíada - Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Academia Nacional Superior de Orquestra",
+            "Instituicao": "Academia Nacional Superior de Orquestra",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Actividades Imobiliárias",
+            "Instituicao": "Escola Superior de Actividades Imobiliárias",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Educação de João de Deus",
+            "Instituicao": "Escola Superior de Educação de João de Deus",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Enfermagem São Francisco das Misericórdias",
+            "Instituicao": "Escola Superior de Enfermagem São Francisco das Misericórdias",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde do Alcoitão",
+            "Instituicao": "Escola Superior de Saúde do Alcoitão",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Atlântica",
+            "Instituicao": "Escola Superior de Saúde Atlântica",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Lisboa",
+            "Instituicao": "Escola Superior de Saúde da Cruz Vermelha Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Ciências da Administração",
+            "Instituicao": "Instituto Politécnico da Lusofonia",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Comunicação, Inovação e Artes",
+            "Instituicao": "Instituto Politécnico da Lusofonia",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Educação da Lusofonia",
+            "Instituicao": "Instituto Politécnico da Lusofonia",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Engenharia e Tecnologias",
+            "Instituicao": "Instituto Politécnico da Lusofonia",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde, Proteção e Bem-Estar Animal",
+            "Instituicao": "Instituto Politécnico da Lusofonia",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Ribeiro Sanches",
+            "Instituicao": "Instituto Politécnico da Lusofonia",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Português de Administração de Marketing de Lisboa",
+            "Instituicao": "Instituto Português de Administração de Marketing de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Tecnologias Avançadas de Lisboa",
+            "Instituicao": "Instituto Superior de Tecnologias Avançadas de Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Lisboa e Vale do Tejo",
+            "Instituicao": "ISCE",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Educação e Ciências",
+            "Instituicao": "ISEC Lisboa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola de Enfermagem (Lisboa)",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Lisboa",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Biociências de Elvas",
+            "Instituicao": "Instituto Politécnico de Portalegre",
+            "Distrito": "Portalegre",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação e Ciências Sociais",
+            "Instituicao": "Instituto Politécnico de Portalegre",
+            "Distrito": "Portalegre",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Instituto Politécnico de Portalegre",
+            "Distrito": "Portalegre",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia, Gestão e Design",
+            "Instituicao": "Instituto Politécnico de Portalegre",
+            "Distrito": "Portalegre",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Arquitetura",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Belas-Artes",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências da Nutrição e da Alimentação",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Desporto",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Direito",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Economia",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Engenharia",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Farmácia",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Letras",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Medicina",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Medicina Dentária",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Psicologia e de Ciências da Educação",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto de Ciências Biomédicas Abel Salazar",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Hotelaria e Turismo",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Media Artes e Design",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Música e Artes do Espectáculo",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Contabilidade e Administração do Porto(cheira mal)",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Engenharia do Porto",
+            "Instituicao": "Instituto Politécnico do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Enfermagem",
+            "Instituicao": "Universidade do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Porto",
+            "Instituicao": "Centro Universitário Lusófona",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior Artística do Porto",
+            "Instituicao": "Escola Superior Artística do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Serviço Social do Porto",
+            "Instituicao": "Instituto Superior de Serviço Social do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "CESPU",
+            "Instituicao": "Instituto Universitário de Ciências da Saúde",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola das Artes",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Biotecnologia",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Direito (Porto)",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Economia e Gestão",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Educação e Psicologia",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade Fernando Pessoa",
+            "Instituicao": "Universidade Fernando Pessoa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade Lusíada - Centro Universitário Lusíada - Norte - Porto",
+            "Instituicao": "Universidade Lusíada - Centro Universitário Lusíada - Norte - Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade da Maia",
+            "Instituicao": "Universidade da Maia",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Universidade Portucalense Infante D. Henrique",
+            "Instituicao": "Universidade Portucalense Infante D. Henrique",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Artes e Design",
+            "Instituicao": "Escola Superior de Artes e Design",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Educação de Paula Frassinetti",
+            "Instituicao": "Escola Superior de Educação de Paula Frassinetti",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Negócios Atlântico",
+            "Instituicao": "Escola Superior de Negócios Atlântico",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde da Fundação «Fernando Pessoa»",
+            "Instituicao": "Escola Superior de Saúde da Fundação «Fernando Pessoa»",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde de Santa Maria",
+            "Instituicao": "Escola Superior de Saúde de Santa Maria",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Desporto e Educação Jean Piaget de Vila Nova de Gaia",
+            "Instituicao": "Instituto Politécnico Jean Piaget do Norte",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Jean Piaget de Vila Nova de Gaia",
+            "Instituicao": "Instituto Politécnico Jean Piaget do Norte",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Ciências Sociais, Educação e Desporto",
+            "Instituicao": "Instituto Politécnico da Maia",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão",
+            "Instituicao": "Instituto Politécnico da Maia",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Enfermagem do Tâmega e Sousa",
+            "Instituicao": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Enfermagem do Tâmega e Sousa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Tecnologias da Saúde do Tâmega e Sousa",
+            "Instituicao": "Instituto Politécnico de Saúde do Norte - CESPU - Escola Superior de Tecnologias da Saúde do Tâmega e Sousa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Português de Administração de Marketing do Porto",
+            "Instituicao": "Instituto Português de Administração de Marketing do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Administração e Gestão",
+            "Instituicao": "Instituto Superior de Administração e Gestão",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Ciências Educativas do Douro",
+            "Instituicao": "Instituto Superior de Ciências Educativas do Douro",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Ciências Empresariais e do Turismo",
+            "Instituicao": "Instituto Superior de Ciências Empresariais e do Turismo",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Ciência e Tecnologia",
+            "Instituicao": "Instituto Superior Politécnico Gaya",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Ciências Empresariais",
+            "Instituicao": "Instituto Superior Politécnico Gaya",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Superior de Tecnologias Avançadas do Porto",
+            "Instituicao": "Instituto Superior de Tecnologias Avançadas do Porto",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Gestão",
+            "Instituicao": "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Gestão",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Tecnologia",
+            "Instituicao": "ISLA - Instituto Politécnico de Gestão e Tecnologia - Escola Superior de Tecnologia",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola de Enfermagem (Porto)",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Porto",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Ciências Agrárias e do Ambiente",
+            "Instituicao": "Universidade dos Açores",
+            "Distrito": "R. A. Açores",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências Sociais e Humanas",
+            "Instituicao": "Universidade dos Açores",
+            "Distrito": "R. A. Açores",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências e Tecnologia",
+            "Instituicao": "Universidade dos Açores",
+            "Distrito": "R. A. Açores",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Economia e Gestão",
+            "Instituicao": "Universidade dos Açores",
+            "Distrito": "R. A. Açores",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Universidade dos Açores - Escola Superior de Saúde - Angra do Heroísmo",
+            "Instituicao": "Universidade dos Açores - Escola Superior de Saúde - Angra do Heroísmo",
+            "Distrito": "R. A. Açores",
+            "Região": "Desconhecido",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Universidade dos Açores - Escola Superior de Saúde - Ponta Delgada",
+            "Instituicao": "Universidade dos Açores - Escola Superior de Saúde - Ponta Delgada",
+            "Distrito": "R. A. Açores",
+            "Região": "Desconhecido",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Artes e Humanidades",
+            "Instituicao": "Universidade da Madeira",
+            "Distrito": "R. A. Madeira",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências Exatas e da Engenharia",
+            "Instituicao": "Universidade da Madeira",
+            "Distrito": "R. A. Madeira",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências Sociais",
+            "Instituicao": "Universidade da Madeira",
+            "Distrito": "R. A. Madeira",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Faculdade de Ciências da Vida",
+            "Instituicao": "Universidade da Madeira",
+            "Distrito": "R. A. Madeira",
+            "Região": "Desconhecido",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Universidade da Madeira",
+            "Distrito": "R. A. Madeira",
+            "Região": "Desconhecido",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologias e Gestão",
+            "Instituicao": "Universidade da Madeira",
+            "Distrito": "R. A. Madeira",
+            "Região": "Desconhecido",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Enfermagem de São José de Cluny",
+            "Instituicao": "Escola Superior de Enfermagem de São José de Cluny",
+            "Distrito": "R. A. Madeira",
+            "Região": "Desconhecido",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior Agrária de Santarém",
+            "Instituicao": "Instituto Politécnico de Santarém",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Desporto de Rio Maior",
+            "Instituicao": "Instituto Politécnico de Santarém",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação de Santarém",
+            "Instituicao": "Instituto Politécnico de Santarém",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Gestão e Tecnologia de Santarém",
+            "Instituicao": "Instituto Politécnico de Santarém",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde de Santarém",
+            "Instituicao": "Instituto Politécnico de Santarém",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Gestão de Tomar",
+            "Instituicao": "Instituto Politécnico de Tomar",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia de Abrantes",
+            "Instituicao": "Instituto Politécnico de Tomar",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia de Tomar",
+            "Instituicao": "Instituto Politécnico de Tomar",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "ISLA Santarém - Instituto Politécnico - Escola Superior de Engenharia e Tecnologia",
+            "Instituicao": "ISLA Santarém - Instituto Politécnico - Escola Superior de Engenharia e Tecnologia",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "ISLA Santarém - Instituto Politécnico - Escola Superior de Gestão",
+            "Instituicao": "ISLA Santarém - Instituto Politécnico - Escola Superior de Gestão",
+            "Distrito": "Santarém",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Ciências e Tecnologia",
+            "Instituicao": "Universidade Nova de Lisboa",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Ciências Empresariais",
+            "Instituicao": "Instituto Politécnico de Setúbal",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação",
+            "Instituicao": "Instituto Politécnico de Setúbal",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Instituto Politécnico de Setúbal",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia do Barreiro",
+            "Instituicao": "Instituto Politécnico de Setúbal",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia de Setúbal",
+            "Instituicao": "Instituto Politécnico de Setúbal",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Naval",
+            "Instituicao": "Instituto Universitário Militar",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Militar e Policial",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Estudos Interculturais e Transdisciplinares de Almada",
+            "Instituicao": "Instituto Superior de Estudos Interculturais e Transdisciplinares de Almada",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Instituto Universitário Egas Moniz",
+            "Instituicao": "Instituto Universitário Egas Moniz",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Egas Moniz",
+            "Instituicao": "Escola Superior de Saúde Egas Moniz",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Educação Jean Piaget de Almada",
+            "Instituicao": "Instituto Politécnico Jean Piaget do Sul",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Jean Piaget de Almada",
+            "Instituicao": "Instituto Politécnico Jean Piaget do Sul",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão Jean Piaget",
+            "Instituicao": "Instituto Politécnico Jean Piaget do Sul",
+            "Distrito": "Setúbal",
+            "Região": "Lisboa",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior Agrária",
+            "Instituicao": "Instituto Politécnico de Viana do Castelo",
+            "Distrito": "Viana do Castelo",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Ciências Empresariais",
+            "Instituicao": "Instituto Politécnico de Viana do Castelo",
+            "Distrito": "Viana do Castelo",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Desporto e Lazer",
+            "Instituicao": "Instituto Politécnico de Viana do Castelo",
+            "Distrito": "Viana do Castelo",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação",
+            "Instituicao": "Instituto Politécnico de Viana do Castelo",
+            "Distrito": "Viana do Castelo",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Instituto Politécnico de Viana do Castelo",
+            "Distrito": "Viana do Castelo",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão",
+            "Instituicao": "Instituto Politécnico de Viana do Castelo",
+            "Distrito": "Viana do Castelo",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola de Ciências Agrárias e Veterinárias",
+            "Instituicao": "Universidade de Trás-os-Montes e Alto Douro",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola de Ciências Humanas e Sociais",
+            "Instituicao": "Universidade de Trás-os-Montes e Alto Douro",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola de Ciências e Tecnologia",
+            "Instituicao": "Universidade de Trás-os-Montes e Alto Douro",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola de Ciências da Vida e do Ambiente",
+            "Instituicao": "Universidade de Trás-os-Montes e Alto Douro",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Hotelaria e Bem-Estar",
+            "Instituicao": "Instituto Politécnico de Bragança",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde de Bragança (Chaves)",
+            "Instituicao": "Instituto Politécnico de Bragança",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde",
+            "Instituicao": "Universidade de Trás-os-Montes e Alto Douro",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Alto Tâmega",
+            "Instituicao": "Escola Superior de Saúde Cruz Vermelha Portuguesa",
+            "Distrito": "Vila Real",
+            "Região": "Norte",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior Agrária de Viseu",
+            "Instituicao": "Instituto Politécnico de Viseu",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Educação de Viseu",
+            "Instituicao": "Instituto Politécnico de Viseu",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Saúde de Viseu",
+            "Instituicao": "Instituto Politécnico de Viseu",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão de Lamego",
+            "Instituicao": "Instituto Politécnico de Viseu",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Tecnologia e Gestão de Viseu",
+            "Instituicao": "Instituto Politécnico de Viseu",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Instituto Superior de Estudos Interculturais e Transdisciplinares de Viseu",
+            "Instituicao": "Instituto Superior de Estudos Interculturais e Transdisciplinares de Viseu",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Faculdade de Medicina Dentária",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Universidade",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola Superior de Saúde Jean Piaget de Viseu",
+            "Instituicao": "Instituto Politécnico Jean Piaget do Norte",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Centro Regional de Viseu",
+            "Instituicao": "Universidade Católica Portuguesa",
+            "Distrito": "Viseu",
+            "Região": "Centro",
+            "Tipo": "Politécnico",
+            "Natureza": "Privado"
+        },
+        {
+            "Nome": "Escola de Artes",
+            "Instituicao": "Universidade de Évora",
+            "Distrito": "Évora",
+            "Região": "Alentejo",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola de Ciências Sociais",
+            "Instituicao": "Universidade de Évora",
+            "Distrito": "Évora",
+            "Região": "Alentejo",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola de Ciências e Tecnologia",
+            "Instituicao": "Universidade de Évora",
+            "Distrito": "Évora",
+            "Região": "Alentejo",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola de Saúde e Desenvolvimento Humano",
+            "Instituicao": "Universidade de Évora",
+            "Distrito": "Évora",
+            "Região": "Alentejo",
+            "Tipo": "Universidade",
+            "Natureza": "Público"
+        },
+        {
+            "Nome": "Escola Superior de Enfermagem de São João de Deus",
+            "Instituicao": "Universidade de Évora",
+            "Distrito": "Évora",
+            "Região": "Alentejo",
+            "Tipo": "Politécnico",
+            "Natureza": "Público"
+        }
+    ]
+}

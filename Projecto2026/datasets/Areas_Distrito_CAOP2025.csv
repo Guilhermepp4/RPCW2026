@@ -1,0 +1,30 @@
+dt;nuts1_dsg;nuts1_cod;distrito_ilha_dsg;area_ha;area_km2;perim_km;altitude_max_m;altitude_min_m, populacao
+"01";Continente;"1";Aveiro;280094.16;2800.94;376;1222;0;708.902
+"02";Continente;"1";Beja;1026332.49;10263.32;762;584;0;144.401
+"03";Continente;"1";Braga;270615.05;2706.15;351;1525;0;850.128
+"04";Continente;"1";Bragança;659853.71;6598.54;476;1489;75;122833
+"05";Continente;"1";Castelo Branco;662747.31;6627.47;569;1993;50;177.903
+"06";Continente;"1";Coimbra;397373.28;3973.73;527;1418;0;408.631
+"07";Continente;"1";Évora;739346.41;7393.46;676;653;25;152.430
+"08";Continente;"1";Faro;499679.49;4996.79;582;902;0;467.343
+"09";Continente;"1";Guarda;553530.81;5535.31;516;1993;82;143.019
+"10";Continente;"1";Leiria;350578.68;3505.79;550;1205;0;458.600
+"11";Continente;"1";Lisboa;281613.57;2816.14;339;666;0;2.294.608
+"12";Continente;"1";Portalegre;608444.5;6084.45;540;1027;46;104.979
+"13";Continente;"1";Porto;233165.17;2331.65;348;1416;0;1.803.223
+"14";Continente;"1";Santarém;671823.76;6718.24;703;678;0;425.438
+"15";Continente;"1";Setúbal;521405.92;5214.06;636;501;0;882.588
+"16";Continente;"1";Viana do Castelo;221884.16;2218.84;266;1416;0;231.266
+"17";Continente;"1";Vila Real;430747.08;4307.47;437;1527;50;185.695
+"18";Continente;"1";Viseu;500978.72;5009.79;480;1381;12;353.535
+"31";Região Autónoma da Madeira;"3";Ilha da Madeira;75841.87;758.42;322;1862;0;251060
+"32";Região Autónoma da Madeira;"3";Ilha de Porto Santo;4268.21;42.68;107;517;0;5483
+"41";Região Autónoma dos Açores;"2";Ilha de Santa Maria;9688.74;96.89;78;587;0;5552
+"42";Região Autónoma dos Açores;"2";Ilha de São Miguel;74457.5;744.58;230;1103;0;133295
+"43";Região Autónoma dos Açores;"2";Ilha Terceira;40026.72;400.27;126;1021;0;53995
+"44";Região Autónoma dos Açores;"2";Ilha da Graciosa;6065.78;60.66;44;402;0;4091
+"45";Região Autónoma dos Açores;"2";Ilha de São Jorge;24364.78;243.65;139;1053;0;8373
+"46";Região Autónoma dos Açores;"2";Ilha do Pico;44479.53;444.8;153;2351;0;13761
+"47";Região Autónoma dos Açores;"2";Ilha do Faial;17305.53;173.06;80;1043;0;14817
+"48";Região Autónoma dos Açores;"2";Ilha das Flores;14096.22;140.96;72;914;0;3428
+"49";Região Autónoma dos Açores;"2";Ilha do Corvo;1711.45;17.11;21;718;0;384

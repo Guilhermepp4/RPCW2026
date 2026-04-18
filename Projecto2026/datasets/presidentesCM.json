@@ -1,0 +1,1850 @@
+[
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "ÁGUEDA",
+        "Presidente": "JORGE HENRIQUE FERNANDES DE ALMEIDA",
+        "Partido": "PPD/PSD.MPT"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "ALBERGARIA-A-VELHA",
+        "Presidente": "JOSÉ CARLOS ESTRELA COELHO",
+        "Partido": "CDS-PP"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "ANADIA",
+        "Presidente": "JORGE EDUARDO FERREIRA SAMPAIO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "AROUCA",
+        "Presidente": "MARGARIDA MARIA DE SOUSA CORREIA BELÉM",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "AVEIRO",
+        "Presidente": "LUÍS MANUEL SOUTO DE MIRANDA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "CASTELO DE PAIVA",
+        "Presidente": "RICARDO JORGE MENDES CARDOSO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "ESPINHO",
+        "Presidente": "JORGE MANUEL MENGO RATOLA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "ESTARREJA",
+        "Presidente": "ISABEL MARIA DA CONCEIÇÃO SIMÕES PINTO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "SANTA MARIA DA FEIRA",
+        "Presidente": "AMADEU ALBERTINO MARQUES SOARES ALBERGARIA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "ÍLHAVO",
+        "Presidente": "RUI MANUEL DA SILVA PEDRO MOREIRA DIAS",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "MEALHADA",
+        "Presidente": "Desconhecido",
+        "Partido": "Desconecido"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "MURTOSA",
+        "Presidente": "JANUÁRIO VIEIRA DA CUNHA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "OLIVEIRA DE AZEMÉIS",
+        "Presidente": "JOAQUIM JORGE FERREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "OLIVEIRA DO BAIRRO",
+        "Presidente": "DUARTE DOS SANTOS ALMEIDA NOVO",
+        "Partido": "CDS-PP"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "OVAR",
+        "Presidente": "DOMINGOS MANUEL MARQUES SILVA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "SÃO JOÃO DA MADEIRA",
+        "Presidente": "JOÃO GOMES OLIVEIRA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "SEVER DO VOUGA",
+        "Presidente": "PEDRO AMADEU FERNANDES LOPES LOBO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "VAGOS",
+        "Presidente": "RUI MIGUEL ROCHA DA CRUZ",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "AVEIRO",
+        "Concelho": "VALE DE CAMBRA",
+        "Presidente": "ANDRÉ AGOSTINHO MARTINS DA SILVA",
+        "Partido": "CDS-PP"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "ALJUSTREL",
+        "Presidente": "FERNANDO MANUEL BATISTA DE BRITO RUAS",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "ALMODÔVAR",
+        "Presidente": "JOSÉ TADEU SEBASTIÃO FIGUEIRA DE FREITAS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "ALVITO",
+        "Presidente": "JOSÉ MANUEL CARVALHO PENEDO MARTINS EFIGÉNIO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "BARRANCOS",
+        "Presidente": "EMILIO CARVALHO DOMINGUES",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "BEJA",
+        "Presidente": "NUNO FERNANDO MONTES PALMA FERRO",
+        "Partido": "CDS-PP.PPD/PSD"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "CASTRO VERDE",
+        "Presidente": "ANTÓNIO JOSÉ ROSA DE BRITO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "CUBA",
+        "Presidente": "JOÃO DUARTE OLIVEIRA BRITO PALMA",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "FERREIRA DO ALENTEJO",
+        "Presidente": "LUÍS ANTÓNIO PITA AMEIXA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "MÉRTOLA",
+        "Presidente": "MÁRIO JOSÉ SANTOS TOMÉ",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "MOURA",
+        "Presidente": "ÁLVARO JOSÉ PATO AZEDO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "ODEMIRA",
+        "Presidente": "HÉLDER ANTÓNIO GUERREIRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "OURIQUE",
+        "Presidente": "MARCELO DAVID COELHO GUERREIRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "SERPA",
+        "Presidente": "FRANCISCO JOSÉ PALMA PICARETA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BEJA",
+        "Concelho": "VIDIGUEIRA",
+        "Presidente": "RICARDO MANUEL BOGANGO BONITO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "AMARES",
+        "Presidente": "EMANUEL AUGUSTO DA SILVA MAGALHÃES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "BARCELOS",
+        "Presidente": "Desconhecido",
+        "Partido": "Desconecido"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "BRAGA",
+        "Presidente": "JOÃO VASCONCELOS BARROS RODRIGUES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "CABECEIRAS DE BASTO",
+        "Presidente": "MANUEL ANTÓNIO MENDES TEIXEIRA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "CELORICO DE BASTO",
+        "Presidente": "JOSÉ ANTÓNIO PEIXOTO LIMA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "ESPOSENDE",
+        "Presidente": "CARLOS MANUEL PIRES MARTINS DA SILVA",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "FAFE",
+        "Presidente": "ANTERO SILVA OLIVEIRA BARBOSA FERNANDES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "GUIMARÃES",
+        "Presidente": "RICARDO JOSÉ MACHADO PEREIRA DA SILVA ARAÚJO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "PÓVOA DE LANHOSO",
+        "Presidente": "FREDERICO DE OLIVEIRA CASTRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "TERRAS DE BOURO",
+        "Presidente": "MANUEL JOÃO SAMPAIO TIBO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "VIEIRA DO MINHO",
+        "Presidente": "FILIPE ALEXANDRE SOARES DE OLIVEIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "VILA NOVA DE FAMALICÃO",
+        "Presidente": "MÁRIO DE SOUSA PASSOS",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "VILA VERDE",
+        "Presidente": "JÚLIA MARIA CARIDADE RODRIGUES FERNANDES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGA",
+        "Concelho": "VIZELA",
+        "Presidente": "VICTOR HUGO MACHADO DA COSTA SALGADO DE ABREU",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "ALFÂNDEGA DA FÉ",
+        "Presidente": "EDUARDO MANUEL DOBRÕES TAVARES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "BRAGANÇA",
+        "Presidente": "ISABEL CRISTINA FERNANDES RODRIGUES FERREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "CARRAZEDA DE ANSIÃES",
+        "Presidente": "JOÃO MANUEL DOS SANTOS LOPES GONÇALVES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "FREIXO DE ESPADA À CINTA",
+        "Presidente": "NUNO MANUEL ROCHA GOMES FERREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "MACEDO DE CAVALEIROS",
+        "Presidente": "SÉRGIO DAVID RAMOS BORGES",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "MIRANDA DO DOURO",
+        "Presidente": "HELENA MARIA DA SILVA VENTURA BARRIL",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "MIRANDELA",
+        "Presidente": "VÍTOR MANUEL CORREIA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "MOGADOURO",
+        "Presidente": "ANTÓNIO JOAQUIM PIMENTEL",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "TORRE DE MONCORVO",
+        "Presidente": "JOSÉ CARLOS DE SÁ MENESES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "VILA FLOR",
+        "Presidente": "PEDRO MIGUEL SARAIVA LIMA CORDEIRO DE MELO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "VIMIOSO",
+        "Presidente": "ANTÓNIO DOS SANTOS JOÃO VAZ",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "BRAGANÇA",
+        "Concelho": "VINHAIS",
+        "Presidente": "LUIS DOS SANTOS FERNANDES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "BELMONTE",
+        "Presidente": "ANTÓNIO LUIS BEITES SOARES",
+        "Partido": "NC"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "CASTELO BRANCO",
+        "Presidente": "LEOPOLDO MARTINS RODRIGUES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "COVILHÃ",
+        "Presidente": "HÉLIO JORGE SIMÕES FAZENDEIRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "FUNDÃO",
+        "Presidente": "LUÍS MIGUEL ROQUE TAROUCA DUARTE GAVINHOS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "IDANHA-A-NOVA",
+        "Presidente": "ELZA MARIA MARTINS GONÇALVES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "OLEIROS",
+        "Presidente": "MIGUEL ALEXANDRE SILVA COSTA SANTOS MARQUES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "PENAMACOR",
+        "Presidente": "JOSÉ MIGUEL RIBEIRO DE OLIVEIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "PROENÇA-A-NOVA",
+        "Presidente": "JOÃO MANUEL VENTURA GRILO DE MELO LOBO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "SERTÃ",
+        "Presidente": "CARLOS ALBERTO DE MIRANDA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "VILA DE REI",
+        "Presidente": "PAULO CÉSAR LARANJEIRA LUÍS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "CASTELO BRANCO",
+        "Concelho": "VILA VELHA DE RÓDÃO",
+        "Presidente": "ANTÓNIO TAVARES PINTO CARMONA MENDES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "ARGANIL",
+        "Presidente": "LUIS PAULO CARREIRA FONSECA DA COSTA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "CANTANHEDE",
+        "Presidente": "MARIA HELENA ROSA DE TEODÓSIO E CRUZ GOMES DE OLIVEIRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "COIMBRA",
+        "Presidente": "ANA MARIA PEREIRA ABRUNHOSA",
+        "Partido": "PS.L.PAN"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "CONDEIXA-A-NOVA",
+        "Presidente": "LILIANA MARQUES PIMENTEL",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "FIGUEIRA DA FOZ",
+        "Presidente": "PEDRO MIGUEL DE SANTANA LOPES",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "GÓIS",
+        "Presidente": "ANTÓNIO RUI DE SOUSA GODINHO SAMPAIO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "LOUSÃ",
+        "Presidente": "VICTOR EUGÉNIO DAS NEVES CARVALHO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "MIRA",
+        "Presidente": "ARTUR JORGE RIBEIRO FRESCO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "MIRANDA DO CORVO",
+        "Presidente": "JOSÉ MIGUEL RAMOS FERREIRA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "MONTEMOR-O-VELHO",
+        "Presidente": "JOSÉ JACÍRIO TEIXEIRA VERÍSSIMO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "OLIVEIRA DO HOSPITAL",
+        "Presidente": "JOSÉ FRANCISCO TAVARES ROLO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "PAMPILHOSA DA SERRA",
+        "Presidente": "JORGE ALVES CUSTÓDIO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "PENACOVA",
+        "Presidente": "ÁLVARO GIL FERREIRA MARTINS COIMBRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "PENELA",
+        "Presidente": "EDUARDO JORGE MENDES NOGUEIRA DOS SANTOS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "SOURE",
+        "Presidente": "RUI MIGUEL FREIRE MENDES FERNANDES",
+        "Partido": "NC"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "TÁBUA",
+        "Presidente": "RICARDO MANUEL OLIVEIRA DA SILVA CRUZ",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "COIMBRA",
+        "Concelho": "VILA NOVA DE POIARES",
+        "Presidente": "NUNO ALEXANDRE FIGUEIREDO NEVES",
+        "Partido": "DESCONHECIDO"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "ALANDROAL",
+        "Presidente": "JOÃO MARIA ARANHA GRILO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "ARRAIOLOS",
+        "Presidente": "JORGE JOAQUIM PITEIRA MACAU",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "BORBA",
+        "Presidente": "PEDRO DUARTE ABELHO GREGO ESTEVES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "ESTREMOZ",
+        "Presidente": "JOSÉ DANIEL PENA SÁDIO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "ÉVORA",
+        "Presidente": "JOSÉ CARLOS DAS DORES ZORRINHO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "MONTEMOR-O-NOVO",
+        "Presidente": "CARLOS MANUEL RODRIGUES PINTO DE SÁ",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "MORA",
+        "Presidente": "LUÍS SIMÃO DUARTE DE MATOS",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "MOURÃO",
+        "Presidente": "JOÃO FILIPE CARDOSO FERNANDES FORTES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "PORTEL",
+        "Presidente": "MARIA LUISA LEONÇO FARINHA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "REDONDO",
+        "Presidente": "DAVID MANUEL FIALHO GALEGO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "REGUENGOS DE MONSARAZ",
+        "Presidente": "MARTA SOFIA DA SILVA CHILRITO PRATES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "VENDAS NOVAS",
+        "Presidente": "RICARDO MANUEL COELHO VIDEIRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "VIANA DO ALENTEJO",
+        "Presidente": "LUÍS MIGUEL HORTA METROGOS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "ÉVORA",
+        "Concelho": "VILA VIÇOSA",
+        "Presidente": "INÁCIO JOSÉ LUDOVICO ESPERANÇA",
+        "Partido": "PPD/PSD.CDS-PP.PPM.MPT"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "ALBUFEIRA",
+        "Presidente": "RUI CELESTINO DOS SANTOS CRISTINA",
+        "Partido": "CH"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "ALCOUTIM",
+        "Presidente": "PAULO JORGE CAVACO PAULINO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "ALJEZUR",
+        "Presidente": "MANUEL JOSÉ DE JESUS MARREIROS",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "CASTRO MARIM",
+        "Presidente": "FILOMENA PASCOAL SINTRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "FARO",
+        "Presidente": "ANTÓNIO MIGUEL VENTURA PINA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "LAGOA",
+        "Presidente": "LUÍS ANTÓNIO ALVES DA ENCARNAÇÃO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "LAGOS",
+        "Presidente": "HUGO MIGUEL MARREIROS HENRIQUE PEREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "LOULÉ",
+        "Presidente": "TELMO MANUEL MACHADO PINTO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "MONCHIQUE",
+        "Presidente": "PAULO JORGE DUARTE ALVES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "OLHÃO",
+        "Presidente": "RICARDO MANUEL VEIA CALÉ",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "PORTIMÃO",
+        "Presidente": "ÁLVARO MIGUEL PEIXINHO ALAMBRE BILA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "SÃO BRÁS DE ALPORTEL",
+        "Presidente": "MARLENE DE SOUSA GUERREIRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "SILVES",
+        "Presidente": "MARIA LUIZA MEDEIRO CONDUTO LUIS",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "TAVIRA",
+        "Presidente": "ANA PAULA FERNANDES MARTINS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "VILA DO BISPO",
+        "Presidente": "PAULA ALEXANDRA XAVIER ALVES DE FREITAS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "FARO",
+        "Concelho": "VILA REAL DE SANTO ANTÓNIO",
+        "Presidente": "ÁLVARO PALMA DE ARAÚJO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "AGUIAR DA BEIRA",
+        "Presidente": "VIRGÍLIO DA CUNHA",
+        "Partido": "IL"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "ALMEIDA",
+        "Presidente": "ANTÓNIO JOSÉ MONTEIRO MACHADO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "CELORICO DA BEIRA",
+        "Presidente": "CARLOS MANUEL DA FONSECA ASCENSÃO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "FIGUEIRA DE CASTELO RODRIGO",
+        "Presidente": "CARLOS MANUEL MARTINS CONDESSO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "FORNOS DE ALGODRES",
+        "Presidente": "ALEXANDRE FILIPE FERNANDES LOPES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "GOUVEIA",
+        "Presidente": "JORGE ABRANTES FERRREIRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "GUARDA",
+        "Presidente": "SÉRGIO FERNANDO SILVA COSTA",
+        "Partido": "NC.PPM"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "MANTEIGAS",
+        "Presidente": "FLÁVIO MIGUEL TACANHO MASSANO",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "MÊDA",
+        "Presidente": "ANTÓNIO CÉSAR VALENTE FIGUEIREDO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "PINHEL",
+        "Presidente": "DANIELA PATRÍCIA MONTEIRO CAPELO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "SABUGAL",
+        "Presidente": "VITOR MANUEL DIAS PROENÇA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "SEIA",
+        "Presidente": "ANTÓNIO LUCIANO DA SILVA RIBEIRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "TRANCOSO",
+        "Presidente": "DANIEL JOSÉ SALVADOR JOANA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "GUARDA",
+        "Concelho": "VILA NOVA DE FOZ CÔA",
+        "Presidente": "PEDRO MIGUEL CARVALHO DUARTE",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "ALCOBAÇA",
+        "Presidente": "HERMÍNIO JOSÉ DA CRUZ AUGUSTO RODRIGUES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "ALVAIÁZERE",
+        "Presidente": "JOÃO PAULO CARVALHO GUERREIRO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "ANSIÃO",
+        "Presidente": "JORGE HUMBERTO FERNADES CANCELINHA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "BATALHA",
+        "Presidente": "ANDRÉ EMANUEL BENTO SOUSA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "BOMBARRAL",
+        "Presidente": "RICARDO MANUEL SILVA FERNANDES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "CALDAS DA RAINHA",
+        "Presidente": "VITOR MANUEL CALISTO MARQUES",
+        "Partido": "DESCONHECIDO"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "CASTANHEIRA DE PÊRA",
+        "Presidente": "ANTÓNIO MANUEL HENRIQUES ANTUNES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "FIGUEIRÓ DOS VINHOS",
+        "Presidente": "CARLOS ALBERTO DAVID DOS SANTOS LOPES",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "LEIRIA",
+        "Presidente": "GONÇALO NUNO BERTOLO GORDALINA LOPES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "MARINHA GRANDE",
+        "Presidente": "PAULO JORGE CAMPOS VICENTE",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "NAZARÉ",
+        "Presidente": "SERAFIM ANTÓNIO LOURAÇO DA SILVA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "ÓBIDOS",
+        "Presidente": "FILIPE MIGUEL ALVES CORREIA DANIEL",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "PEDRÓGÃO GRANDE",
+        "Presidente": "JOÃO MANUEL GOMES MARQUES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "PENICHE",
+        "Presidente": "FILIPE MAIA DE MATOS FERREIRA SALES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "POMBAL",
+        "Presidente": "PEDRO ALEXANDRE ANTUNES FAUSTINO PIMPÃO DOS SANTOS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LEIRIA",
+        "Concelho": "PORTO DE MÓS",
+        "Presidente": "JOSÉ JORGE COUTO VALA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "ALENQUER",
+        "Presidente": "JOÃO MIGUEL MAÇARICO NICOLAU",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "ARRUDA DOS VINHOS",
+        "Presidente": "CARLOS MANUEL JORGE ALVES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "AZAMBUJA",
+        "Presidente": "SILVINO JOSÉ DA SILVA LÚCIO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "CADAVAL",
+        "Presidente": "RICARDO ALEXANDRE DA SILVA PINTEUS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "CASCAIS",
+        "Presidente": "NUNO FRANCISCO PITEIRA LOPES",
+        "Partido": "CDS-PP.PPD/PSD"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "LISBOA",
+        "Presidente": "CARLOS MANUEL FELIX MOEDAS",
+        "Partido": "PPD/PSD.CDS-PP.IL"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "LOURES",
+        "Presidente": "RICARDO JORGE COLAÇO LEÃO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "LOURINHÃ",
+        "Presidente": "ORLANDO MATIAS DA FONSECA CARVALHO",
+        "Partido": "CDS-PP.PPD/PSD"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "MAFRA",
+        "Presidente": "HUGO MANUEL MOREIRA LUÍS",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "OEIRAS",
+        "Presidente": "ISALTINO AFONSO MORAIS",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "SINTRA",
+        "Presidente": "MARCO PAULO CALDEIRA DE ALMEIDA",
+        "Partido": "PPD/PSD.IL.PAN"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "SOBRAL DE MONTE AGRAÇO",
+        "Presidente": "RAQUEL FILIPA SOARES LOURENÇO",
+        "Partido": "PPD/PSD.CDS-PP.PPM.MPT"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "TORRES VEDRAS",
+        "Presidente": "SERGIO PAULO MATIAS GALVÃO",
+        "Partido": "PPD/PSD.CDS-PP.VP"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "VILA FRANCA DE XIRA",
+        "Presidente": "FERNANDO PAULO FERREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "AMADORA",
+        "Presidente": "VÍTOR MANUEL TORRES FERREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "LISBOA",
+        "Concelho": "ODIVELAS",
+        "Presidente": "HUGO MANUEL DOS SANTOS MARTINS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "ALTER DO CHÃO",
+        "Presidente": "FRANCISCO JOSÉ CORDEIRO MIRANDA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "ARRONCHES",
+        "Presidente": "JOÃO CARLOS VENTURA CRESPO",
+        "Partido": "CDS-PP.PPD/PSD"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "AVIS",
+        "Presidente": "MANUEL MARIA LIBÉRIO COELHO",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "CAMPO MAIOR",
+        "Presidente": "LUIS FERNANDO MARTINS ROSINHA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "CASTELO DE VIDE",
+        "Presidente": "NUNO FILIPE BAPTISTA CALIXTO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "CRATO",
+        "Presidente": "JOAQUIM BERNARDO DOS SANTOS DIOGO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "ELVAS",
+        "Presidente": "JOSÉ ANTÓNIO RONDÃO ALMEIDA",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "FRONTEIRA",
+        "Presidente": "ANTÓNIO VELEZ GOMES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "GAVIÃO",
+        "Presidente": "ANTÓNIO MANUEL GOMES SEVERINO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "MARVÃO",
+        "Presidente": "LUIS ANTÓNIO ABELHO SOBREIRA VITORINO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "MONFORTE",
+        "Presidente": "MIGUEL ALEXANDRE FERREIRA RASQUINHO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "NISA",
+        "Presidente": "JOSÉ DINIS SAMARRA SERRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "PONTE DE SOR",
+        "Presidente": "ROGÉRIO EDUARDO CORREIA SILVA ALVES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "PORTALEGRE",
+        "Presidente": "FERMELINDA DE JESUS POMBO CARVALHO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "PORTALEGRE",
+        "Concelho": "SOUSEL",
+        "Presidente": "MANUEL JOAQUIM SILVA VALÉRIO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "AMARANTE",
+        "Presidente": "ANTÓNIO JORGE VIEIRA RICARDO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "BAIÃO",
+        "Presidente": "ANA RAQUEL COELHO AZEVEDO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "FELGUEIRAS",
+        "Presidente": "NUNO ALEXANDRE MARTINS DA FONSECA",
+        "Partido": "L.PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "GONDOMAR",
+        "Presidente": "LUÍS FILIPE DE CASTRO DE ARAÚJO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "LOUSADA",
+        "Presidente": "NELSON ÂNGELO COELHO OLIVEIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "MAIA",
+        "Presidente": "ANTÓNIO DOMINGOS DA SILVA TIAGO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "MARCO DE CANAVESES",
+        "Presidente": "CRISTINA LASALETE CARDOSO VIEIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "MATOSINHOS",
+        "Presidente": "LUÍSA MARIA NEVES SALGUEIRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "PAÇOS DE FERREIRA",
+        "Presidente": "PAULO JORGE RODRIGUES FERREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "PAREDES",
+        "Presidente": "JOSÉ ALEXANDRE DA SILVA ALMEIDA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "PENAFIEL",
+        "Presidente": "PEDRO MIGUEL SANTANA CEPEDA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "PORTO",
+        "Presidente": "PEDRO MIGUEL DE AZEREDO DUARTE",
+        "Partido": "PPD/PSD.CDS-PP.IL"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "PÓVOA DE VARZIM",
+        "Presidente": "ANDREA LUÍSA NEIVA MAIA DA SILVA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "SANTO TIRSO",
+        "Presidente": "ALBERTO MANUEL MARTINS DA COSTA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "VALONGO",
+        "Presidente": "PAULO JORGE ESTEVES FERREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "VILA DO CONDE",
+        "Presidente": "VITOR MANUEL MOREIRA COSTA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "VILA NOVA DE GAIA",
+        "Presidente": "Desconhecido",
+        "Partido": "Desconecido"
+    },
+    {
+        "Distrito": "PORTO",
+        "Concelho": "TROFA",
+        "Presidente": "SÉRGIO DANIEL DA COSTA ARAÚJO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "ABRANTES",
+        "Presidente": "MANUEL JORGE SÉNECA DA LUZ VALAMATOS DOS REIS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "ALCANENA",
+        "Presidente": "RUI FERNANDO ANASTÁCIO HENRIQUES",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "ALMEIRIM",
+        "Presidente": "JOAQUIM MANUEL DE DEUS CATALÃO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "ALPIARÇA",
+        "Presidente": "SÓNIA ISABEL SANFONA CRUZ MENDES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "BENAVENTE",
+        "Presidente": "SÓNIA PATRÍCIA DA SILVA FERREIRA QUINTINO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "CARTAXO",
+        "Presidente": "JOÃO MIGUEL FERREIRA HEITOR",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "CHAMUSCA",
+        "Presidente": "NUNO JORGE LINO MIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "CONSTÂNCIA",
+        "Presidente": "SÉRGIO MIGUEL SANTOS PEREIRA DE OLIVEIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "CORUCHE",
+        "Presidente": "NUNO JOSÉ SILVA GUILHERME HENRIQUES DE AZEVEDO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "ENTRONCAMENTO",
+        "Presidente": "NELSON JOSÉ ESTRELA LOPES CUNHA",
+        "Partido": "CH"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "FERREIRA DO ZÊZERE",
+        "Presidente": "BRUNO JOSÉ DA GRAÇA GOMES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "GOLEGÃ",
+        "Presidente": "ANTÓNIO CARLOS DA COSTA CAMILO",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "MAÇÃO",
+        "Presidente": "JOSÉ FERNANDO MENDES MARTINS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "RIO MAIOR",
+        "Presidente": "LUÍS FILIPE SANTANA DIAS",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "SALVATERRA DE MAGOS",
+        "Presidente": "HELENA MARIA PEREIRA DAS NEVES",
+        "Partido": "DESCONHECIDO"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "SANTARÉM",
+        "Presidente": "JOÃO FRANCISCO FERREIRA TEIXEIRA LEITE",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "SARDOAL",
+        "Presidente": "PEDRO MANUEL DOS SANTOS ROSA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "TOMAR",
+        "Presidente": "TIAGO MANUEL HENRIQUES FERREIRA CARRÃO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "TORRES NOVAS",
+        "Presidente": "JOSÉ MANUEL PAULO TRINCÃO MARQUES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "VILA NOVA DA BARQUINHA",
+        "Presidente": "MANUEL JOSÉ COIMBRA MOURATO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SANTARÉM",
+        "Concelho": "OURÉM",
+        "Presidente": "LUÍS MIGUEL MARQUES GROSSINHO COUTINHO ALBUQUERQUE",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "ALCÁCER DO SAL",
+        "Presidente": "CLARISSE MARIA GAUDINO VEREDAS CAMPOS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "ALCOCHETE",
+        "Presidente": "FERNANDO MANUEL GONÇALVES PINA PINTO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "ALMADA",
+        "Presidente": "INÊS DE SAINT- MAURICE ESTEVES DE MEDEIROS VICTORINO DE",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "ALMEIDA",
+        "Presidente": "Desconhecido",
+        "Partido": "Desconecido"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "BARREIRO",
+        "Presidente": "FREDERICO ALEXANDRE ALJUSTREL DA COSTA ROSA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "GRÂNDOLA",
+        "Presidente": "LUÍS MANUEL RODRIGUES VITAL ALEXANDRE",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "MOITA",
+        "Presidente": "CARLOS EDGAR RODRIGUES SÁ ALBINO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "MONTIJO",
+        "Presidente": "FERNANDO JOSÉ GOUVEIA CARIA",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "PALMELA",
+        "Presidente": "ANA TERESA VICENTE CUSTÓDIO DE SÁ",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "SANTIAGO DO CACÉM",
+        "Presidente": "BRUNO JOSÉ PEIXOTO GONÇALVES PEREIRA",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "SEIXAL",
+        "Presidente": "Desconhecido",
+        "Partido": "Desconecido"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "SESIMBRA",
+        "Presidente": "FRANCISCO MANUEL FIRMINO DE JESUS",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "SETÚBAL",
+        "Presidente": "MARIA DAS DORES MARQUES BANHEIRO MEIRA",
+        "Partido": "GCE (GRUPO DE CIDADÃOS ELEITORES)"
+    },
+    {
+        "Distrito": "SETÚBAL",
+        "Concelho": "SINES",
+        "Presidente": "ÁLVARO DOS SANTOS BEIJINHA",
+        "Partido": "PCP-PEV"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "ARCOS DE VALDEVEZ",
+        "Presidente": "OLEGÁRIO GOMES GONÇALVES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "CAMINHA",
+        "Presidente": "LILIANA SOFIA BOUÇA DA SILVA",
+        "Partido": "PPD/PSD.CDS-PP.PPM.MPT"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "MELGAÇO",
+        "Presidente": "JOSÉ ALBANO ESTEVES DOMINGUES",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "MONÇÃO",
+        "Presidente": "ANTÓNIO JOSÉ FERNANDES BARBOSA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "PAREDES DE COURA",
+        "Presidente": "TIAGO MANUEL PEREIRA DA CUNHA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "PONTE DA BARCA",
+        "Presidente": "AUGUSTO MANUEL DOS REIS MARINHO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "PONTE DE LIMA",
+        "Presidente": "VASCO NUNO MAGALHÃES VELHO DE ALMEIDA FERRAZ",
+        "Partido": "CDS-PP"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "VALENÇA",
+        "Presidente": "JOSÉ MANUEL VAZ CARPINTEIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "VIANA DO CASTELO",
+        "Presidente": "JOAQUIM LUÍS NOBRE PEREIRA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VIANA DO CASTELO",
+        "Concelho": "VILA NOVA DE CERVEIRA",
+        "Presidente": "RUI PEDRO TEIXEIRA FERREIRA DA SILVA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "ALIJÓ",
+        "Presidente": "JOSÉ RODRIGUES PAREDES",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "BOTICAS",
+        "Presidente": "ANTÓNIO GUILHERME FORTE LERES PIRES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "CHAVES",
+        "Presidente": "NUNO VAZ RIBEIRO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "MESÃO FRIO",
+        "Presidente": "PAULO JORGE PERES TEIXEIRA DA SILVA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "MONDIM DE BASTO",
+        "Presidente": "BRUNO MIGUEL DE MOURA FERREIRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "MONTALEGRE",
+        "Presidente": "MARIA DE FÁTIMA PEREIRA FERNANDES ALVES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "MURÇA",
+        "Presidente": "Desconhecido",
+        "Partido": "Desconecido"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "PESO DA RÉGUA",
+        "Presidente": "JOSÉ MANUEL GONÇALVES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "RIBEIRA DE PENA",
+        "Presidente": "JOÃO AVELINO NORONHA RODRIGUES DE CARVALHO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "SABROSA",
+        "Presidente": "MARIA HELENA MARQUES PINTO DA LAPA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "SANTA MARTA DE PENAGUIÃO",
+        "Presidente": "SÍLVIA FONSECA SILVA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "VALPAÇOS",
+        "Presidente": "JORGE MANUEL DA MATA PIRES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VILA REAL",
+        "Concelho": "VILA POUCA DE AGUIAR",
+        "Presidente": "ANA RITA FERREIRA DIAS BASTOS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "ARMAMAR",
+        "Presidente": "MÁRCIO PAULO CARRULO MORAIS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "CARREGAL DO SAL",
+        "Presidente": "PAULO JORGE CATALINO DE ALMEIDA FERRAZ",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "CASTRO DAIRE",
+        "Presidente": "PAULO MARTINS DE ALMEIDA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "CINFÃES",
+        "Presidente": "CARLOS ALBERTO LOPES CARDOSO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "LAMEGO",
+        "Presidente": "FRANCISCO MANUEL LOPES",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "MANGUALDE",
+        "Presidente": "MARCO FILIPE PESSOA DE ALMEIDA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "MOIMENTA DA BEIRA",
+        "Presidente": "PAULO ALEXANDRE DE MATOS FIGUEIREDO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "MORTÁGUA",
+        "Presidente": "RICARDO SÉRGIO PARDAL MARQUES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "NELAS",
+        "Presidente": "JOAQUIM AUGUSTO ALVES AMARAL",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "OLIVEIRA DE FRADES",
+        "Presidente": "JOÃO CARLOS FERREIRA VALÉRIO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "PENALVA DO CASTELO",
+        "Presidente": "JOSÉ DIAS LOPES LAIRES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "PENEDONO",
+        "Presidente": "SÓNIA ISABEL ANJOS NUMÃO LOPES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "RESENDE",
+        "Presidente": "FERNANDO SILVÉRIO CARDOSO DE SOUSA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "SANTA COMBA DÃO",
+        "Presidente": "INÊS MARIA VARELA MATOS",
+        "Partido": "PPD/PSD.IL"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "SÃO JOÃO DA PESQUEIRA",
+        "Presidente": "MANUEL ANTÓNIO NATÁRIO CORDEIRO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "SÃO PEDRO DO SUL",
+        "Presidente": "PEDRO MIGUEL MOURO LOURENÇO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "SÁTÃO",
+        "Presidente": "ALEXANDRE MANUEL MENDONÇA VAZ",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "SERNANCELHE",
+        "Presidente": "CARLOS MANUEL RAMOS DOS SANTOS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "TABUAÇO",
+        "Presidente": "JOSÉ JOÃO MONTEIRO PATRÍCIO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "TAROUCA",
+        "Presidente": "JOSÉ DAMIÃO LOPES GUEDES DE MELO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "TONDELA",
+        "Presidente": "FÁTIMA CARLA DIAS ANTUNES BORGES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "VILA NOVA DE PAIVA",
+        "Presidente": "PAULO MANUEL TEIXEIRA MARQUES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "VISEU",
+        "Presidente": "JOÃO NUNO FERREIRA GONÇALVES AZEVEDO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "VISEU",
+        "Concelho": "VOUZELA",
+        "Presidente": "CARLOS ALBERTO SANTOS OLIVEIRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "CALHETA",
+        "Presidente": "DOROTEIA MERCÊS ANDRADE DA SILVA LEÇA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "CÂMARA DE LOBOS",
+        "Presidente": "CELSO RENATO FREITAS BETTENCOURT",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "FUNCHAL",
+        "Presidente": "JORGE MARIA ABREU DE CARVALHO",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "MACHICO",
+        "Presidente": "HUGO ALEXANDRE TEIXEIRA MARQUES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "PONTA DO SOL",
+        "Presidente": "RUI DAVID PITA MARQUES LUÍS",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "PORTO MONIZ",
+        "Presidente": "Desconhecido",
+        "Partido": "Desconecido"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "RIBEIRA BRAVA",
+        "Presidente": "JORGE MANUEL FARIA DOS SANTOS",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "SANTA CRUZ",
+        "Presidente": "ÉLIA LUÍSA DIAS GONÇALVES ASCENSÃO",
+        "Partido": "JPP"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "SANTANA",
+        "Presidente": "MÁRCIO DINARTE DA SILVA FERNANDES",
+        "Partido": "CDS-PP"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "SÃO VICENTE",
+        "Presidente": "JOSÉ CARLOS GONÇALVES",
+        "Partido": "CH"
+    },
+    {
+        "Distrito": "Madeira",
+        "Concelho": "PORTO SANTO",
+        "Presidente": "NUNO FILIPE MELIM BATISTA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "VILA DO PORTO",
+        "Presidente": "BÁRBARA PEREIRA TORRES DE MEDEIROS CHAVES",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "LAGOA",
+        "Presidente": "FREDERICO FURTADO DE SOUSA",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "NORDESTE",
+        "Presidente": "ANTÓNIO MIGUEL BORGES SOARES",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "PONTA DELGADA",
+        "Presidente": "PEDRO MIGUEL DE MEDEIROS DO NASCIMENTO CABRAL",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "POVOAÇÃO",
+        "Presidente": "PEDRO NUNO SOUSA MELO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "RIBEIRA GRANDE",
+        "Presidente": "JAIME LUÍS MELO VIEIRA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "VILA FRANCA DO CAMPO",
+        "Presidente": "GRAÇA DE FÁTIMA BOLARINHO VENTURA MELO",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "ANGRA DO HEROÍSMO",
+        "Presidente": "FÁTIMA DA CONCEIÇÃO LOBÃO SANTOS DA SILVEIRA AMORIM",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "VILA DA PRAIA DA VITÓRIA",
+        "Presidente": "VÂNIA MARISA BORGES FIGUEIREDO FERREIRA",
+        "Partido": "PPD/PSD.CDS-PP"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "SANTA CRUZ DA GRACIOSA",
+        "Presidente": "ANTÓNIO MANUEL RAMOS DOS REIS",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "CALHETA",
+        "Presidente": "ANTÓNIO JOÃO VIEGAS SOUSA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "VELAS",
+        "Presidente": "CATARINA OLIVEIRA CABECEIRAS",
+        "Partido": "CDS-PP"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "LAJES DO PICO",
+        "Presidente": "ANA CATARINA TERRA BRUM",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "MADALENA",
+        "Presidente": "CATARINA ISABEL GASPAR MANITO",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "SÃO ROQUE DO PICO",
+        "Presidente": "LUÍS FILIPE RAMOS MACEDO DA SILVA",
+        "Partido": "PPD/PSD"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "HORTA",
+        "Presidente": "CARLOS MANUEL DA SILVEIRA FERREIRA",
+        "Partido": "PPD/PSD.CDS-PP.PPM"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "LAJES DAS FLORES",
+        "Presidente": "BETO ALEXANDRE AZEVEDO VASCONCELOS",
+        "Partido": "PS"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "SANTA CRUZ DAS FLORES",
+        "Presidente": "MARIA ELISABETE AVELAR NÓIA",
+        "Partido": "DESCONHECIDO"
+    },
+    {
+        "Distrito": "Açores",
+        "Concelho": "CORVO",
+        "Presidente": "MARCO PAULO ALVES DA SILVA",
+        "Partido": "PS"
+    }
+]
