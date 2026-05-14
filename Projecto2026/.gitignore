@@ -1,0 +1,7 @@
+# Ignorar pastas virtuais do Python
+venv/
+.env
+
+datasest_finished/*
+datasets/*
+Ontologias/*
