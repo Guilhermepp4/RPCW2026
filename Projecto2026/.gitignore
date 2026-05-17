@@ -2,6 +2,6 @@
 venv/
 .env
 
-datasest_finished/*
+datasets_finished/*
 datasets/*
 Ontologias/*

@@ -1,0 +1,14 @@
+{
+    "head": {
+        "vars": [
+            "nome",
+            "normaType",
+            "ndistrito",
+            "nconcelho",
+            "nregiao"
+        ]
+    },
+    "results": {
+        "bindings": []
+    }
+}

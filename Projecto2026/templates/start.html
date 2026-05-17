@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Portugal Semântico</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="relative hero-gradient h-[70vh] flex items-center justify-center text-white overflow-hidden w3-display-container">
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block opacity-80">Web Semântica & Turismo</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 drop-shadow-lg">
+                Portugal <span class="text-blue-400">Semântico</span>
+            </h1>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                <a href="#explorar" class="w3-button w3-blue w3-round-xxlarge w3-padding-large font-bold">Começar a Explorar</a>
+                <a href="#sobre" class="w3-button w3-white w3-round-xxlarge w3-padding-large w3-border font-bold">Saber Mais</a>
+            </div>
+        </div>
+        <div class="w3-display-bottommiddle w3-margin-bottom animate-bounce">
+            <i class="fa fa-chevron-down text-2xl"></i>
+        </div>
+    </header>
+
+    
+    <nav id="explorar" class="sticky top-0 bg-blue-900 text-white w3-card-4" style="z-index: 9999 !important;">
+        <style>
+            html { scroll-behavior: smooth; }
+            
+            .hero-gradient {
+                background: linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.7)), 
+                            url('https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .goog-te-gadget-simple {
+                background-color: transparent !important;
+                border: 1px solid rgba(255,255,255,0.4) !important;
+                padding: 5px 10px !important;
+                border-radius: 20px !important;
+            }
+
+            .goog-te-gadget-simple span, 
+            .goog-te-gadget-simple font, 
+            .goog-te-menu-value span, 
+            .goog-te-menu-value font {
+                color: #ffffff !important;
+                text-decoration: none !important;
+            }
+
+            .goog-te-gadget-icon, 
+            .goog-te-gadget-simple img {
+                display: none !important;
+            }
+            
+            .goog-te-gadget-simple span {
+                border-left: none !important;
+            }
+            .goog-te-gadget {
+                color: transparent !important;
+                font-size: 0 !important;
+            }
+
+            .goog-te-banner-frame.skiptranslate {
+                display: none !important;
+            }
+            body {
+                top: 0px !important;
+            }
+        </style>
+        <div class="container mx-auto flex justify-between items-center p-3">
+            <div id="google_translate_element"></div>
+            <h1 class="text-xl font-bold tracking-tighter">PATRIMÓNIO<span class="text-blue-400">PT</span></h1>
+        </div>  
+    </nav>
+    <main class="container mx-auto mt-8 flex flex-col md:flex-row gap-8 px-4">
+        
+        <aside class="w-full md:w-1/4">
+            <div class="w3-white w3-card w3-round-xlarge w3-padding">
+                <h2 class="text-xl font-bold mb-6 text-gray-800 border-b pb-2"><i class="fa fa-map-marker mr-2 text-blue-600"></i>Regiões</h2>
+                
+                <div class="space-y-2">
+                    <form action="/pesquisar" method="POST">
+                        <details class="group">
+                            <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
+                                <span class="font-semibold">Norte</span>
+                                <i class="fa fa-caret-down group-open:rotate-180"></i>
+                            </summary>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Braga" id="norte" class="filter-checkbox w3-check mr-3"> Braga</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Bragança" id="norte" class="filter-checkbox w3-check mr-3"> Bragança</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Porto" id="norte" class="filter-checkbox w3-check mr-3"> Porto</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Viana do Castelo" id="norte" class="filter-checkbox w3-check mr-3"> Viana do Castelo</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Vila Real" id="norte" class="filter-checkbox w3-check mr-3"> Vila Real</label>
+                            </ul>
+                            <div class="mt-4 flex gap-2">
+                                <button onclick="toggleAll(true, 'norte')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button onclick="toggleAll(false, 'norte')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                            </div>
+                        </details>
+                        <details class="group">
+                            <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
+                                <span class="font-semibold">Centro</span>
+                                <i class="fa fa-caret-down group-open:rotate-180"></i>
+                            </summary>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Aveiro" id="centro" class="filter-checkbox w3-check mr-3"> Aveiro</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Castelo Branco" id="centro" class="filter-checkbox w3-check mr-3"> Castelo Branco</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Coimbra" id="centro" class="filter-checkbox w3-check mr-3"> Coimbra</label>                            
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Guarda" id="centro" class="filter-checkbox w3-check mr-3"> Guarda</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Leiria" id="centro" class="filter-checkbox w3-check mr-3"> Leiria</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Viseu" id="centro" class="filter-checkbox w3-check mr-3"> Viseu</label>
+                            </ul>
+                            <div class="mt-4 flex gap-2">
+                                <button onclick="toggleAll(true, 'centro')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button onclick="toggleAll(false, 'centro')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                            </div>
+                        </details>
+                        <details class="group">
+                            <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
+                                <span class="font-semibold">Lisboa</span>
+                                <i class="fa fa-caret-down group-open:rotate-180"></i>
+                            </summary>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Lisboa" id="lisboa" class="filter-checkbox w3-check mr-3"> Lisboa</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Santarém" id="lisboa" class="filter-checkbox w3-check mr-3"> Santarém</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Setúbal" id="lisboa" class="filter-checkbox w3-check mr-3"> Setúbal</label>
+                            </ul>
+                            <div class="mt-4 flex gap-2">
+                                <button onclick="toggleAll(true, 'lisboa')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button onclick="toggleAll(false, 'lisboa')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                            </div>
+                        </details>
+                        <details class="group">
+                            <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
+                                <span class="font-semibold">Alentejo</span>
+                                <i class="fa fa-caret-down group-open:rotate-180"></i>
+                            </summary>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Beja" id="alentejo" class="filter-checkbox w3-check mr-3"> Beja</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Évora" id="alentejo" class="filter-checkbox w3-check mr-3"> Évora</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Portalegre" id="alentejo" class="filter-checkbox w3-check mr-3"> Portalegre</label>
+                            </ul>
+                            <div class="mt-4 flex gap-2">
+                                <button onclick="toggleAll(true, 'alentejo')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button onclick="toggleAll(false, 'alentejo')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                            </div>
+                        </details>
+                        <details class="group">
+                            <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
+                                <span class="font-semibold">Algarve</span>
+                                <i class="fa fa-caret-down group-open:rotate-180"></i>
+                            </summary>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Faro" id="algarve" class="filter-checkbox w3-check mr-3"> Faro</label>
+                            </ul>
+                            <div class="mt-4 flex gap-2">
+                                <button onclick="toggleAll(true, 'algarve')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button onclick="toggleAll(false, 'algarve')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                            </div>
+                        </details>
+                        <details class="group">
+                            <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
+                                <span class="font-semibold">Ilhas</span>
+                                <i class="fa fa-caret-down group-open:rotate-180"></i>
+                            </summary>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Açores" id="ilhas" class="filter-checkbox w3-check mr-3"> Açores</label>
+                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Madeira" id="ilhas" class="filter-checkbox w3-check mr-3"> Madeira</label>
+                            </ul>
+                            <div class="mt-4 flex gap-2">
+                                <button onclick="toggleAll(true, 'ilhas')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button onclick="toggleAll(false, 'ilhas')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="mt-10 pt-6 border-t border-gray-100">
+                        <h3 class="font-bold text-gray-800 mb-4"><i class="fa fa-filter mr-2 text-blue-600"></i>Tipo de Local</h3>
+                        <div id="checkbox-list" class="space-y-2">
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="ArquiteturaMista" class="filter-checkbox w3-check mr-3"> Arquitetura Mista</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="EdificioReligioso" class="filter-checkbox w3-check mr-3"> Edifícios Religiosos</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="EstruturaMilitar" class="filter-checkbox w3-check mr-3"> Estruturas Militares</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="MonumentoCivil" class="filter-checkbox w3-check mr-3"> Monumentos Civis</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="SitioArqueologico" class="filter-checkbox w3-check mr-3"> Sitio Arqueológico</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="Outros" class="filter-checkbox w3-check mr-3"> Outros</label>
+                        </div>
+                            <div class="mt-6">
+                                <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-xl shadow-md ...">
+                                    <i class="fa fa-search"></i>
+                                    <span>Pesquisar Monumentos</span>
+                                </button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <section class="w-full md:w-3/4">
+            <div id="map" class="w3-card w3-round-xlarge shadow-lg h-[500px] mb-8 bg-gray-200"></div>
+        </section>
+
+        {% if monumentos %}
+            <div class="mt-8 w3-animate-opacity">
+                <div class="w3-container bg-blue-900 text-white w3-padding w3-round-t-xlarge">
+                    <h3 class="text-lg font-bold">Resultados da Pesquisa</h3>
+                </div>
+                <div class="w3-white w3-card w3-round-b-xlarge overflow-hidden">
+                    <table class="w3-table-all w3-hoverable">
+                        <thead>
+                            <tr class="w3-light-grey">
+                                <th>Designação</th>
+                                <th>Tipo</th>
+                                <th>Distrito</th>
+                                <th>Concelho</th>
+                                <th>Região</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for m in monumentos %}
+                            <tr>
+                                <td>{{ m.name }}</td>
+                                <td><span class="w3-tag w3-blue w3-round w3-tiny">{{ m.tipo }}</span></td>
+                                <td>{{ m.distrito }}</td>
+                                <td>{{ m.concelho }}</td>
+                                <td>{{ m.regiao }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        {% endif %}
+
+    </main>
+
+    <section id="sobre" class="w3-container w3-padding-64 bg-gray-100">
+        <div class="w3-content" style="max-width:900px">
+            <div class="w3-white w3-card-4 w3-round-xlarge overflow-hidden">
+                <div class="w3-container w3-blue-900 w3-padding-24 text-white">
+                    <h2 class="text-3xl font-bold"><i class="fa fa-book mr-4"></i>Relatório do Projeto</h2>
+                </div>
+                
+                <div class="w3-row-padding w3-padding-32">
+                    <div class="w3-col m7">
+                        <h3 class="text-xl font-bold text-blue-900 mb-4">Metodologia Semântica</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Este portal não é apenas um diretório comum. Foi construído utilizando <b>Tecnologias de Web Semântica</b>, onde cada monumento e instituição é um recurso único numa rede de dados interligados.
+                        </p>
+                        <div class="bg-blue-50 p-4 w3-leftbar w3-border-blue rounded-r-lg">
+                            <p class="text-sm italic text-blue-800">
+                                "O uso de RDF e SPARQL permite que o sistema compreenda que 'Braga' é um Distrito dentro da região 'Norte' sem necessidade de redundância de dados."
+                            </p>
+                        </div>
+                        <h4 class="font-bold mt-6 mb-2">Tecnologias Utilizadas:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="w3-tag w3-round w3-light-blue w3-tiny">Protégé</span>
+                            <span class="w3-tag w3-round w3-light-blue w3-tiny">Turtle (.ttl)</span>
+                            <span class="w3-tag w3-round w3-light-blue w3-tiny">Leaflet JS</span>
+                            <span class="w3-tag w3-round w3-light-blue w3-tiny">SPARQL</span>
+                        </div>
+                    </div>
+
+                    <div class="w3-col m5">
+                        <div class="w3-light-grey w3-padding w3-round-xlarge">
+                            <h3 class="text-lg font-bold mb-4 border-b pb-2">Identificação</h3>
+                            <ul class="w3-ul w3-small">
+                                <li><i class="fa fa-user mr-2 text-blue-600"></i><b>Autor:</b> Guilherme Pinto Pinho</li>
+                                <li><i class="fa fa-id-card mr-2 text-blue-600"></i><b>Nº:</b> PG60263</li>
+                                <li><i class="fa fa-graduation-cap mr-2 text-blue-600"></i><b>Cadeira:</b> Representação e Processamento de Conhecimento na Web</li>
+                                <li><i class="fa fa-university mr-2 text-blue-600"></i><b>Inst:</b> Universidade do Minho</li>
+                                <li><i class="fa fa-calendar mr-2 text-blue-600"></i><b>Ano:</b> 2025/2026</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w3-container w3-padding-32 bg-gray-900 text-gray-400 text-center">
+        <p class="text-sm">Desenvolvido para fins académicos utilizando a Ontologia MonumentosPT</p>
+        <div class="mt-4 text-xs opacity-50">&copy; 2026 Guilherme Pinho</div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'en,es,fr,de',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        var map = L.map('map').setView([41.56131, -8.393804], 8); 
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap'
+        }).addTo(map);
+
+        const dados = {{ monumentos | tojson }};
+
+        if (dados.length > 0) {
+            var markers = [];
+            dados.forEach(monumento => {
+                if (monumento.lat && monumento.long) {
+                    var m = L.marker([monumento.lat, monumento.long])
+                            .bindPopup("<b>" + monumento.name + "</b>")
+                            .addTo(map);
+                    markers.push([monumento.lat, monumento.long]);
+                }
+            });
+
+            if (markers.length > 0) {
+                var bounds = L.latLngBounds(markers);
+                map.fitBounds(bounds, {padding: [50, 50]});
+            }
+        }
+
+        function toggleAll(isSelected, region) {
+            document.querySelectorAll(`.filter-checkbox[id="${region}"]`).forEach(box => box.checked = isSelected);
+        }
+        function toggleAllCheck(isSelected) {
+            document.querySelectorAll('.filter-checkbox').forEach(box => box.checked = isSelected);
+        }
+
+    </script>
+</body>
+</html>
