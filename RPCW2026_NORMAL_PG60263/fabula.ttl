@@ -1,0 +1,284 @@
+@prefix : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76/> .
+
+<http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#apanhou
+:apanhou rdf:type owl:ObjectProperty ;
+         rdfs:domain :Personagem ;
+         rdfs:range :Objeto .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#aproximouSeDe
+:aproximouSeDe rdf:type owl:ObjectProperty ;
+               rdfs:domain :Personagem ;
+               rdfs:range :Local .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#deixouCair
+:deixouCair rdf:type owl:ObjectProperty ;
+            rdfs:domain :Personagem ;
+            rdfs:range :Objeto .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#elogia
+:elogia rdf:type owl:ObjectProperty ;
+        rdfs:domain :Personagem ;
+        rdfs:range :Personagem .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#engana
+:engana rdf:type owl:ObjectProperty ;
+        rdfs:domain :Personagem ;
+        rdfs:range :Personagem .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#estaCom
+:estaCom rdf:type owl:ObjectProperty ;
+         rdfs:domain :Objeto ;
+         rdfs:range :Personagem .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#estaEm
+:estaEm rdf:type owl:ObjectProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :Objeto
+                                    :Personagem
+                                  )
+                    ] ;
+        rdfs:range :Local .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#possui
+:possui rdf:type owl:ObjectProperty ;
+        rdfs:domain :Personagem ;
+        rdfs:range :Objeto .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#sente
+:sente rdf:type owl:ObjectProperty ;
+       rdfs:domain :Personagem ;
+       rdfs:range :Sentimento .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#temCaracteristica
+:temCaracteristica rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Personagem ;
+                   rdfs:range :Caracteristica .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#corPlumagem
+:corPlumagem rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#temNome
+:temNome rdf:type owl:DatatypeProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Local
+                                     :Objeto
+                                     :Personagem
+                                   )
+                     ] ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#temTipo
+:temTipo rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Animal
+:Animal rdf:type owl:Class ;
+        rdfs:subClassOf :Personagem .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Astucia
+:Astucia rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :Caracteristica
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :temTipo ;
+                                                      owl:hasValue "Astuto"
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Beleza
+:Beleza rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Caracteristica
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :temTipo ;
+                                                     owl:hasValue "Belo"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Caracteristica
+:Caracteristica rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Confusao
+:Confusao rdf:type owl:Class ;
+          rdfs:subClassOf :Sentimento .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Corvo
+:Corvo rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :Animal
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :temTipo ;
+                                                    owl:hasValue "corvo"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Local
+:Local rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Objeto
+:Objeto rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Personagem
+:Personagem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Raposa
+:Raposa rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Animal
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :temTipo ;
+                                                     owl:hasValue "raposa"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Sentimento
+:Sentimento rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Vaidade
+:Vaidade rdf:type owl:Class ;
+         rdfs:subClassOf :Sentimento .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Vaidoso
+:Vaidoso rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :Caracteristica
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :temTipo ;
+                                                      owl:hasValue "vaidoso"
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Vergonha
+:Vergonha rdf:type owl:Class ;
+          rdfs:subClassOf :Sentimento .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#A_Corvo
+:A_Corvo rdf:type owl:NamedIndividual ,
+                  :Corvo ;
+         :deixouCair :O_Queijo ;
+         :estaEm :Arvore ;
+         :possui :O_Queijo ;
+         :sente :S_Confusao ,
+                :S_Vaidade ,
+                :S_Vergonha ;
+         :temCaracteristica :C_Beleza ,
+                            :C_Vaidoso ;
+         :corPlumagem "preto" ;
+         :temNome "Corvo 1" ;
+         :temTipo "corvo" .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#A_raposa
+:A_raposa rdf:type owl:NamedIndividual ,
+                   :Raposa ;
+          :apanhou :O_Queijo ;
+          :aproximouSeDe :Arvore ;
+          :elogia :A_Corvo ;
+          :engana :A_Corvo ;
+          :temCaracteristica :C_Astuto ;
+          :temNome "Raposa 1" ;
+          :temTipo "raposa" .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#Arvore
+:Arvore rdf:type owl:NamedIndividual ,
+                 :Local ;
+        :temNome "Arvore 1" .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#C_Astuto
+:C_Astuto rdf:type owl:NamedIndividual ,
+                   :Astucia ;
+          :temTipo "Astuto" .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#C_Beleza
+:C_Beleza rdf:type owl:NamedIndividual ,
+                   :Beleza ;
+          :temTipo "Belo" .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#C_Vaidoso
+:C_Vaidoso rdf:type owl:NamedIndividual ,
+                    :Vaidoso ;
+           :temTipo "vaidoso" .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#O_Queijo
+:O_Queijo rdf:type owl:NamedIndividual ,
+                   :Objeto ;
+          :estaCom :A_Corvo ;
+          :temNome "Queijo 1" .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#S_Confusao
+:S_Confusao rdf:type owl:NamedIndividual ,
+                     :Confusao .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#S_Vaidade
+:S_Vaidade rdf:type owl:NamedIndividual ,
+                    :Vaidade .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/4/untitled-ontology-76#S_Vergonha
+:S_Vergonha rdf:type owl:NamedIndividual ,
+                     :Vergonha .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

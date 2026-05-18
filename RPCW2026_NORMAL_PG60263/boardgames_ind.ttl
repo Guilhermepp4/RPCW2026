@@ -1,0 +1,835 @@
+@prefix : <http://www.di.uminho.pt/rpcw2026/PG60263#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.di.uminho.pt/rpcw2026/PG60263> .
+
+<http://www.di.uminho.pt/rpcw2026/PG60263> a owl:Ontology .
+
+#################################################################
+#    Classes 
+#################################################################
+
+###  Classes Base
+:Jogo a owl:Class .
+:Autor a owl:Class .
+:Editora a owl:Class .
+:Mecanica a owl:Class .
+:Premio a owl:Class .
+
+
+#################################################################
+#    Object Properties 
+#################################################################
+
+###  Relações entre Classes 
+
+:isPublishedBy a owl:ObjectProperty ;
+               rdfs:domain :Jogo ;
+               rdfs:range :Editora ;
+               owl:inverseOf :publishedGame .
+
+:hasMechanic a owl:ObjectProperty ;
+             rdfs:domain :Jogo ;
+             rdfs:range :Mecanica ;
+             owl:inverseOf :usedInGame .
+             
+:designedGame a owl:ObjectProperty ;
+              rdfs:domain :Autor ;
+              rdfs:range :Jogo .
+
+:publishedGame a owl:ObjectProperty ;
+               rdfs:domain :Editora ;
+               rdfs:range :Jogo .
+
+:usedInGame a owl:ObjectProperty ;
+            rdfs:domain :Mecanica ;
+            rdfs:range :Jogo .
+
+:wonByGame a owl:ObjectProperty ;
+           rdfs:domain :Premio ;
+           rdfs:range :Jogo .
+
+
+#################################################################
+#    Data Properties
+#################################################################
+
+###  Atributos das Classes
+:name a owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+:category a owl:DatatypeProperty ;
+          rdfs:domain :Jogo ;
+          rdfs:range xsd:string .
+
+:minPlayers a owl:DatatypeProperty ;
+            rdfs:domain :Jogo ;
+            rdfs:range xsd:integer .
+
+:maxPlayers a owl:DatatypeProperty ;
+            rdfs:domain :Jogo ;
+            rdfs:range xsd:integer .
+
+:playingTimeMinutes a owl:DatatypeProperty ;
+                    rdfs:domain :Jogo ;
+                    rdfs:range xsd:integer .
+
+:descriptionEN a owl:DatatypeProperty ;
+               rdfs:domain :Jogo ;
+               rdfs:range xsd:string .
+
+:country a owl:DatatypeProperty ;
+         rdfs:domain :Editora ;
+         rdfs:range xsd:string .
+
+:year a owl:DatatypeProperty ;
+      rdfs:domain :Premio ;
+      rdfs:range xsd:integer .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#catan
+:catan a :Jogo ;
+      :name "Catan"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 3 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 120 ;
+      :descriptionEN "Players take on the roles of settlers, each attempting to build and develop holdings while trading and acquiring resources."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#ticket-to-ride
+:ticket-to-ride a :Jogo ;
+      :name "Ticket to Ride"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 5 ;
+      :playingTimeMinutes 60 ;
+      :descriptionEN "Players collect cards of various types of train cars they then use to claim railway routes in North America."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#scythe
+:scythe a :Jogo ;
+      :name "Scythe"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 5 ;
+      :playingTimeMinutes 115 ;
+      :descriptionEN "An engine-building, asymmetric, competitive board game set in an alternate-history 1920s period."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#terraforming-mars
+:terraforming-mars a :Jogo ;
+      :name "Terraforming Mars"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 5 ;
+      :playingTimeMinutes 120 ;
+      :descriptionEN "Players control corporations and buy and play cards to terraform the planet Mars."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#azul
+:azul a :Jogo ;
+      :name "Azul"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 45 ;
+      :descriptionEN "Players take turns drafting colored tiles from suppliers to their player board to score points."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#gloomhaven
+:gloomhaven a :Jogo ;
+      :name "Gloomhaven"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 120 ;
+      :descriptionEN "A cooperative game of tactical combat in a unique, evolving fantasy world."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#carcassonne
+:carcassonne a :Jogo ;
+      :name "Carcassonne"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 5 ;
+      :playingTimeMinutes 45 ;
+      :descriptionEN "Players draw and place a tile with a piece of southern French landscape on it."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#pandemic
+:pandemic a :Jogo ;
+      :name "Pandemic"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 45 ;
+      :descriptionEN "Your team of experts must prevent the world from succumbing to a viral pandemic."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#wingspan
+:wingspan a :Jogo ;
+      :name "Wingspan"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 5 ;
+      :playingTimeMinutes 70 ;
+      :descriptionEN "Attract a beautiful and diverse collection of birds to your wildlife preserve."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#codenames
+:codenames a :Jogo ;
+      :name "Codenames"^^xsd:string ;
+      :category "Party"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 8 ;
+      :playingTimeMinutes 15 ;
+      :descriptionEN "Give your team clever one-word clues to help them spot their agents in the field."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#7-wonders
+:7-wonders a :Jogo ;
+      :name "7 Wonders"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 7 ;
+      :playingTimeMinutes 30 ;
+      :descriptionEN "Draft cards to develop your ancient civilization and build its Wonder of the World."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#splendor
+:splendor a :Jogo ;
+      :name "Splendor"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 30 ;
+      :descriptionEN "Renaissance merchants race to grab gems, acquire property, and please nobility."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#root
+:root a :Jogo ;
+      :name "Root"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 90 ;
+      :descriptionEN "A game of woodland might and right, with highly asymmetric factions."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#everdell
+:everdell a :Jogo ;
+      :name "Everdell"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 80 ;
+      :descriptionEN "A game of dynamic tableau building and worker placement in a charming forest."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#brass-birmingham
+:brass-birmingham a :Jogo ;
+      :name "Brass: Birmingham"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 120 ;
+      :descriptionEN "Build networks, grow industries, and navigate the world of the Industrial Revolution."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#castles-of-burgundy
+:castles-of-burgundy a :Jogo ;
+      :name "The Castles of Burgundy"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 90 ;
+      :descriptionEN "Plan, trade, and build your Burgundian estate to prosperity and prominence."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#cascadia
+:cascadia a :Jogo ;
+      :name "Cascadia"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 45 ;
+      :descriptionEN "Create the most harmonious ecosystem as you draft habitats and wildlife."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#blood-rage
+:blood-rage a :Jogo ;
+      :name "Blood Rage"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 90 ;
+      :descriptionEN "Ragnarök has come! Draft cards, lead your Viking clan to glory, and die in battle."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#ark-nova
+:ark-nova a :Jogo ;
+      :name "Ark Nova"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 150 ;
+      :descriptionEN "Plan and design a modern, scientifically managed zoo to support conservation projects."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#spirit-island
+:spirit-island a :Jogo ;
+      :name "Spirit Island"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 120 ;
+      :descriptionEN "Island Spirits join forces to defend their home from colonizing Invaders."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#dune-imperium
+:dune-imperium a :Jogo ;
+      :name "Dune: Imperium"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 120 ;
+      :descriptionEN "Influence, intrigue, and combat in the universe of Dune using deck-building and worker placement."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#lost-ruins-of-arnak
+:lost-ruins-of-arnak a :Jogo ;
+      :name "Lost Ruins of Arnak"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 1 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 120 ;
+      :descriptionEN "Explore a mysterious island, discover artifacts, and face formidable guardians."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#dominion
+:dominion a :Jogo ;
+      :name "Dominion"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 4 ;
+      :playingTimeMinutes 30 ;
+      :descriptionEN "Acquire lands, hire subjects, and build the ultimate deck to rule your kingdom."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#twilight-imperium-4
+:twilight-imperium-4 a :Jogo ;
+      :name "Twilight Imperium: Fourth Edition"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 3 ;
+      :maxPlayers 6 ;
+      :playingTimeMinutes 480 ;
+      :descriptionEN "Build an empire through trade, politics, and warfare in a galaxy-spanning space opera."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#patchwork
+:patchwork a :Jogo ;
+      :name "Patchwork"^^xsd:string ;
+      :category "Family"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 2 ;
+      :playingTimeMinutes 30 ;
+      :descriptionEN "Compete to build the most aesthetic (and high-scoring) patchwork quilt."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#king-of-tokyo
+:king-of-tokyo a :Jogo ;
+      :name "King of Tokyo"^^xsd:string ;
+      :category "Party"^^xsd:string ;
+      :minPlayers 2 ;
+      :maxPlayers 6 ;
+      :playingTimeMinutes 30 ;
+      :descriptionEN "Mutant monsters, gigantic robots, and fierce aliens battle for control of Tokyo."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#puerto-rico
+:puerto-rico a :Jogo ;
+      :name "Puerto Rico"^^xsd:string ;
+      :category "Strategy"^^xsd:string ;
+      :minPlayers 3 ;
+      :maxPlayers 5 ;
+      :playingTimeMinutes 150 ;
+      :descriptionEN "Ship goods, construct buildings, and choose roles to become the most prosperous in Puerto Rico."^^xsd:string .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#klaus-teuber
+:klaus-teuber a :Autor ;
+      :name "Klaus Teuber"^^xsd:string ;
+      :designedGame :catan .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#alan-r-moon
+:alan-r-moon a :Autor ;
+      :name "Alan R. Moon"^^xsd:string ;
+      :designedGame :ticket-to-ride .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#jamey-stegmaier
+:jamey-stegmaier a :Autor ;
+      :name "Jamey Stegmaier"^^xsd:string ;
+      :designedGame :scythe .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#jacob-fryxelius
+:jacob-fryxelius a :Autor ;
+      :name "Jacob Fryxelius"^^xsd:string ;
+      :designedGame :terraforming-mars .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#michael-kiesling
+:michael-kiesling a :Autor ;
+      :name "Michael Kiesling"^^xsd:string ;
+      :designedGame :azul .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#isaac-childres
+:isaac-childres a :Autor ;
+      :name "Isaac Childres"^^xsd:string ;
+      :designedGame :gloomhaven .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#klaus-jurgen-wrede
+:klaus-jurgen-wrede a :Autor ;
+      :name "Klaus-Jürgen Wrede"^^xsd:string ;
+      :designedGame :carcassonne .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#matt-leacock
+:matt-leacock a :Autor ;
+      :name "Matt Leacock"^^xsd:string ;
+      :designedGame :pandemic .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#elizabeth-hargrave
+:elizabeth-hargrave a :Autor ;
+      :name "Elizabeth Hargrave"^^xsd:string ;
+      :designedGame :wingspan .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#vlaada-chvatil
+:vlaada-chvatil a :Autor ;
+      :name "Vlaada Chvátil"^^xsd:string ;
+      :designedGame :codenames .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#antoine-bauza
+:antoine-bauza a :Autor ;
+      :name "Antoine Bauza"^^xsd:string ;
+      :designedGame :7-wonders .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#marc-andre
+:marc-andre a :Autor ;
+      :name "Marc André"^^xsd:string ;
+      :designedGame :splendor .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#cole-wehrle
+:cole-wehrle a :Autor ;
+      :name "Cole Wehrle"^^xsd:string ;
+      :designedGame :root .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#james-a-wilson
+:james-a-wilson a :Autor ;
+      :name "James A. Wilson"^^xsd:string ;
+      :designedGame :everdell .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#martin-wallace
+:martin-wallace a :Autor ;
+      :name "Martin Wallace"^^xsd:string ;
+      :designedGame :brass-birmingham .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#stefan-feld
+:stefan-feld a :Autor ;
+      :name "Stefan Feld"^^xsd:string ;
+      :designedGame :castles-of-burgundy .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#randy-flynn
+:randy-flynn a :Autor ;
+      :name "Randy Flynn"^^xsd:string ;
+      :designedGame :cascadia .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#eric-m-lang
+:eric-m-lang a :Autor ;
+      :name "Eric M. Lang"^^xsd:string ;
+      :designedGame :blood-rage .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#mathias-wigge
+:mathias-wigge a :Autor ;
+      :name "Mathias Wigge"^^xsd:string ;
+      :designedGame :ark-nova .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#r-eric-reuss
+:r-eric-reuss a :Autor ;
+      :name "R. Eric Reuss"^^xsd:string ;
+      :designedGame :spirit-island .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#paul-dennen
+:paul-dennen a :Autor ;
+      :name "Paul Dennen"^^xsd:string ;
+      :designedGame :dune-imperium .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#min-elwen
+:min-elwen a :Autor ;
+      :name "Min & Elwen"^^xsd:string ;
+      :designedGame :lost-ruins-of-arnak .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#donald-x-vaccarino
+:donald-x-vaccarino a :Autor ;
+      :name "Donald X. Vaccarino"^^xsd:string ;
+      :designedGame :dominion .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#christian-t-petersen
+:christian-t-petersen a :Autor ;
+      :name "Christian T. Petersen"^^xsd:string ;
+      :designedGame :twilight-imperium-4 .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#uwe-rosenberg
+:uwe-rosenberg a :Autor ;
+      :name "Uwe Rosenberg"^^xsd:string ;
+      :designedGame :patchwork .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#richard-garfield
+:richard-garfield a :Autor ;
+      :name "Richard Garfield"^^xsd:string ;
+      :designedGame :king-of-tokyo .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#andreas-seyfarth
+:andreas-seyfarth a :Autor ;
+      :name "Andreas Seyfarth"^^xsd:string ;
+      :designedGame :puerto-rico .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#kosmos
+:kosmos a :Editora ;
+      :name "KOSMOS"^^xsd:string ;
+      :country "Germany"^^xsd:string ;
+      :publishedGame :catan .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#days-of-wonder
+:days-of-wonder a :Editora ;
+      :name "Days of Wonder"^^xsd:string ;
+      :country "France"^^xsd:string ;
+      :publishedGame :ticket-to-ride .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#stonemaier-games
+:stonemaier-games a :Editora ;
+      :name "Stonemaier Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :scythe ;
+      :publishedGame :wingspan .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#fryxgames
+:fryxgames a :Editora ;
+      :name "FryxGames"^^xsd:string ;
+      :country "Sweden"^^xsd:string ;
+      :publishedGame :terraforming-mars .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#plan-b-games
+:plan-b-games a :Editora ;
+      :name "Plan B Games"^^xsd:string ;
+      :country "Canada"^^xsd:string ;
+      :publishedGame :azul .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#cephalofair
+:cephalofair a :Editora ;
+      :name "Cephalofair Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :gloomhaven .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#hans-im-gluck
+:hans-im-gluck a :Editora ;
+      :name "Hans im Glück"^^xsd:string ;
+      :country "Germany"^^xsd:string ;
+      :publishedGame :carcassonne .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#z-man-games
+:z-man-games a :Editora ;
+      :name "Z-Man Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :pandemic .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#czech-games-edition
+:czech-games-edition a :Editora ;
+      :name "Czech Games Edition"^^xsd:string ;
+      :country "Czech Republic"^^xsd:string ;
+      :publishedGame :codenames ;
+      :publishedGame :lost-ruins-of-arnak .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#repos-production
+:repos-production a :Editora ;
+      :name "Repos Production"^^xsd:string ;
+      :country "Belgium"^^xsd:string ;
+      :publishedGame :7-wonders .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#space-cowboys
+:space-cowboys a :Editora ;
+      :name "Space Cowboys"^^xsd:string ;
+      :country "France"^^xsd:string ;
+      :publishedGame :splendor .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#leder-games
+:leder-games a :Editora ;
+      :name "Leder Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :root .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#starling-games
+:starling-games a :Editora ;
+      :name "Starling Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :everdell .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#roxley
+:roxley a :Editora ;
+      :name "Roxley"^^xsd:string ;
+      :country "Canada"^^xsd:string ;
+      :publishedGame :brass-birmingham .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#ravensburger
+:ravensburger a :Editora ;
+      :name "Ravensburger"^^xsd:string ;
+      :country "Germany"^^xsd:string ;
+      :publishedGame :castles-of-burgundy ;
+      :publishedGame :puerto-rico .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#flatout-games
+:flatout-games a :Editora ;
+      :name "Flatout Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :cascadia .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#cmon
+:cmon a :Editora ;
+      :name "CMON"^^xsd:string ;
+      :country "Singapore"^^xsd:string ;
+      :publishedGame :blood-rage .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#feuerland-spiele
+:feuerland-spiele a :Editora ;
+      :name "Feuerland Spiele"^^xsd:string ;
+      :country "Germany"^^xsd:string ;
+      :publishedGame :ark-nova .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#greater-than-games
+:greater-than-games a :Editora ;
+      :name "Greater Than Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :spirit-island .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#dire-wolf
+:dire-wolf a :Editora ;
+      :name "Dire Wolf"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :dune-imperium .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#rio-grande-games
+:rio-grande-games a :Editora ;
+      :name "Rio Grande Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :dominion .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#fantasy-flight-games
+:fantasy-flight-games a :Editora ;
+      :name "Fantasy Flight Games"^^xsd:string ;
+      :country "USA"^^xsd:string ;
+      :publishedGame :twilight-imperium-4 .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#lookout-games
+:lookout-games a :Editora ;
+      :name "Lookout Games"^^xsd:string ;
+      :country "Germany"^^xsd:string ;
+      :publishedGame :patchwork .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#iello
+:iello a :Editora ;
+      :name "IELLO"^^xsd:string ;
+      :country "France"^^xsd:string ;
+      :publishedGame :king-of-tokyo .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#route-building
+:route-building a :Mecanica ;
+      :name "Route Building"^^xsd:string ;
+      :usedInGame :catan ;
+      :usedInGame :ticket-to-ride .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#engine-building
+:engine-building a :Mecanica ;
+      :name "Engine Building"^^xsd:string ;
+      :usedInGame :scythe ;
+      :usedInGame :terraforming-mars .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#tile-placement
+:tile-placement a :Mecanica ;
+      :name "Tile Placement"^^xsd:string ;
+      :usedInGame :azul ;
+      :usedInGame :terraforming-mars ;
+      :usedInGame :carcassonne ;
+      :usedInGame :catan .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#hand-management
+:hand-management a :Mecanica ;
+      :name "Hand Management"^^xsd:string ;
+      :usedInGame :ticket-to-ride ;
+      :usedInGame :terraforming-mars ;
+      :usedInGame :gloomhaven .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#grid-movement
+:grid-movement a :Mecanica ;
+      :name "Grid Movement"^^xsd:string ;
+      :usedInGame :scythe ;
+      :usedInGame :gloomhaven .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#variable-player-powers
+:variable-player-powers a :Mecanica ;
+      :name "Variable Player Powers"^^xsd:string ;
+      :usedInGame :scythe ;
+      :usedInGame :terraforming-mars ;
+      :usedInGame :gloomhaven .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#cooperative-game
+:cooperative-game a :Mecanica ;
+      :name "Cooperative Game"^^xsd:string ;
+      :usedInGame :gloomhaven .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#deck-building
+:deck-building a :Mecanica ;
+      :name "Deck, Bag, and Pool Building"^^xsd:string ;
+      :usedInGame :dominion ;
+      :usedInGame :dune-imperium ;
+      :usedInGame :lost-ruins-of-arnak ;
+      :usedInGame :ark-nova .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#worker-placement
+:worker-placement a :Mecanica ;
+      :name "Worker Placement"^^xsd:string ;
+      :usedInGame :everdell ;
+      :usedInGame :dune-imperium ;
+      :usedInGame :lost-ruins-of-arnak .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#card-drafting
+:card-drafting a :Mecanica ;
+      :name "Card Drafting"^^xsd:string ;
+      :usedInGame :7-wonders ;
+      :usedInGame :wingspan ;
+      :usedInGame :blood-rage .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#dice-rolling
+:dice-rolling a :Mecanica ;
+      :name "Dice Rolling"^^xsd:string ;
+      :usedInGame :catan ;
+      :usedInGame :king-of-tokyo ;
+      :usedInGame :castles-of-burgundy .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#network-building
+:network-building a :Mecanica ;
+      :name "Network and Route Building"^^xsd:string ;
+      :usedInGame :brass-birmingham .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#tile-placement
+:tile-placement a :Mecanica ;
+      :name "Tile Placement"^^xsd:string ;
+      :usedInGame :cascadia ;
+      :usedInGame :patchwork ;
+      :usedInGame :castles-of-burgundy .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#variable-player-powers
+:variable-player-powers a :Mecanica ;
+      :name "Variable Player Powers"^^xsd:string ;
+      :usedInGame :root ;
+      :usedInGame :spirit-island ;
+      :usedInGame :twilight-imperium-4 ;
+      :usedInGame :pandemic ;
+      :usedInGame :blood-rage .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#set-collection
+:set-collection a :Mecanica ;
+      :name "Set Collection"^^xsd:string ;
+      :usedInGame :ticket-to-ride ;
+      :usedInGame :azul ;
+      :usedInGame :terraforming-mars ;
+      :usedInGame :splendor ;
+      :usedInGame :wingspan ;
+      :usedInGame :pandemic .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#cooperative-game
+:cooperative-game a :Mecanica ;
+      :name "Cooperative Game"^^xsd:string ;
+      :usedInGame :pandemic ;
+      :usedInGame :spirit-island .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#area-majority
+:area-majority a :Mecanica ;
+      :name "Area Majority / Influence"^^xsd:string ;
+      :usedInGame :carcassonne ;
+      :usedInGame :scythe ;
+      :usedInGame :blood-rage ;
+      :usedInGame :root ;
+      :usedInGame :twilight-imperium-4 .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#push-your-luck
+:push-your-luck a :Mecanica ;
+      :name "Push Your Luck"^^xsd:string ;
+      :usedInGame :codenames ;
+      :usedInGame :king-of-tokyo .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#sdj-1995
+:sdj-1995 a :Premio ;
+      :name "Spiel des Jahres"^^xsd:string ;
+      :year 1995 ;
+      :wonByGame :catan .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#sdj-2001
+:sdj-2001 a :Premio ;
+      :name "Spiel des Jahres"^^xsd:string ;
+      :year 2001 ;
+      :wonByGame :carcassonne .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#sdj-2004
+:sdj-2004 a :Premio ;
+      :name "Spiel des Jahres"^^xsd:string ;
+      :year 2004 ;
+      :wonByGame :ticket-to-ride .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#sdj-2018
+:sdj-2018 a :Premio ;
+      :name "Spiel des Jahres"^^xsd:string ;
+      :year 2018 ;
+      :wonByGame :azul .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#dsp-2017
+:dsp-2017 a :Premio ;
+      :name "Deutscher Spiele Preis"^^xsd:string ;
+      :year 2017 ;
+      :wonByGame :terraforming-mars .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#gg-2016
+:gg-2016 a :Premio ;
+      :name "Golden Geek Board Game of the Year"^^xsd:string ;
+      :year 2016 ;
+      :wonByGame :scythe .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#gg-2017
+:gg-2017 a :Premio ;
+      :name "Golden Geek Board Game of the Year"^^xsd:string ;
+      :year 2017 ;
+      :wonByGame :gloomhaven .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#sdj-2009
+:sdj-2009 a :Premio ;
+      :name "Spiel des Jahres"^^xsd:string ;
+      :year 2009 ;
+      :wonByGame :dominion .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#sdj-2016
+:sdj-2016 a :Premio ;
+      :name "Spiel des Jahres"^^xsd:string ;
+      :year 2016 ;
+      :wonByGame :codenames .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#sdj-2022
+:sdj-2022 a :Premio ;
+      :name "Spiel des Jahres"^^xsd:string ;
+      :year 2022 ;
+      :wonByGame :cascadia .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#ksdj-2019
+:ksdj-2019 a :Premio ;
+      :name "Kennerspiel des Jahres"^^xsd:string ;
+      :year 2019 ;
+      :wonByGame :wingspan .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#dsp-2011
+:dsp-2011 a :Premio ;
+      :name "Deutscher Spiele Preis"^^xsd:string ;
+      :year 2011 ;
+      :wonByGame :7-wonders .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#dsp-2022
+:dsp-2022 a :Premio ;
+      :name "Deutscher Spiele Preis"^^xsd:string ;
+      :year 2022 ;
+      :wonByGame :ark-nova .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#gg-2013
+:gg-2013 a :Premio ;
+      :name "Golden Geek Board Game of the Year"^^xsd:string ;
+      :year 2013 ;
+      :wonByGame :pandemic .
+
+###  http://www.di.uminho.pt/rpcw2026/PG60263#gg-2018
+:gg-2018 a :Premio ;
+      :name "Golden Geek Board Game of the Year"^^xsd:string ;
+      :year 2018 ;
+      :wonByGame :root .

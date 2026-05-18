@@ -1,0 +1,79 @@
+@prefix : <http://www.di.uminho.pt/rpcw2026/PG60263#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.di.uminho.pt/rpcw2026/PG60263> .
+
+<http://www.di.uminho.pt/rpcw2026/PG60263> a owl:Ontology .
+
+#################################################################
+#    Classes [cite: 149]
+#################################################################
+
+###  Classes Base [cite: 124, 128]
+:Jogo a owl:Class .
+:Autor a owl:Class .
+:Editora a owl:Class .
+:Mecanica a owl:Class .
+:Premio a owl:Class .
+
+
+#################################################################
+#    Object Properties [cite: 151]
+#################################################################
+
+###  Relações entre Classes [cite: 129, 131]
+:designedGame a owl:ObjectProperty ;
+              rdfs:domain :Autor ;
+              rdfs:range :Jogo .
+
+:publishedGame a owl:ObjectProperty ;
+               rdfs:domain :Editora ;
+               rdfs:range :Jogo .
+
+:usedInGame a owl:ObjectProperty ;
+            rdfs:domain :Mecanica ;
+            rdfs:range :Jogo .
+
+:wonByGame a owl:ObjectProperty ;
+           rdfs:domain :Premio ;
+           rdfs:range :Jogo .
+
+
+#################################################################
+#    Data Properties [cite: 150]
+#################################################################
+
+###  Atributos das Classes [cite: 129, 130]
+:name a owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+:category a owl:DatatypeProperty ;
+          rdfs:domain :Jogo ;
+          rdfs:range xsd:string .
+
+:minPlayers a owl:DatatypeProperty ;
+            rdfs:domain :Jogo ;
+            rdfs:range xsd:integer .
+
+:maxPlayers a owl:DatatypeProperty ;
+            rdfs:domain :Jogo ;
+            rdfs:range xsd:integer .
+
+:playingTimeMinutes a owl:DatatypeProperty ;
+                    rdfs:domain :Jogo ;
+                    rdfs:range xsd:integer .
+
+:descriptionEN a owl:DatatypeProperty ;
+               rdfs:domain :Jogo ;
+               rdfs:range xsd:string .
+
+:country a owl:DatatypeProperty ;
+         rdfs:domain :Editora ;
+         rdfs:range xsd:string .
+
+:year a owl:DatatypeProperty ;
+      rdfs:domain :Premio ;
+      rdfs:range xsd:integer .
