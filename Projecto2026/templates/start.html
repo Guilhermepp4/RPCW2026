@@ -88,96 +88,158 @@
                 
                 <div class="space-y-2">
                     <form action="/pesquisar" method="POST">
-                        <details class="group">
+                        <details class="group" {% if norte_aberto %} open {% endif %}>
                             <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
                                 <span class="font-semibold">Norte</span>
                                 <i class="fa fa-caret-down group-open:rotate-180"></i>
                             </summary>
                             <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Braga" id="norte" class="filter-checkbox w3-check mr-3"> Braga</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Bragança" id="norte" class="filter-checkbox w3-check mr-3"> Bragança</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Porto" id="norte" class="filter-checkbox w3-check mr-3"> Porto</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Viana do Castelo" id="norte" class="filter-checkbox w3-check mr-3"> Viana do Castelo</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Vila Real" id="norte" class="filter-checkbox w3-check mr-3"> Vila Real</label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Braga" id="norte" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Braga' in distritos_selecionadas %} checked {% endif %}> Braga
+                                </label>
+                                    
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Bragança" id="norte" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Bragança' in distritos_selecionadas %} checked {% endif %}> Bragança
+                                </label>
+                                
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Porto" id="norte" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Porto' in distritos_selecionadas %} checked {% endif %}> Porto
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Viana do Castelo" id="norte" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Viana do Castelo' in distritos_selecionadas %} checked {% endif %}> Viana do Castelo
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Vila Real" id="norte" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Vila Real' in distritos_selecionadas %} checked {% endif %}> Vila Real
+                                </label>
                             </ul>
                             <div class="mt-4 flex gap-2">
-                                <button onclick="toggleAll(true, 'norte')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
-                                <button onclick="toggleAll(false, 'norte')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                                <button type="button" onclick="toggleAll(true, 'norte')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button type="button" onclick="toggleAll(false, 'norte')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
                             </div>
                         </details>
-                        <details class="group">
+                        <details class="group" {% if centro_aberto %} open {% endif %}>
                             <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
                                 <span class="font-semibold">Centro</span>
                                 <i class="fa fa-caret-down group-open:rotate-180"></i>
                             </summary>
                             <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Aveiro" id="centro" class="filter-checkbox w3-check mr-3"> Aveiro</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Castelo Branco" id="centro" class="filter-checkbox w3-check mr-3"> Castelo Branco</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Coimbra" id="centro" class="filter-checkbox w3-check mr-3"> Coimbra</label>                            
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Guarda" id="centro" class="filter-checkbox w3-check mr-3"> Guarda</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Leiria" id="centro" class="filter-checkbox w3-check mr-3"> Leiria</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Viseu" id="centro" class="filter-checkbox w3-check mr-3"> Viseu</label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Aveiro" id="centro" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Aveiro' in distritos_selecionadas %} checked {% endif %}> Aveiro
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Castelo Branco" id="centro" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Castelo Branco' in distritos_selecionadas %} checked {% endif %}> Castelo Branco
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Coimbra" id="centro" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Coimbra' in distritos_selecionadas %} checked {% endif %}> Coimbra
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Guarda" id="centro" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Guarda' in distritos_selecionadas %} checked {% endif %}> Guarda
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Leiria" id="centro" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Leiria' in distritos_selecionadas %} checked {% endif %}> Leiria
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Viseu" id="centro" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Viseu' in distritos_selecionadas %} checked {% endif %}> Viseu
+                                </label>
                             </ul>
                             <div class="mt-4 flex gap-2">
-                                <button onclick="toggleAll(true, 'centro')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
-                                <button onclick="toggleAll(false, 'centro')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                                <button type="button" onclick="toggleAll(true, 'centro')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button type="button" onclick="toggleAll(false, 'centro')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
                             </div>
                         </details>
-                        <details class="group">
+                        <details class="group" {% if lisboa_aberto %} open {% endif %}>
                             <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
                                 <span class="font-semibold">Lisboa</span>
                                 <i class="fa fa-caret-down group-open:rotate-180"></i>
                             </summary>
                             <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Lisboa" id="lisboa" class="filter-checkbox w3-check mr-3"> Lisboa</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Santarém" id="lisboa" class="filter-checkbox w3-check mr-3"> Santarém</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Setúbal" id="lisboa" class="filter-checkbox w3-check mr-3"> Setúbal</label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Lisboa" id="lisboa" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Lisboa' in distritos_selecionadas %} checked {% endif %}> Lisboa
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Santarém" id="lisboa" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Santarém' in distritos_selecionadas %} checked {% endif %}> Santarém
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Setúbal" id="lisboa" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Setúbal' in distritos_selecionadas %} checked {% endif %}> Setúbal
+                                </label>
                             </ul>
                             <div class="mt-4 flex gap-2">
-                                <button onclick="toggleAll(true, 'lisboa')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
-                                <button onclick="toggleAll(false, 'lisboa')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                                <button type="button" onclick="toggleAll(true, 'lisboa')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button type="button" onclick="toggleAll(false, 'lisboa')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
                             </div>
                         </details>
-                        <details class="group">
+                        <details class="group" {% if alentejo_aberto %} open {% endif %}>
                             <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
                                 <span class="font-semibold">Alentejo</span>
                                 <i class="fa fa-caret-down group-open:rotate-180"></i>
                             </summary>
                             <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Beja" id="alentejo" class="filter-checkbox w3-check mr-3"> Beja</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Évora" id="alentejo" class="filter-checkbox w3-check mr-3"> Évora</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Portalegre" id="alentejo" class="filter-checkbox w3-check mr-3"> Portalegre</label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Beja" id="alentejo" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Beja' in distritos_selecionadas %} checked {% endif %}> Beja
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Évora" id="alentejo" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Évora' in distritos_selecionadas %} checked {% endif %}> Évora
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Portalegre" id="alentejo" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Portalegre' in distritos_selecionadas %} checked {% endif %}> Portalegre
+                                </label>
                             </ul>
                             <div class="mt-4 flex gap-2">
-                                <button onclick="toggleAll(true, 'alentejo')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
-                                <button onclick="toggleAll(false, 'alentejo')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                                <button type="button" onclick="toggleAll(true, 'alentejo')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button type="button" onclick="toggleAll(false, 'alentejo')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
                             </div>
                         </details>
-                        <details class="group">
+                        <details class="group" {% if algarve_aberto %} open {% endif %}>
                             <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
                                 <span class="font-semibold">Algarve</span>
                                 <i class="fa fa-caret-down group-open:rotate-180"></i>
                             </summary>
                             <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Faro" id="algarve" class="filter-checkbox w3-check mr-3"> Faro</label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Faro" id="algarve" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Faro' in distritos_selecionadas %} checked {% endif %}> Faro
+                                </label>
                             </ul>
                             <div class="mt-4 flex gap-2">
-                                <button onclick="toggleAll(true, 'algarve')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
-                                <button onclick="toggleAll(false, 'algarve')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                                <button type="button" onclick="toggleAll(true, 'algarve')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button type="button" onclick="toggleAll(false, 'algarve')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
                             </div>
                         </details>
-                        <details class="group">
+                        <details class="group" {% if ilhas_aberto %} open {% endif %}>
                             <summary class="flex justify-between items-center p-3 bg-gray-50 rounded-lg cursor-pointer hover:bg-blue-50">
                                 <span class="font-semibold">Ilhas</span>
                                 <i class="fa fa-caret-down group-open:rotate-180"></i>
                             </summary>
                             <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600 border-l-2 pl-4 py-2">
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Açores" id="ilhas" class="filter-checkbox w3-check mr-3"> Açores</label>
-                                <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="distrito" value="Madeira" id="ilhas" class="filter-checkbox w3-check mr-3"> Madeira</label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Açores" id="ilhas" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Açores' in distritos_selecionadas %} checked {% endif %}> Açores
+                                </label>
+                                <label class="flex items-center text-sm cursor-pointer">
+                                    <input type="checkbox" name="distrito" value="Madeira" id="ilhas" class="filter-checkbox w3-check mr-3"
+                                    {% if 'Madeira' in distritos_selecionadas %} checked {% endif %}> Madeira
+                                </label>
                             </ul>
                             <div class="mt-4 flex gap-2">
-                                <button onclick="toggleAll(true, 'ilhas')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
-                                <button onclick="toggleAll(false, 'ilhas')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
+                                <button type="button" onclick="toggleAll(true, 'ilhas')" class="w3-button w3-tiny w3-blue w3-round">Todos</button>
+                                <button type="button" onclick="toggleAll(false, 'ilhas')" class="w3-button w3-tiny w3-light-grey w3-round">Limpar</button>
                             </div>
                         </details>
                     </div>
@@ -185,12 +247,18 @@
                     <div class="mt-10 pt-6 border-t border-gray-100">
                         <h3 class="font-bold text-gray-800 mb-4"><i class="fa fa-filter mr-2 text-blue-600"></i>Tipo de Local</h3>
                         <div id="checkbox-list" class="space-y-2">
-                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="ArquiteturaMista" class="filter-checkbox w3-check mr-3"> Arquitetura Mista</label>
-                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="EdificioReligioso" class="filter-checkbox w3-check mr-3"> Edifícios Religiosos</label>
-                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="EstruturaMilitar" class="filter-checkbox w3-check mr-3"> Estruturas Militares</label>
-                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="MonumentoCivil" class="filter-checkbox w3-check mr-3"> Monumentos Civis</label>
-                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="SitioArqueologico" class="filter-checkbox w3-check mr-3"> Sitio Arqueológico</label>
-                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="Outros" class="filter-checkbox w3-check mr-3"> Outros</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="ArquiteturaMista" class="filter-checkbox w3-check mr-3"
+                                {% if 'ArquiteturaMista' in tipos_selecionados %} checked {% endif %}> Arquitetura Mista</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="EdificioReligioso" class="filter-checkbox w3-check mr-3"
+                                {% if 'EdificioReligioso' in tipos_selecionados %} checked {% endif %}> Edifícios Religiosos</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="EstruturaMilitar" class="filter-checkbox w3-check mr-3"
+                                {% if 'EstruturaMilitar' in tipos_selecionados %} checked {% endif %}> Estruturas Militares</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="MonumentoCivil" class="filter-checkbox w3-check mr-3"
+                                {% if 'MonumentoCivil' in tipos_selecionados %} checked {% endif %}> Monumentos Civis</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="SitioArqueologico" class="filter-checkbox w3-check mr-3"
+                                {% if 'SitioArqueologico' in tipos_selecionados %} checked {% endif %}> Sitio Arqueológico</label>
+                            <label class="flex items-center text-sm cursor-pointer"><input type="checkbox" name="tipo_local" value="Outros" class="filter-checkbox w3-check mr-3"
+                                {% if 'Outros' in tipos_selecionados %} checked {% endif %}> Outros</label>
                         </div>
                             <div class="mt-6">
                                 <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-xl shadow-md ...">
@@ -207,37 +275,89 @@
         </section>
 
         {% if monumentos %}
-            <div class="mt-8 w3-animate-opacity">
-                <div class="w3-container bg-blue-900 text-white w3-padding w3-round-t-xlarge">
-                    <h3 class="text-lg font-bold">Resultados da Pesquisa</h3>
+            <div class="mt-12 w3-animate-opacity">
+                
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-8 border-b border-gray-200 pb-5">
+                    <div>
+                        <h3 class="text-2xl font-extrabold text-gray-800 tracking-tight flex items-center gap-3">
+                            <span class="p-2 bg-blue-900 text-white rounded-xl shadow-md">
+                                <i class="fa fa-university text-sm"></i>
+                            </span>
+                            Património Descoberto
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-1">Explora a riqueza cultural e histórica interligada na rede semântica.</p>
+                    </div>
+                    <span id="contador-paginas" class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-blue-50 text-blue-900 border border-blue-100">
+                        A carregar...
+                    </span>
                 </div>
-                <div class="w3-white w3-card w3-round-b-xlarge overflow-hidden">
-                    <table class="w3-table-all w3-hoverable">
-                        <thead>
-                            <tr class="w3-light-grey">
-                                <th>Designação</th>
-                                <th>Tipo</th>
-                                <th>Distrito</th>
-                                <th>Concelho</th>
-                                <th>Região</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for m in monumentos %}
-                            <tr>
-                                <td>{{ m.name }}</td>
-                                <td><span class="w3-tag w3-blue w3-round w3-tiny">{{ m.tipo }}</span></td>
-                                <td>{{ m.distrito }}</td>
-                                <td>{{ m.concelho }}</td>
-                                <td>{{ m.regiao }}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+
+                <div id="container-monumentos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {% for m in monumentos %}
+                    <div class="monumento-card bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group hidden">
+                        
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="px-3 py-1 text-[11px] font-bold tracking-wider uppercase bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-lg shadow-sm">
+                                    {{ m.tipo }}
+                                </span>
+                                <i class="fa fa-bookmark-o text-gray-300 group-hover:text-blue-500 transition-colors duration-300"></i>
+                            </div>
+                            
+                            <h4 class="text-xl font-bold text-gray-800 mb-5 tracking-tight line-clamp-2 group-hover:text-blue-900 transition-colors duration-300">
+                                {{ m.name }}
+                            </h4>
+                            
+                            <div class="space-y-3 pt-2 border-t border-gray-50 text-sm text-gray-600">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-400 flex items-center gap-2"><i class="fa fa-map-marker text-red-500 w-4"></i> Distrito</span>
+                                    <span class="font-semibold text-gray-700">{{ m.distrito }}</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-400 flex items-center gap-2"><i class="fa fa-compass w-4"></i> Concelho</span>
+                                    <span class="font-medium text-gray-700">{{ m.concelho }}</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-400 flex items-center gap-2"><i class="fa fa-globe w-4"></i> Região</span>
+                                    <span class="text-xs font-semibold px-2 py-0.5 bg-gray-100 rounded text-gray-600">{{ m.regiao }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50/70 px-6 py-4 border-t border-gray-100 flex items-center justify-between gap-2">
+                            {% if m.lat and m.long %}
+                                <span class="text-xs text-green-600 font-medium flex items-center gap-1.5" title="Disponível no Mapa">
+                                    <span class="h-2 w-2 rounded-full bg-green-500 inline-block animate-pulse"></span>
+                                    No mapa
+                                </span>
+                            {% else %}
+                                <span class="text-xs text-gray-400 font-medium flex items-center gap-1.5" title="Sem coordenadas geográficas">
+                                    <span class="h-2 w-2 rounded-full bg-gray-300 inline-block"></span>
+                                    Sem mapa    
+                                </span>
+                            {% endif %}
+
+                            <a href="/monumento/{{ m.id }}" class="inline-flex items-center gap-2 text-xs font-bold text-blue-900 hover:text-blue-700 transition-colors duration-200 group/btn">
+                                Ver Detalhes 
+                                <i class="fa fa-arrow-right transform group-hover/btn:translate-x-1 transition-transform duration-200"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="flex justify-center items-center mt-10 gap-4">
+                    <button id="btn-anterior" onclick="mudarPagina(-1)" class="w3-button w3-light-grey w3-round">
+                        <i class="fa fa-chevron-left mr-2"></i> Anterior
+                    </button>
+                    <button id="btn-seguinte" onclick="mudarPagina(1)" class="w3-button w3-light-grey w3-round">
+                        Seguinte <i class="fa fa-chevron-right ml-2"></i>
+                    </button>
                 </div>
             </div>
-        {% endif %}
-
+            {% endif %}
+        
     </main>
 
     <section id="sobre" class="w3-container w3-padding-64 bg-gray-100">
@@ -314,8 +434,25 @@
             var markers = [];
             dados.forEach(monumento => {
                 if (monumento.lat && monumento.long) {
+                    const urlDetalhes = "monumento/" + monumento.id; 
+
+                    // Criamos o conteúdo HTML que vai aparecer dentro do balão do PIN
+                    const popupConteudo = `
+                        <div class="p-1">
+                            <span style="font-size: 10px; uppercase; font-weight: bold; color: #1e3a8a; display: block; margin-bottom: 2px;">
+                                ${monumento.tipo}
+                            </span>
+                            <strong style="font-size: 14px; color: #1f2937; display: block; margin-bottom: 8px;">
+                                ${monumento.name}
+                            </strong>
+                            <a href="${urlDetalhes}" class="w3-button w3-blue w3-tiny w3-round" style="font-weight: bold; text-decoration: none; display: inline-block; width: 100%; text-align: center;">
+                                Ver Detalhes <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    `;
+
                     var m = L.marker([monumento.lat, monumento.long])
-                            .bindPopup("<b>" + monumento.name + "</b>")
+                            .bindPopup(popupConteudo)
                             .addTo(map);
                     markers.push([monumento.lat, monumento.long]);
                 }
@@ -333,6 +470,55 @@
         function toggleAllCheck(isSelected) {
             document.querySelectorAll('.filter-checkbox').forEach(box => box.checked = isSelected);
         }
+
+        let paginaAtual = 1;
+        const itensPorPagina = 10;
+
+        const todosOsCards = document.querySelectorAll('.monumento-card'); 
+        const totalPaginas = Math.ceil(todosOsCards.length / itensPorPagina);
+
+        function mostrarPagina(pagina) {
+            if (todosOsCards.length === 0) return;
+
+            paginaAtual = pagina;
+
+            const inicio = (paginaAtual - 1) * itensPorPagina;
+            const fim = inicio + itensPorPagina;
+
+            // Esconder todos os cards e mostrar apenas os 10 desta página
+            todosOsCards.forEach((card, index) => {
+                if (index >= inicio && index < fim) {
+                    card.classList.remove('hidden'); // Mostra
+                } else {
+                    card.classList.add('hidden');    // Esconde
+                }
+            });
+
+            // Atualizar o texto do contador (ex: "Página 1 de 14 | 135 monumentos")
+            const contador = document.getElementById('contador-paginas');
+            if (contador) {
+                contador.innerHTML = `<i class="fa fa-folder-open mr-2"></i> Página ${paginaAtual} de ${totalPaginas || 1} (${todosOsCards.length} locais)`;
+            }
+
+            // Ativar/Desativar os botões conforme a página
+            document.getElementById('btn-anterior').disabled = (paginaAtual === 1);
+            document.getElementById('btn-seguinte').disabled = (paginaAtual === totalPaginas || totalPaginas === 0);
+        }
+
+        function mudarPagina(direcao) {
+            const novaPagina = paginaAtual + direcao;
+            if (novaPagina >= 1 && novaPagina <= totalPaginas) {
+                mostrarPagina(novaPagina);
+                
+                // Scroll suave de volta para o topo da lista para o utilizador ver os novos cartões
+                document.getElementById('container-monumentos').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Inicializar a primeira página assim que os dados carregam
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarPagina(1);
+        });
 
     </script>
 </body>

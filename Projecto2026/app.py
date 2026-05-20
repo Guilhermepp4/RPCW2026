@@ -30,7 +30,7 @@ def pesquisar():
 
     query = f"""
     PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
-    SELECT DISTINCT ?nome ?normaType ?ndistrito ?nconcelho ?nregiao ?lat ?long WHERE {{
+    SELECT DISTINCT ?id ?nome ?normaType ?ndistrito ?nconcelho ?nregiao ?lat ?long WHERE {{
     
     ?m a ?tipoIndividuo ;
        :nome ?nome ;
@@ -46,7 +46,8 @@ def pesquisar():
                 :nome ?nregiao .
         
         BIND(STRAFTER(str(?tipoIndividuo), "monumentosPT/") as ?normaType)
-        
+        BIND(STRAFTER(str(?m), "monumentosPT/") as ?id)
+
         # Filtros
         FILTER(?normaType != "Monumento" && ?normaType != "NamedIndividual" && ?normaType != "")
         {filtro_distrito}
@@ -68,6 +69,7 @@ def pesquisar():
                 continue
 
             lista_monumentos.append({
+                "id": info.get('id', {}).get('value', ''),
                 "name": info.get('nome', {}).get('value', 'S/ Nome'),
                 "tipo": tipo,
                 "distrito": info.get('ndistrito', {}).get('value', 'S/ Distrito'),
@@ -79,8 +81,19 @@ def pesquisar():
                 lista_monumentos[-1]["long"] = float(lng)
             except:
                 pass
+    
+    norte_aberto = any(d in distritos for d in ["Braga", "Bragança", "Porto", "Viana do Castelo", "Vila Real"])
+    centro_aberto = any(d in distritos for d in ["Aveiro", "Castelo Branco", "Coimbra", "Guarda", "Leiria", "Viseu"])
+    lisboa_aberto = any(d in distritos for d in ["Lisboa", "Santarém", "Setúbal"])
+    alentejo_aberto = any(d in distritos for d in ["Beja", "Évora", "Portalegre"])
+    algarve_aberto = "Faro" in distritos
+    ilhas_aberto = any(d in distritos for d in ["Açores", "Madeira"])
 
-    return render_template("start.html", monumentos=lista_monumentos)
+    return render_template("start.html", monumentos=lista_monumentos, distritos_selecionadas=distritos, tipos_selecionados=type, norte_aberto=norte_aberto, centro_aberto=centro_aberto, lisboa_aberto=lisboa_aberto, alentejo_aberto=alentejo_aberto, algarve_aberto=algarve_aberto, ilhas_aberto=ilhas_aberto)
+
+@app.route('/monumento/<id_monumento>')
+def monumentoRoute(id_monumento):
+    return render_template("monumento.html", id=id_monumento)
 
 if __name__ == '__main__':
     app.run(debug=True)

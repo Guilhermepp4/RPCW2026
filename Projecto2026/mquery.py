@@ -14,27 +14,28 @@ def execute_query(query):
         return None
 query= """
 PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
-
-    SELECT DISTINCT ?nome ?normaType ?ndistrito ?nconcelho ?nregiao
-    WHERE {
-        ?m a ?tipoIndividuo ;
-        :nome ?nome ;
-        :ficaEmConcelho ?concelho .
+    SELECT DISTINCT ?id ?nome ?normaType ?ndistrito ?nconcelho ?nregiao ?lat ?long WHERE {
+    
+    ?m a ?tipoIndividuo ;
+       :nome ?nome ;
+       :ficaEmConcelho ?concelho .
+    OPTIONAL { ?m :temLatitude ?lat . }
+    OPTIONAL { ?m :temLongitude ?long . }
         
         ?concelho :pertence_Distrito ?distrito ;
-                :nome ?nconcelho .
-        
+                  :nome ?nconcelho .
         ?distrito :pertenceA_Regiao ?regiao ;
-                :nome ?ndistrito .
-        
+                  :nome ?ndistrito .
         ?regiao a :Região ;
-            :nome ?nregiao .
+                :nome ?nregiao .
         
         BIND(STRAFTER(str(?tipoIndividuo), "monumentosPT/") as ?normaType)
+        BIND(STRAFTER(str(?m), "monumentosPT/") as ?id)
         
-        FILTER(?normaType != "Monumento")
-        FILTER (?ndistrito = "Viana_do_Castelo")
-    }"""
+        # Filtros
+        FILTER(?normaType != "Monumento" && ?normaType != "NamedIndividual" && ?normaType != "")
+    }
+    ORDER BY ?ndistrito ?nconcelho ?nome"""
 res = execute_query(query)
 
 import json
