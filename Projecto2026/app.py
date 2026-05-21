@@ -35,21 +35,26 @@ def pesquisar():
     ?m a ?tipoIndividuo ;
        :nome ?nome ;
        :ficaEmConcelho ?concelho .
+       
     OPTIONAL {{ ?m :temLatitude ?lat . }}
     OPTIONAL {{ ?m :temLongitude ?long . }}
         
-        ?concelho :pertence_Distrito ?distrito ;
-                  :nome ?nconcelho .
-        ?distrito :pertenceA_Regiao ?regiao ;
-                  :nome ?ndistrito .
-        ?regiao a :Região ;
-                :nome ?nregiao .
+        ?concelho :nome ?nconcelho .
+        {{
+         	?concelho :pertence_Distrito ?distrito .
+            ?distrito :nome ?ndistrito ;
+            		:pertenceA_Regiao/:nome ?nregiao .
+        }} UNION {{
+            ?concelho :pertence_Ilha ?ilha .
+            ?ilha :nome ?ndistrito ;
+            	:pertenceArquipelago/:nome ?nregiao .
+        }}
         
         BIND(STRAFTER(str(?tipoIndividuo), "monumentosPT/") as ?normaType)
         BIND(STRAFTER(str(?m), "monumentosPT/") as ?id)
-
-        # Filtros
+		
         FILTER(?normaType != "Monumento" && ?normaType != "NamedIndividual" && ?normaType != "")
+    	
         {filtro_distrito}
         {filtro_tipo}
     }}
@@ -63,15 +68,25 @@ def pesquisar():
         infos = res['results']['bindings']
         for info in infos:
             tipo = info.get('normaType', {}).get('value', 'Desconhecido')
+            nome = info.get('nome', {}).get('value', '')
             lat = info.get('lat', {}).get('value')
             lng = info.get('long', {}).get('value')
-            if tipo == 'Desconhecido':
+            if tipo == 'Desconhecido' or nome == '':
                 continue
+
+            TRADUCAO_TIPOS = {
+                "ArquiteturaMista": "Arquitetura Mista",
+                "EdificioReligioso": "Edifício Religioso",
+                "EstruturaMilitar": "Estrutura Militar",
+                "MonumentoCivil": "Monumento Civil",
+                "SitioArqueologico": "Sítio Arqueológico",
+                "Outros": "Outros"
+            }
 
             lista_monumentos.append({
                 "id": info.get('id', {}).get('value', ''),
-                "name": info.get('nome', {}).get('value', 'S/ Nome'),
-                "tipo": tipo,
+                "name": nome,
+                "tipo": TRADUCAO_TIPOS.get(tipo, tipo),
                 "distrito": info.get('ndistrito', {}).get('value', 'S/ Distrito'),
                 "concelho": info.get('nconcelho', {}).get('value', 'S/ Concelho'),
                 "regiao": info.get('nregiao', {}).get('value', 'S/ Região')
@@ -87,12 +102,15 @@ def pesquisar():
     lisboa_aberto = any(d in distritos for d in ["Lisboa", "Santarém", "Setúbal"])
     alentejo_aberto = any(d in distritos for d in ["Beja", "Évora", "Portalegre"])
     algarve_aberto = "Faro" in distritos
-    ilhas_aberto = any(d in distritos for d in ["Açores", "Madeira"])
+    ilhas_aberto = any(d in distritos for d in ["Corvo", "Flores", "Pico", "Graciosa", "Santa Maria", "São Jorge", "São Miguel", "Terceira", "Madeira", "Porto Santo"])
 
-    return render_template("start.html", monumentos=lista_monumentos, distritos_selecionadas=distritos, tipos_selecionados=type, norte_aberto=norte_aberto, centro_aberto=centro_aberto, lisboa_aberto=lisboa_aberto, alentejo_aberto=alentejo_aberto, algarve_aberto=algarve_aberto, ilhas_aberto=ilhas_aberto)
+    return render_template("start.html", monumentos=lista_monumentos, distritos_selecionados=distritos, tipos_selecionados=type, norte_aberto=norte_aberto, centro_aberto=centro_aberto, lisboa_aberto=lisboa_aberto, alentejo_aberto=alentejo_aberto, algarve_aberto=algarve_aberto, ilhas_aberto=ilhas_aberto)
 
 @app.route('/monumento/<id_monumento>')
 def monumentoRoute(id_monumento):
+    q = f"""
+    
+    """
     return render_template("monumento.html", id=id_monumento)
 
 if __name__ == '__main__':

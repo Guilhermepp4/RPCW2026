@@ -1,74 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML à Toa</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      font-family: Arial, sans-serif;
-      color: white;
-      overflow: hidden;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.1);
-      padding: 40px;
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      text-align: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      animation: float 3s ease-in-out infinite;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-
-    p {
-      margin-top: 10px;
-      opacity: 0.8;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 10px;
-      background: white;
-      color: #2a5298;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      transform: scale(1.05);
-      background: #f0f0f0;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>{{ m.nome }} - Detalhes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
 
-  <div class="card">
-    <h1>Olá 👋</h1>
-    <p>Esse é um HTML totalmente aleatório.</p>
-    <button onclick="alert('Você clicou no botão!')">
-      Clique aqui para ver o monumento {{ id }}
-    </button>
-  </div>
+    <div class="container mx-auto max-w-5xl mt-6 px-4">
+        <a href="javascript:history.back()" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-900 hover:text-blue-700 transition-colors">
+            <i class="fa fa-arrow-left"></i> Voltar à pesquisa
+        </a>
+    </div>
+
+    <main class="container mx-auto max-w-5xl mt-6 px-4 pb-16">
+        
+        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden grid grid-cols-1 md:grid-cols-3">
+            
+            <div class="bg-gray-900 flex items-center justify-center min-h-[250px] md:min-h-full relative overflow-hidden group">
+                {% if m.imagem %}
+                    <img src="{{ m.imagem }}" alt="{{ m.nome }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                {% else %}
+                    <div class="text-center text-gray-500 p-6">
+                        <i class="fa fa-university text-5xl mb-2 text-gray-600"></i>
+                        <p class="text-xs">Sem imagem disponível</p>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="p-8 md:col-span-2 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 text-xs font-bold bg-blue-50 text-blue-900 rounded-lg uppercase tracking-wider mb-3">
+                        {{ m.tipo }}
+                    </span>
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-950 tracking-tight mb-4">
+                        {{ m.nome }}
+                    </h1>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 border-t border-gray-100 pt-5 text-center">
+                    <div class="p-3 bg-gray-50 rounded-2xl">
+                        <span class="block text-[10px] uppercase font-bold text-gray-400 mb-1">Região</span>
+                        <span class="font-semibold text-gray-800 text-sm block truncate">{{ m.nregiao }}</span>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-2xl">
+                        <span class="block text-[10px] uppercase font-bold text-gray-400 mb-1">Distrito / Ilha</span>
+                        <span class="font-semibold text-gray-800 text-sm block truncate">{{ m.ndistrito }}</span>
+                    </div>
+                    <div class="p-3 bg-gray-50 rounded-2xl">
+                        <span class="block text-[10px] uppercase font-bold text-gray-400 mb-1">Concelho</span>
+                        <span class="font-semibold text-gray-800 text-sm block truncate">{{ m.nconcelho }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 space-y-8">
+            
+            {% if m.descricao %}
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-blue-900 rounded-full inline-block"></span>
+                    Descrição Geral
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-justify whitespace-pre-line text-sm md:text-base">
+                    {{ m.descricao }}
+                </p>
+            </section>
+            {% endif %}
+
+            {% if m.historia %}
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-amber-600 rounded-full inline-block"></span>
+                    História e Contexto
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-justify whitespace-pre-line text-sm md:text-base">
+                    {{ m.historia }}
+                </p>
+            </section>
+            {% endif %}
+
+            {% if m.caracteristicas %}
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-emerald-600 rounded-full inline-block"></span>
+                    Características Arquitetónicas
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-justify whitespace-pre-line text-sm md:text-base">
+                    {{ m.caracteristicas }}
+                </p>
+            </section>
+            {% endif %}
+            
+        </div>
+    </main>
 
 </body>
 </html>

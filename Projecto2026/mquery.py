@@ -34,6 +34,7 @@ PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentos
         
         # Filtros
         FILTER(?normaType != "Monumento" && ?normaType != "NamedIndividual" && ?normaType != "")
+        Filter(?ndistrito IN ("Beja"))
     }
     ORDER BY ?ndistrito ?nconcelho ?nome"""
 res = execute_query(query)

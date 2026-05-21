@@ -37,8 +37,6 @@ SELECT ?caracteristica ?tipoCaracteristica WHERE {
     ?caracteristica :temTipo ?tipoCaracteristica .
 }
 
-
-
 ___________________________________________________
 4. Que personagem enganou o Corvo? (Recupera a relação de interação criada entre os dois indivíduos).
 ___________________________________________________

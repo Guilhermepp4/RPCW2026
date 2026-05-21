@@ -17,6 +17,50 @@ distritos = ["do_Porto#Porto", "de_Braga#Braga", "de_Viana_do_Castelo#Viana_do_C
               "de_Évora#Évora", "de_Beja#Beja", "de_Portalegre#Portalegre",
               "de_Faro#Faro"]
 
+def explore_mon(url):
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    }
+
+    page = requests.get(url, headers=headers)
+    page.encoding = 'utf-8'
+    soup = BeautifulSoup(page.text, 'html.parser')
+
+    res = {
+        "Outros_Nomes": "",
+        "Descricao": ""
+    }
+
+    content = soup.find('table', class_='table table-striped')
+    if not content:
+        return res
+    
+    td_label = content.find(lambda tag: tag.name == 'td' and "Outras Designações / Pesquisas" in tag.get_text())
+    
+    if td_label:
+        td_conteudo = td_label.find_next_sibling('td')
+
+        if td_conteudo:
+            texto_completo = td_conteudo.get_text()
+            subNames = texto_completo.replace("Ver Ficha em www.monumentos.gov.pt", "")
+            res["Outros_Nomes"] = subNames.strip().strip('"').strip('(').strip(')').strip().strip('"')
+    
+    todos_tds = content.find_all('td')
+    texto_mais_longo = ""
+    
+    for td in todos_tds:
+        conteudo_td = td.get_text(separator="\n", strip=True)
+        
+        if "Ver Ficha em" in conteudo_td or "Descrição Geral" in conteudo_td or "Histórico" in conteudo_td or "Designações" in conteudo_td:
+            continue
+            
+        if len(conteudo_td) > len(texto_mais_longo):
+            texto_mais_longo = conteudo_td
+
+    if len(texto_mais_longo) > 100:
+        res["Descricao"] = texto_mais_longo.strip().strip('"').strip()
+
+    return res
 
 def extrairInf(page_response):
     page_response.encoding = 'utf-8'
@@ -38,31 +82,16 @@ def extrairInf(page_response):
             for row in rows:
                 cols = row.find_all('td')
                 if len(cols) >= 7:
-
-                    id = cols[0].get_text().strip()
-                    designacao = cols[1].get_text().strip()
-                    categoria = cols[2].get_text().strip()
-                    tipologia = cols[3].get_text().strip()
-                    freguesia = cols[4].get_text().strip()
-                    grau = cols[5].get_text().strip()
-                    ano = cols[6].get_text().strip()
-                    coordenadas = None
-                    imagem = None
-                    if len(cols) > 7:
-                        coordenadas = cols[7].get_text().strip()
-                        imagem = cols[8].find('img')['src'] if len(cols) > 8 and cols[8].find('img') else None
+                    if cols[0].a:
+                        next_url = cols[0].a["href"]
+                        mon_info = explore_mon(next_url)
+                    
                 res["Concelhos"][concelho_name].append({
-                    "ID": id,
-                    "Designação": designacao,
-                    "Categoria": categoria,
-                    "Tipologia": tipologia,
-                    "Freguesia": freguesia,
-                    "Grau": grau,
-                    "Ano": ano,
-                    "Coordenadas": coordenadas,
-                    "Imagem": imagem,
+                    "ID": cols[0].get_text().strip(),
+                    "Outros_Nomes": mon_info['Outros_Nomes'],
+                    "Descrição": mon_info['Descricao']
                 })
-                print(f"Concelho: {concelho_name}, Monumento: {designacao}")
+                print(f"Concelho: {concelho_name}, Monumento: {cols[1].get_text().strip()}")
     return res
 
 
