@@ -12,31 +12,39 @@ def execute_query(query):
     except Exception as e:
         print(f"Error executing query: {e}")
         return None
-query= """
-PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
-    SELECT DISTINCT ?id ?nome ?normaType ?ndistrito ?nconcelho ?nregiao ?lat ?long WHERE {
-    
-    ?m a ?tipoIndividuo ;
-       :nome ?nome ;
-       :ficaEmConcelho ?concelho .
-    OPTIONAL { ?m :temLatitude ?lat . }
-    OPTIONAL { ?m :temLongitude ?long . }
+query= f"""
+ PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
+    SELECT Distinct ?NameMon ?subNomes ?normaType ?Year ?tipo ?lat ?long ?img ?nregiao ?ndistrito ?NameConc ?NameFreg ?descricao WHERE {{
+        :mon_74628 a ?tipoMonumento ;
+            :nome ?NameMon ;
+            :ficaEmConcelho ?Conc ;
+            :ficaEmFreguesia/:nome ?NameFreg .
         
-        ?concelho :pertence_Distrito ?distrito ;
-                  :nome ?nconcelho .
-        ?distrito :pertenceA_Regiao ?regiao ;
-                  :nome ?ndistrito .
-        ?regiao a :Região ;
-                :nome ?nregiao .
+        ?Conc a :Concelho ;
+            :nome ?NameConc .
         
-        BIND(STRAFTER(str(?tipoIndividuo), "monumentosPT/") as ?normaType)
-        BIND(STRAFTER(str(?m), "monumentosPT/") as ?id)
+        {{
+        ?Conc :pertence_Distrito ?distrito .
+        ?distrito :nome ?ndistrito ;
+                    :pertenceA_Regiao/:nome ?nregiao .
+        }} UNION {{
+        ?Conc :pertence_Ilha ?ilha .
+        ?ilha :nome ?ndistrito ;
+                :pertenceArquipelago/:nome ?nregiao .
+        }}
         
-        # Filtros
+        OPTIONAL {{ :mon_74628 :temTipologia ?tipo . }}
+        OPTIONAL {{ :mon_74628 :temLatitude ?lat . }}
+        OPTIONAL {{ :mon_74628 :temLongitude ?long . }}
+        OPTIONAL {{ :mon_74628 :temImagemURL ?img . }}
+        OPTIONAL {{ :mon_74628 :Ano_Fundacao ?Year . }}
+        OPTIONAL {{ :mon_74628 :temOutrosNomes ?subNomes . }}
+        OPTIONAL {{ :mon_74628 :temDescricao ?descricao . }}
+
+        BIND(STRAFTER(str(?tipoMonumento), "monumentosPT/") as ?normaType)
         FILTER(?normaType != "Monumento" && ?normaType != "NamedIndividual" && ?normaType != "")
-        Filter(?ndistrito IN ("Beja"))
-    }
-    ORDER BY ?ndistrito ?nconcelho ?nome"""
+
+    }}"""
 res = execute_query(query)
 
 import json
