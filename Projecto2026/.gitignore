@@ -1,7 +1,0 @@
-# Ignorar pastas virtuais do Python
-venv/
-.env
-
-datasets_finished/*
-datasets/*
-Ontologias/*

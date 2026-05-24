@@ -1,0 +1,220 @@
+@prefix : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/> .
+
+<http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT#pertenceArquipelago
+:pertenceArquipelago rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :temIlha .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT#pertenceIlha
+:pertenceIlha rdf:type owl:ObjectProperty ;
+              rdfs:domain :Concelho ;
+              rdfs:range :Ilha .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT#temIlha
+:temIlha rdf:type owl:ObjectProperty ;
+         rdfs:domain :Arquipelago ;
+         rdfs:range :Ilha .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/ConcelhoTemMon
+:ConcelhoTemMon rdf:type owl:ObjectProperty ;
+                owl:inverseOf :ficaEmConcelho .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/FreguesiaTemMon
+:FreguesiaTemMon rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :ficaEmFreguesia .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/ficaEmConcelho
+:ficaEmConcelho rdf:type owl:ObjectProperty ;
+                rdfs:domain :Monumento ;
+                rdfs:range :Concelho .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/ficaEmFreguesia
+:ficaEmFreguesia rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Monumento ;
+                 rdfs:range :Freguesia .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/pertence_Distrito
+:pertence_Distrito rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Concelho ;
+                   rdfs:range :Distrito .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/pertence_concelho
+:pertence_concelho rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :temFreguesia .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/temConcelho
+:temConcelho rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Ilha
+                                         :Distrito
+                                       )
+                         ] ;
+             rdfs:range :Concelho .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/temFreguesia
+:temFreguesia rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/Ano_Fundacao
+:Ano_Fundacao rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Monumento ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/Designacao
+:Designacao rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Monumento ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/nome
+:nome rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Arquipelago
+                                  :Ilha
+                                  :Concelho
+                                  :Distrito
+                                  :Freguesia
+                                  :Monumento
+                                )
+                  ] ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/temImagemURL
+:temImagemURL rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Monumento ;
+              rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/temLatitude
+:temLatitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Monumento ;
+             rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/temLongitude
+:temLongitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Monumento ;
+              rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/temTipologia
+:temTipologia rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Monumento ;
+              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT#Arquipelago
+:Arquipelago rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT#Ilha
+:Ilha rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :pertenceArquipelago ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Arquipelago
+                      ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/ArquiteturaMista
+:ArquiteturaMista rdf:type owl:Class ;
+                  rdfs:subClassOf :Monumento .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/Concelho
+:Concelho rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Class ;
+                            owl:unionOf ( [ rdf:type owl:Restriction ;
+                                            owl:onProperty :pertenceIlha ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :Ilha
+                                          ]
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :pertence_Distrito ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :Distrito
+                                          ]
+                                        )
+                          ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/Distrito
+:Distrito rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/EdificioReligioso
+:EdificioReligioso rdf:type owl:Class ;
+                   rdfs:subClassOf :Monumento .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/EstruturaMilitar
+:EstruturaMilitar rdf:type owl:Class ;
+                  rdfs:subClassOf :Monumento .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/Freguesia
+:Freguesia rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :pertence_concelho ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Concelho
+                           ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/Monumento
+:Monumento rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Class ;
+                             owl:unionOf ( [ rdf:type owl:Restriction ;
+                                             owl:onProperty :ficaEmConcelho ;
+                                             owl:someValuesFrom :Concelho
+                                           ]
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :ficaEmFreguesia ;
+                                             owl:someValuesFrom :Freguesia
+                                           ]
+                                         )
+                           ] .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/MonumentoCivil
+:MonumentoCivil rdf:type owl:Class ;
+                rdfs:subClassOf :Monumento .
+
+
+###  http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/SitioArqueologico
+:SitioArqueologico rdf:type owl:Class ;
+                   rdfs:subClassOf :Monumento .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
