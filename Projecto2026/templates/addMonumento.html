@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Monumento</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+
+    <div class="container mx-auto max-w-2xl mt-10 px-4">
+        <a href="/" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-950 hover:text-blue-700 transition-colors mb-6">
+            <i class="fa fa-arrow-left"></i> Voltar à página inicial
+        </a>
+
+        <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+            <h1 class="text-2xl font-extrabold text-gray-950 mb-2 flex items-center gap-2">
+                <i class="fa fa-plus-circle text-blue-900"></i> Aumentar Ontologia
+            </h1>
+            <p class="text-sm text-gray-400 mb-6">Insira os detalhes para criar um novo indivíduo no grafo de conhecimento.</p>
+
+            <form action="/inserir" method="POST" class="space-y-5">
+                
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">ID Único do Monumento</label>
+                    <input type="text" name="id_monumento" placeholder="Ex: mon_99999" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Nome do Monumento</label>
+                    <input type="text" name="nome" placeholder="Ex: Capela de Nossa Senhora..." required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Sub-Nomes do Monumento</label>
+                    <input type="text" name="subnomes" placeholder="Ex: Capela de Nossa Senhora..." required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                </div>
+                
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Ano fundação do Monumento</label>
+                    <input type="text" name="ano_fundacao" placeholder="Ex: 1850" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Categoria (Classe OWL)</label>
+                    <select name="tipo_classe" required
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm bg-white focus:outline-none focus:border-blue-900 transition-colors">
+                        <option value="MonumentoCivil">Monumento Civil</option>
+                        <option value="EdificioReligioso">Edifício Religioso</option>
+                        <option value="EstruturaMilitar">Estrutura Militar</option>
+                        <option value="SitioArqueologico">Sítio Arqueológico</option>
+                        <option value="ArquiteturaMista">Arquitetura Mista</option>
+                        <option value="ArquiteturaMista">Outro</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Tipologia</label>
+                    <input type="text" name="tipologia" placeholder="Ex: Capela de Nossa Senhora..." required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Concelho Alvo</label>
+                    <input type="text" name="concelho" placeholder="Ex: Conc_Amarante" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                    <p class="text-[11px] text-gray-400 mt-1">Nota: Garanta que este concelho já existe mapeado na sua ontologia.</p>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Freguesia Alvo</label>
+                    <input type="text" name="freguesia" placeholder="Ex: Freg_Amarante" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                    <p class="text-[11px] text-gray-400 mt-1">Nota: Garanta que esta freguesia já exista mapeada na sua ontologia.</p>
+                </div>
+                
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Coordenadas</label>
+                    <input type="text" name="coordenadas" placeholder="Ex: 41.5486, -8.1523" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Imagem</label>
+                    <input type="text" name="imagem" placeholder="Ex: https://example.com/image.jpg" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Descrição Histórica</label>
+                    <textarea name="descricao" rows="4" placeholder="Escreva aqui o resumo histórico..."
+                              class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors"></textarea>
+                </div>
+
+                <button type="submit" 
+                        class="w-full mt-4 inline-flex items-center justify-center gap-2 px-4 py-3 bg-blue-950 hover:bg-blue-900 text-white font-semibold text-sm rounded-xl transition-colors shadow-md cursor-pointer">
+                    <i class="fa fa-save"></i> Inserir na Ontologia
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -205,5 +205,9 @@ def monumentoRoute(id_monumento):
     
     return render_template("monumento.html", monumento=monumento[-1])
 
+@app.route('/inserir', methods=['GET', 'POST'])
+def inserirMonumentoRoute():
+    return render_template("addMonumento.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
