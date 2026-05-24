@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+<body class="bg-gray-50 font-sans text-gray-800 antialiased relative">
 
     <div class="container mx-auto max-w-2xl mt-10 px-4">
         <a href="/" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-950 hover:text-blue-700 transition-colors mb-6">
@@ -19,11 +19,11 @@
             </h1>
             <p class="text-sm text-gray-400 mb-6">Insira os detalhes para criar um novo indivíduo no grafo de conhecimento.</p>
 
-            <form action="/inserir" method="POST" class="space-y-5">
+            <form id="form-monumento" class="space-y-5">
                 
                 <div>
                     <label class="block text-xs font-bold uppercase text-gray-500 mb-2">ID Único do Monumento</label>
-                    <input type="text" name="id_monumento" placeholder="Ex: mon_99999" required
+                    <input type="text" name="id_monumento" placeholder="Ex: 99999" required
                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
                 </div>
 
@@ -35,13 +35,13 @@
 
                 <div>
                     <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Sub-Nomes do Monumento</label>
-                    <input type="text" name="subnomes" placeholder="Ex: Capela de Nossa Senhora..." required
+                    <input type="text" name="subnomes" placeholder="Ex: Capela de Nossa Senhora..."
                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
                 </div>
                 
                 <div>
                     <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Ano fundação do Monumento</label>
-                    <input type="text" name="ano_fundacao" placeholder="Ex: 1850" required
+                    <input type="text" name="ano_fundacao" placeholder="Ex: 1850"
                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
                 </div>
 
@@ -54,39 +54,55 @@
                         <option value="EstruturaMilitar">Estrutura Militar</option>
                         <option value="SitioArqueologico">Sítio Arqueológico</option>
                         <option value="ArquiteturaMista">Arquitetura Mista</option>
-                        <option value="ArquiteturaMista">Outro</option>
+                        <option value="Outro">Outro</option>
                     </select>
                 </div>
                 
                 <div>
                     <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Tipologia</label>
-                    <input type="text" name="tipologia" placeholder="Ex: Capela de Nossa Senhora..." required
+                    <input type="text" name="tipologia" placeholder="Ex: Capela de Nossa Senhora..."
                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Concelho Alvo</label>
-                    <input type="text" name="concelho" placeholder="Ex: Conc_Amarante" required
-                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
-                    <p class="text-[11px] text-gray-400 mt-1">Nota: Garanta que este concelho já existe mapeado na sua ontologia.</p>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Região do Monumento</label>
+                    <select name="regiao_macro" required
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm bg-white focus:outline-none focus:border-blue-900 transition-colors">
+                        <option value="continente">Portugal Continental</option>
+                        <option value="acores">Região Autónoma dos Açores</option>
+                        <option value="madeira">Região Autónoma da Madeira</option>
+                    </select>
                 </div>
 
-                <div>
-                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Freguesia Alvo</label>
-                    <input type="text" name="freguesia" placeholder="Ex: Freg_Amarante" required
-                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
-                    <p class="text-[11px] text-gray-400 mt-1">Nota: Garanta que esta freguesia já exista mapeada na sua ontologia.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Concelho Alvo</label>
+                        <input type="text" id="input-concelho" name="concelho" placeholder="Ex: Amarante" required
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Freguesia Alvo</label>
+                        <input type="text" id="input-freguesia" name="freguesia" placeholder="Ex: São Gonçalo" required
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                    </div>
                 </div>
-                
-                <div>
-                    <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Coordenadas</label>
-                    <input type="text" name="coordenadas" placeholder="Ex: 41.5486, -8.1523" required
-                           class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Latitude</label>
+                        <input type="text" name="latitude" placeholder="Ex: 41.5486"
+                               class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Longitude</label>
+                        <input type="text" name="longitude" placeholder="Ex: -8.1523"
+                               class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
+                    </div>
                 </div>
 
                 <div>
                     <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Imagem</label>
-                    <input type="text" name="imagem" placeholder="Ex: https://example.com/image.jpg" required
+                    <input type="text" name="imagem" placeholder="Ex: https://example.com/image.jpg"
                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors">
                 </div>
 
@@ -96,6 +112,8 @@
                               class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors"></textarea>
                 </div>
 
+                <input type="hidden" id="criar-automatico" name="criar_automatico" value="false">
+
                 <button type="submit" 
                         class="w-full mt-4 inline-flex items-center justify-center gap-2 px-4 py-3 bg-blue-950 hover:bg-blue-900 text-white font-semibold text-sm rounded-xl transition-colors shadow-md cursor-pointer">
                     <i class="fa fa-save"></i> Inserir na Ontologia
@@ -103,6 +121,157 @@
             </form>
         </div>
     </div>
+
+    <div id="modal-aviso" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-white max-w-md w-full rounded-2xl p-6 shadow-2xl border border-orange-100">
+            
+            <div class="flex items-center gap-3 text-orange-600 mb-4">
+                <i class="fa fa-exclamation-triangle text-3xl"></i>
+                <h3 class="text-lg font-bold text-gray-900">Atualização Geográfica</h3>
+            </div>
+            
+            <p id="texto-aviso" class="text-sm text-gray-600 mb-4 leading-relaxed"></p>
+
+            <div id="bloco-distrito" class="mb-6 hidden bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                <label class="block text-xs font-bold uppercase text-orange-800 mb-2">
+                    Distrito para o Concelho <span id="nome-concelho-alerta" class="underline font-mono"></span>:
+                </label>
+                <div class="flex rounded-xl border border-orange-200 overflow-hidden bg-white">
+                    <span class="bg-orange-100 text-orange-500 text-sm px-3 py-3 font-mono border-r border-orange-200 select-none">dist_</span>
+                    <input type="text" id="input-distrito-modal" placeholder="porto" 
+                        class="w-full px-3 py-3 text-sm focus:outline-none bg-white">
+                </div>
+            </div>
+
+            <div id="bloco-ilha" class="mb-6 hidden bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                <label class="block text-xs font-bold uppercase text-orange-800 mb-2">
+                    Ilha para o Concelho <span id="nome-concelho-alerta-ilha" class="underline font-mono"></span>: </label>
+                <div class="flex rounded-xl border border-orange-200 overflow-hidden bg-white">
+                    <span class="bg-orange-100 text-orange-500 text-sm px-3 py-3 font-mono border-r border-orange-200 select-none">ilha_</span>
+                    <input type="text" id="input-ilha-modal" placeholder="corvo" 
+                        class="w-full px-3 py-3 text-sm focus:outline-none bg-white">
+                </div>
+            </div>
+
+            <div class="flex justify-end gap-3">
+                <button type="button" onclick="fecharModal()" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold rounded-xl transition-colors cursor-pointer">
+                    Cancelar
+                </button>
+                <button type="button" onclick="confirmarSubmissao()" class="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white text-sm font-semibold rounded-xl transition-colors shadow-md cursor-pointer">
+                    Confirmar e Criar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('form-monumento');
+        const modal = document.getElementById('modal-aviso');
+        const textoAviso = document.getElementById('texto-aviso');
+        const criarAutoInput = document.getElementById('criar-automatico');
+        
+        const blocoDistrito = document.getElementById('bloco-distrito');
+        const blocoIlha = document.getElementById('bloco-ilha');
+        
+        const nomeConcelhoAlerta = document.getElementById('nome-concelho-alerta');
+        const nomeConcelhoAlertaIlha = document.getElementById('nome-concelho-alerta-ilha');
+        
+        const inputDistritoModal = document.getElementById('input-distrito-modal');
+        const inputIlhaModal = document.getElementById('input-ilha-modal');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+
+            if (inputDistritoModal.value.trim() !== "") {
+                formData.append('distrito_novo', inputDistritoModal.value.trim());
+            }
+            if (inputIlhaModal.value.trim() !== "") {
+                formData.append('ilha_nova', inputIlhaModal.value.trim());
+            }
+
+            const resposta = await fetch('/inserir', {
+                method: 'POST',
+                body: formData
+            });
+
+            const resultado = await resposta.json();
+
+            if (resultado.status === 'erro') {
+                alert(resultado.mensagem);
+                return;
+            }
+
+            else if (resultado.status === 'sucesso') {
+                alert(resultado.mensagem);
+                form.reset();
+                fecharModal();
+                return;
+            }
+
+            else if (resultado.status === 'aviso_locais') {
+                textoAviso.innerText = resultado.mensagem;
+                criarAutoInput.value = "true";
+                
+                if (resultado.concelho_em_falta) {
+                    const concelhoLimpo = document.getElementById('input-concelho').value.trim().toLowerCase().replace(/ /g, "_");
+                    
+                    const regiaoEscolhida = formData.get('regiao_macro'); 
+
+                    if (regiaoEscolhida === 'continente') {
+                        nomeConcelhoAlerta.innerText = "conc_" + concelhoLimpo;
+                        
+                        blocoDistrito.classList.remove('hidden');
+                        inputDistritoModal.setAttribute('required', 'true');
+                        
+                        blocoIlha.classList.add('hidden');
+                        inputIlhaModal.removeAttribute('required');
+                        inputIlhaModal.value = "";
+                    } else {
+                        nomeConcelhoAlertaIlha.innerText = "conc_" + concelhoLimpo;
+                        
+                        blocoIlha.classList.remove('hidden');
+                        inputIlhaModal.setAttribute('required', 'true');
+                        
+                        blocoDistrito.classList.add('hidden');
+                        inputDistritoModal.removeAttribute('required');
+                        inputDistritoModal.value = "";
+                    }
+                } else {
+                    blocoDistrito.classList.add('hidden');
+                    blocoIlha.classList.add('hidden');
+                    inputDistritoModal.removeAttribute('required');
+                    inputIlhaModal.removeAttribute('required');
+                }
+
+                modal.classList.remove('hidden');
+            }
+        });
+
+        function fecharModal() {
+            modal.classList.add('hidden');
+            criarAutoInput.value = "false";
+            inputDistritoModal.value = "";
+            inputIlhaModal.value = "";
+        }
+
+        function confirmarSubmissao() {
+            if (!blocoDistrito.classList.contains('hidden') && inputDistritoModal.value.trim() === "") {
+                alert("Por favor, indique o distrito para podermos criar o concelho.");
+                inputDistritoModal.focus();
+                return;
+            }
+            if (!blocoIlha.classList.contains('hidden') && inputIlhaModal.value.trim() === "") {
+                alert("Por favor, indique a ilha para podermos criar o concelho.");
+                inputIlhaModal.focus();
+                return;
+            }
+            
+            modal.classList.add('hidden');
+            form.dispatchEvent(new Event('submit'));
+        }
+    </script>
 
 </body>
 </html>

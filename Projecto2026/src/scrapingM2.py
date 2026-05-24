@@ -81,10 +81,9 @@ def extrairInf(page_response):
 
             for row in rows:
                 cols = row.find_all('td')
-                if len(cols) >= 7:
-                    if cols[0].a:
-                        next_url = cols[0].a["href"]
-                        mon_info = explore_mon(next_url)
+                if cols[0].a:
+                    next_url = cols[0].a["href"]
+                    mon_info = explore_mon(next_url)
                     
                 res["Concelhos"][concelho_name].append({
                     "ID": cols[0].get_text().strip(),

@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, jsonify, render_template, request
 from datetime import datetime
-from mquery import execute_query
+from mquery import execute_query, execute_update
 import re
 
 app = Flask(__name__)
@@ -205,9 +205,144 @@ def monumentoRoute(id_monumento):
     
     return render_template("monumento.html", monumento=monumento[-1])
 
+def verificar_se_existe_na_ontologia(nome, tipo):
+    query = f"""
+    PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
+    ASK {{
+        :{nome} a :{tipo} .
+    }}
+    """
+    res = execute_query(query)
+    return res.get('boolean', False)
+
 @app.route('/inserir', methods=['GET', 'POST'])
 def inserirMonumentoRoute():
-    return render_template("addMonumento.html")
+
+    if request.method == 'GET':
+        return render_template("addMonumento.html")
+    
+    id_monumento = request.form.get('id_monumento')
+    id_existe = verificar_se_existe_na_ontologia(f"mon_{id_monumento}", "Monumento")
+    if id_existe:
+        return jsonify({'status': 'erro', 'mensagem': f"O ID '{id_monumento}' já existe na ontologia. Por favor, escolha um ID diferente."})
+    
+    nome = request.form.get('nome')
+    subnomes = request.form.get('subnomes', 'n\a')
+    ano = request.form.get('ano_fundacao', 'n\a')
+    tipo = request.form.get('tipo_classe')
+    tipologia = request.form.get('tipologia', 'n\a')
+    id_concelho = request.form.get('concelho').strip().lower().replace(" ", "_")
+    id_freguesia = request.form.get('freguesia').strip().lower().replace(" ", "_")
+    latitude = request.form.get('latitude', 'n\a')
+    longitude = request.form.get('longitude', 'n\a')
+    imagem = request.form.get('imagem', 'http://www.sem-imagem.com')
+    descricao = request.form.get('descricao', 'n\a')
+
+    ilha_raw = request.form.get('ilha_nova')
+    id_ilha = ilha_raw.strip().lower().replace(" ", "_") if ilha_raw else None
+
+    distrito_raw = request.form.get('distrito_novo')
+    id_distrito = distrito_raw.strip().lower().replace(" ", "_") if distrito_raw else None
+
+    concelho_existe = verificar_se_existe_na_ontologia(f"conc_{id_concelho}", "Concelho")
+    freguesia_existe = verificar_se_existe_na_ontologia(f"freg_{id_freguesia}", "Freguesia")
+    criar_automatico = request.form.get('criar_automatico') == 'true'
+
+    if (not concelho_existe or not freguesia_existe) and not criar_automatico:
+        if not concelho_existe and not freguesia_existe:
+            msg = f"O concelho '{id_concelho}' e a freguesia '{id_freguesia}' não existem. Indique o distrito para criarmos o concelho. A freguesia será criada e associada a ele."
+            return jsonify({
+                'status': 'aviso_locais', 
+                'mensagem': msg, 
+                'concelho_em_falta': True
+            })
+
+        elif concelho_existe and not freguesia_existe:
+            msg = f"A freguesia '{id_freguesia}' não existe na ontologia. Deseja criá-la automaticamente e associá-la ao concelho '{id_concelho}'?"
+            return jsonify({
+                'status': 'aviso_locais', 
+                'mensagem': msg, 
+                'concelho_em_falta': False
+            })
+
+        elif not concelho_existe and freguesia_existe:
+            msg = f"O concelho '{id_concelho}' não existe. Indique o distrito a que pertence para o podermos criar."
+            return jsonify({
+                'status': 'aviso_locais', 
+                'mensagem': msg, 
+                'concelho_em_falta': True
+            })
+
+    print(request.form.get('freguesia'))
+    try:
+        created = []
+
+        if not concelho_existe:
+            if id_ilha:
+                pertence = f":pertence_Ilha :ilha_{id_ilha}"
+            else:
+                pertence = f":pertence_Distrito :dist_{id_distrito}"
+
+            query_conc = f"""
+            PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
+            INSERT DATA {{
+                :conc_{id_concelho} a :Concelho ;
+                    :nome "{request.form.get('concelho').strip()}" ;
+                    {pertence} .
+            }}
+            """
+            execute_update(query_conc)
+            created.append(f"Concelho '{id_concelho}'")
+
+        if not freguesia_existe:
+            query_freg = f"""
+            PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
+            INSERT DATA {{
+                :freg_{id_freguesia} a :Freguesia ;
+                    :nome "{request.form.get('freguesia').strip()}" ;
+                    :pertence_concelho :conc_{id_concelho} .
+            }}
+            """
+            execute_update(query_freg)
+            created.append(f"Freguesia '{id_freguesia}'")
+
+        triplos = [
+        f""":mon_{id_monumento} a :{tipo} .
+            :mon_{id_monumento} :nome "{nome}" .
+            :mon_{id_monumento} :ficaEmConcelho :conc_{id_concelho} .
+            :mon_{id_monumento} :ficaEmFreguesia :freg_{id_freguesia} ."""
+        ]
+        
+        if ano:
+            triplos.append(f':mon_{id_monumento} :Ano_Fundacao "{ano}" .')
+        if tipologia:
+            triplos.append(f':mon_{id_monumento} :temTipologia "{tipologia}" .')
+        if subnomes:
+            triplos.append(f':mon_{id_monumento} :temOutrosNomes "{subnomes}" .')
+        if latitude:
+            triplos.append(f':mon_{id_monumento} :temLatitude {latitude} .')
+        if longitude:
+            triplos.append(f':mon_{id_monumento} :temLongitude {longitude} .')
+        if imagem:
+            triplos.append(f':mon_{id_monumento} :temImagemURL <{imagem}> .')
+        if descricao:
+            triplos.append(f':mon_{id_monumento} :temDescricao "{descricao}" .')
+        
+        corpo_query = "\n        ".join(triplos)
+        query = f"""
+        PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
+        INSERT DATA {{
+            {corpo_query}
+        }}
+        """
+
+        execute_update(query)
+        created.append(f"Monumento '{id_monumento}'")
+
+        return jsonify({'status': 'sucesso', 'mensagem': f"Sucesso! Os seguintes elementos foram criados: {', '.join(created)}"})
+
+    except Exception as e:
+        return jsonify({'status': 'erro', 'mensagem': f'Erro ao executar SPARQL: {str(e)}'})
 
 if __name__ == '__main__':
     app.run(debug=True)

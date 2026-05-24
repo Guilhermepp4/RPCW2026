@@ -1,4 +1,4 @@
-from SPARQLWrapper import SPARQLWrapper, JSON
+from SPARQLWrapper import SPARQLWrapper, JSON, POST, POSTDIRECTLY
 import json
 
 GRAPHDB_ENDPOINT = "http://localhost:7200/repositories/TurismoPT"
@@ -12,6 +12,25 @@ def execute_query(query):
     except Exception as e:
         print(f"Error executing query: {e}")
         return None
+    
+def execute_update(query):
+    endpoint_update = "http://localhost:7200/repositories/TurismoPT/statements"
+
+    sparql = SPARQLWrapper(endpoint_update)
+
+    sparql.setMethod(POST)
+    sparql.setRequestMethod(POSTDIRECTLY)
+
+    sparql.setQuery(query)
+
+    try:
+        sparql.query()
+        return True
+
+    except Exception as e:
+        print(f"Error executing update: {e}")
+        raise
+    
 query= f"""
  PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
     SELECT Distinct ?NameMon ?subNomes ?normaType ?Year ?tipo ?lat ?long ?img ?nregiao ?ndistrito ?NameConc ?NameFreg ?descricao WHERE {{
