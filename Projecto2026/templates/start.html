@@ -252,6 +252,19 @@
             </div>
         </section>
 
+        <section id="seccao-favoritos" class="mb-12 hidden">
+            <div class="flex items-center gap-3 mb-6 border-b border-gray-200 pb-5">
+                <span class="p-2 bg-blue-600 text-white rounded-xl shadow-md">
+                    <i class="fa fa-bookmark text-sm"></i>
+                </span>
+                <h3 class="text-2xl font-extrabold text-gray-800 tracking-tight">
+                    Os Meus Monumentos Guardados
+                </h3>
+            </div>
+            <div id="container-favoritos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </section>
+        
         <section>
             {% if monumentos %}
             <div class="w3-animate-opacity">
@@ -276,7 +289,7 @@
                                 <span class="px-3 py-1 text-[11px] font-bold tracking-wider uppercase bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-lg shadow-sm">
                                     {{ m.tipo }}
                                 </span>
-                                <i class="fa fa-bookmark-o text-gray-300 group-hover:text-blue-500 transition-colors duration-300"></i>
+                                <i onclick="saveMonumento(this, '{{ m.id }}')" data-id="{{ m.id }}" class="fa fa-bookmark-o bookmark-btn text-gray-300 hover:text-blue-500 transition-colors duration-300 cursor-pointer text-base"></i>
                             </div>
                             <h4 class="text-xl font-bold text-gray-800 mb-5 tracking-tight line-clamp-2 group-hover:text-blue-900 transition-colors duration-300">
                                 {{ m.name }}
@@ -330,36 +343,67 @@
                     <h2 class="text-3xl font-bold"><i class="fa fa-book mr-4"></i>Relatório do Projeto</h2>
                 </div>
                 
-                <div class="w3-row-padding w3-padding-32">
-                    <div class="w3-col m7">
-                        <h3 class="text-xl font-bold text-blue-900 mb-4">Metodologia Semântica</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Este portal não é apenas um diretório comum. Foi construído utilizando <b>Tecnologias de Web Semântica</b>, onde cada monumento e instituição é um recurso único numa rede de dados interligados.
-                        </p>
-                        <div class="bg-blue-50 p-4 w3-leftbar w3-border-blue rounded-r-lg">
-                            <p class="text-sm italic text-blue-800">
-                                "O uso de RDF e SPARQL permite que o sistema compreenda que 'Braga' é um Distrito dentro da região 'Norte' sem necessidade de redundância de dados."
+                <div class="w3-col m12 lg:w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        
+                        <div class="bg-gray-50/60 p-5 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <i class="fa fa-share-alt text-blue-600"></i> Dados Interligados
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Este ecossistema armazena e organiza o vasto património de Portugal recorrendo a 
+                                <b class="text-blue-900">Tecnologias de Web Semântica</b>. Em vez de uma base de dados relacional comum, cada monumento, região e instituição é modelado como um recurso único e interligado através de uma ontologia rica, permitindo inferência de conhecimento e queries altamente estruturadas.
                             </p>
                         </div>
-                        <h4 class="font-bold mt-6 mb-2">Tecnologias Utilizadas:</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="w3-tag w3-round w3-light-blue w3-tiny">Protégé</span>
-                            <span class="w3-tag w3-round w3-light-blue w3-tiny">Turtle (.ttl)</span>
-                            <span class="w3-tag w3-round w3-light-blue w3-tiny">Leaflet JS</span>
-                            <span class="w3-tag w3-round w3-light-blue w3-tiny">SPARQL</span>
+
+                        <div class="bg-gray-50/60 p-5 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <i class="fa fa-map-o text-blue-600"></i> Exploração & Filtros
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Através de um mapa interativo, o utilizador pode navegar pelas várias regiões de Portugal e filtrar locais por tipologia. O portal oferece acesso instantâneo a detalhes cruciais como coordenadas geográficas, contextualização histórica e descrições detalhadas de cada monumento.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50/60 p-5 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <i class="fa fa-bookmark text-blue-600"></i> Espaço Personalizado
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Focado na experiência do utilizador, o sistema permite isolar e guardar monumentos de interesse numa secção persistente de favoritos. Isto garante uma consulta rápida em visitas futuras, promovendo uma navegação contínua, fluida e totalmente personalizada.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50/60 p-5 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                <i class="fa fa-plus-circle text-blue-600"></i> Conhecimento Colaborativo
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Mais do que um arquivo estático, o portal incentiva a colaboração ativa. Qualquer utilizador pode submeter novos monumentos ou enriquecer dados já existentes, alimentando diretamente a base de conhecimento e expandindo o mapeamento do património cultural do país.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="w3-col m5">
-                        <div class="w3-light-grey w3-padding w3-round-xlarge">
-                            <h3 class="text-lg font-bold mb-4 border-b pb-2">Identificação</h3>
-                            <ul class="w3-ul w3-small">
-                                <li><i class="fa fa-user mr-2 text-blue-600"></i><b>Autor:</b> Guilherme Pinto Pinho</li>
-                                <li><i class="fa fa-id-card mr-2 text-blue-600"></i><b>Nº:</b> PG60263</li>
-                                <li><i class="fa fa-graduation-cap mr-2 text-blue-600"></i><b>Cadeira:</b> Representação e Processamento de Conhecimento na Web</li>
-                                <li><i class="fa fa-university mr-2 text-blue-600"></i><b>Inst:</b> Universidade do Minho</li>
-                                <li><i class="fa fa-calendar mr-2 text-blue-600"></i><b>Ano:</b> 2025/2026</li>
-                            </ul>
+                    <div class="pt-4 border-t border-gray-100">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                            <i class="fa fa-code"></i> Stack Tecnológica do Projeto
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg border border-blue-100 shadow-sm">
+                                <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span> Protégé
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-lg border border-emerald-100 shadow-sm">
+                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> Turtle (.ttl)
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-lg border border-purple-100 shadow-sm">
+                                <span class="h-1.5 w-1.5 rounded-full bg-purple-500"></span> SPARQL
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-lg border border-amber-100 shadow-sm">
+                                <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> JavaScript (ES6)
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-lg border border-red-100 shadow-sm">
+                                <span class="h-1.5 w-1.5 rounded-full bg-red-500"></span> Flask / Python
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -368,8 +412,8 @@
     </section>
 
     <footer class="w3-container w3-padding-32 bg-gray-900 text-gray-400 text-center">
-        <p class="text-sm">Desenvolvido para fins académicos utilizando a Ontologia MonumentosPT</p>
-        <div class="mt-4 text-xs opacity-50">&copy; 2026 Guilherme Pinho</div>
+        <p class="text-sm">Desenvolvido para fins académicos - <b>UC</b> Representação e Processamento de Conhecimento na Web</p>
+        <div class="mt-4 text-xs opacity-50">&copy; 2026 Guilherme Pinho PG60263 & Rodrigo</div>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -398,8 +442,6 @@
             dados.forEach(monumento => {
                 if (monumento.lat && monumento.long) {
                     const urlDetalhes = "monumento/" + monumento.id; 
-
-                    // Criamos o conteúdo HTML que vai aparecer dentro do balão do PIN
                     const popupConteudo = `
                         <div class="p-1">
                             <span style="font-size: 10px; uppercase; font-weight: bold; color: #1e3a8a; display: block; margin-bottom: 2px;">
@@ -470,15 +512,120 @@
             if (novaPagina >= 1 && novaPagina <= totalPaginas) {
                 mostrarPagina(novaPagina);
                 
-                // Scroll suave de volta para o topo da lista para o utilizador ver os novos cartões
                 document.getElementById('container-monumentos').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            const originalMudarPagina = window.mudarPagina;
+            if (typeof originalMudarPagina === "function") {
+                window.mudarPagina = function(...args) {
+                    originalMudarPagina.apply(this, args);
+                    sincronizarBookmarksVisiveis();
+                };
             }
         }
 
-        // Inicializar a primeira página assim que os dados carregam
         document.addEventListener("DOMContentLoaded", function() {
             mostrarPagina(1);
         });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            updateIcones();
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            sincronizarBookmarksVisiveis();
+        });
+
+        function sincronizarBookmarksVisiveis() {
+            const favoritos = JSON.parse(localStorage.getItem("monumentos_favoritos")) || [];
+            
+            // Seleciona todos os botões de favoritos que estão renderizados na página atual
+            const botoes = document.querySelectorAll(".bookmark-btn");
+            
+            botoes.forEach(botao => {
+                const id = botao.getAttribute("data-id");
+                
+                // Se o ID deste card estiver na lista de salvos do utilizador, força o visual ativo
+                if (favoritos.includes(id)) {
+                    botao.classList.remove("fa-bookmark-o", "text-gray-300");
+                    botao.classList.add("fa-bookmark", "text-blue-500");
+                } else {
+                    botao.classList.remove("fa-bookmark", "text-blue-500");
+                    botao.classList.add("fa-bookmark-o", "text-gray-300");
+                }
+            });
+        }
+
+        function saveMonumento(element, id) {
+            let favoritos = JSON.parse(localStorage.getItem('monumentos_favoritos')) || [];
+
+            if (favoritos.includes(id)){
+                favoritos = favoritos.filter(favId => favId !== id);
+
+            } else {
+                favoritos.push(id);
+            }
+            localStorage.setItem('monumentos_favoritos', JSON.stringify(favoritos));
+
+            updateInterfaceFavs();
+        }
+
+        function updateInterfaceFavs() {
+            const favoritos = JSON.parse(localStorage.getItem('monumentos_favoritos')) || [];
+            const containerFavoritos = document.getElementById("container-favoritos");
+            const seccaoFavoritos = document.getElementById("seccao-favoritos");
+            
+            if (favoritos.length === 0) {
+                if (seccaoFavoritos) seccaoFavoritos.classList.add("hidden");
+                if (containerFavoritos) containerFavoritos.innerHTML = "";
+                return;
+            }
+
+            if (seccaoFavoritos) seccaoFavoritos.classList.remove("hidden");
+            if (containerFavoritos) containerFavoritos.innerHTML = "";
+
+            // PARTE C: Capturar o HTML estrutural dos cards para que sobrevivam às paginações/pesquisas
+            const todosOsCardsDisponiveis = document.querySelectorAll("#container-monumentos .monumento-card");
+            
+            todosOsCardsDisponiveis.forEach(card => {
+                const botao = card.querySelector(".bookmark-btn");
+                if (botao) {
+                    const id = botao.getAttribute("data-id");
+                    if (favoritos.includes(id)) {
+                        // Faz uma cópia física do elemento HTML gerado pelo Jinja
+                        let cardClone = card.cloneNode(true);
+                        cardClone.classList.remove("hidden"); // Remove o 'hidden' nativo do teu sistema
+                        
+                        // Força o botão de clique dentro do painel de cima a invocar o mesmo comportamento
+                        const cloneBotao = cardClone.querySelector(".bookmark-btn");
+                        cloneBotao.classList.remove("fa-bookmark-o", "text-gray-300");
+                        cloneBotao.classList.add("fa-bookmark", "text-blue-600");
+                        
+                        // Guarda em cache de sessão para persistir mesmo mudando de página local
+                        sessionStorage.setItem(`html_cache_${id}`, cardClone.outerHTML);
+                    }
+                }
+            });
+
+            // Injeta todos os favoritos encontrados na cache estrutural para dentro do contentor de cima
+            favoritos.forEach(id => {
+                const htmlCacheado = sessionStorage.getItem(`html_cache_${id}`);
+                if (htmlCacheado && containerFavoritos) {
+                    containerFavoritos.insertAdjacentHTML("beforeend", htmlCacheado);
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            updateInterfaceFavs();
+        });
+
+        const originalMudarPagina = window.mudarPagina;
+        if (typeof originalMudarPagina === "function") {
+            window.mudarPagina = function(...args) {
+                originalMudarPagina.apply(this, args);
+                updateInterfaceFavs();
+            };
+        }
 
     </script>
 </body>
