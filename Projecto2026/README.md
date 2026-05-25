@@ -64,7 +64,7 @@ Através do script de tratamento e injeção de dados ([`injectData.py`](https:/
 De forma a estruturar o conhecimento do domínio patrimonial, a ontologia divide-se em termos de classes e propriedades bem definidas:
 
 - **Classes**: Monumento, Freguesia, Concelho, Distrito, Ilha, Arquipélago e Região
-- - **Suclasses**: EdificioReligioso, EstruturaMilitar, MonumentoCivil, SitioArqueologico, ArquiteturaMista e Outros
+	- **Suclasses**: EdificioReligioso, EstruturaMilitar, MonumentoCivil, SitioArqueologico, ArquiteturaMista e Outros
 
 - **Object Properties**: :ficaEmConcelho, :ficaEmFreguesia
 
