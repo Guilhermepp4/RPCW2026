@@ -54,7 +54,7 @@ def obter_classe_monumento(categoria_json):
     return "Monumento"
 
 
-with open("datasest_finished/monumentos.json", encoding="utf-8") as f:
+with open("datasets_finished/monumentos.json", encoding="utf-8") as f:
     data = json.load(f)
 
 ttl_content = f"""@prefix : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/> .

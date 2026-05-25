@@ -60,6 +60,93 @@ Através do script de tratamento e injeção de dados ([`injectData.py`](https:/
 
 [`app.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/app.py): Servidor Flask que escuta os pedidos do utilizador, interage com o [`mquery.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/mquery.py) para obter os dados em formato semântico, e renderiza as páginas do frontend localizadas em [`templates/`](https://github.com/Guilhermepp4/RPCW2026/tree/main/Projecto2026/templates).
 
+#### Modelação Ontológica
+De forma a estruturar o conhecimento do domínio patrimonial, a ontologia divide-se em termos de classes e propriedades bem definidas:
+
+- **Classes**: Monumento, Freguesia, Concelho, Distrito, Ilha, Arquipélago e Região
+- - **Suclasses**: EdificioReligioso, EstruturaMilitar, MonumentoCivil, SitioArqueologico, ArquiteturaMista e Outros
+
+- **Object Properties**: :ficaEmConcelho, :ficaEmFreguesia
+
+- **Data Properties**: :Ano_Fundacao, :nome, :temDescricao, :temImagemURL, :temLatitude, :temLongitude, :temOutrosNomes e :temTipologia
+
+
+#### Demonstração de Consultas SPARQL [`mquery.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/mquery.py)
+- **Query 1**: Listagem Geral com Filtros Dinâmicos
+Esta consulta é parametrizada no backend para filtrar os monumentos consoante os distritos e tipos selecionados pelo utilizador:
+
+```sparql
+
+PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
+    SELECT DISTINCT ?id ?nome ?normaType ?ndistrito ?nconcelho ?nregiao ?lat ?long WHERE {{
+    
+    ?m a ?tipoIndividuo ;
+       :nome ?nome ;
+       :ficaEmConcelho ?concelho .
+       
+    OPTIONAL {{ ?m :temLatitude ?lat . }}
+    OPTIONAL {{ ?m :temLongitude ?long . }}
+        
+        ?concelho :nome ?nconcelho .
+        {{
+         	?concelho :pertence_Distrito ?distrito .
+            ?distrito :nome ?ndistrito ;
+            		:pertenceA_Regiao/:nome ?nregiao .
+        }} UNION {{
+            ?concelho :pertence_Ilha ?ilha .
+            ?ilha :nome ?ndistrito ;
+            	:pertenceArquipelago/:nome ?nregiao .
+        }}
+        
+        BIND(STRAFTER(str(?tipoIndividuo), "monumentosPT/") as ?normaType)
+        BIND(STRAFTER(str(?m), "monumentosPT/") as ?id)
+		
+        FILTER(?normaType != "Monumento" && ?normaType != "NamedIndividual" && ?normaType != "")
+    	
+        {filtro_distrito}
+        {filtro_tipo}
+    }}
+    ORDER BY ?ndistrito ?nconcelho ?nome
+```
+
+**Query 2**: Detalhe Atómico de um Monumento
+Executada quando o utilizador acede à página individual de um monumento através do seu ID/URI único:
+
+```sparql
+PREFIX : <http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/>
+    SELECT Distinct ?NameMon ?subNomes ?normaType ?Year ?tipo ?lat ?long ?img ?nregiao ?ndistrito ?NameConc ?NameFreg ?descricao WHERE {{
+        :{id_monumento} a ?tipoMonumento ;
+            :nome ?NameMon ;
+            :ficaEmConcelho ?Conc ;
+            :ficaEmFreguesia/:nome ?NameFreg .
+        
+        ?Conc a :Concelho ;
+            :nome ?NameConc .
+        
+        {{
+        ?Conc :pertence_Distrito ?distrito .
+        ?distrito :nome ?ndistrito ;
+                    :pertenceA_Regiao/:nome ?nregiao .
+        }} UNION {{
+        ?Conc :pertence_Ilha ?ilha .
+        ?ilha :nome ?ndistrito ;
+                :pertenceArquipelago/:nome ?nregiao .
+        }}
+        
+        OPTIONAL {{ :{id_monumento} :temTipologia ?tipo . }}
+        OPTIONAL {{ :{id_monumento} :temLatitude ?lat . }}
+        OPTIONAL {{ :{id_monumento} :temLongitude ?long . }}
+        OPTIONAL {{ :{id_monumento} :temImagemURL ?img . }}
+        OPTIONAL {{ :{id_monumento} :Ano_Fundacao ?Year . }}
+        OPTIONAL {{ :{id_monumento} :temOutrosNomes ?subNomes . }}
+        OPTIONAL {{ :{id_monumento} :temDescricao ?descricao . }}
+
+        BIND(STRAFTER(str(?tipoMonumento), "monumentosPT/") as ?normaType)
+        FILTER(?normaType != "Monumento" && ?normaType != "NamedIndividual" && ?normaType != "")
+
+    }}
+```
+
 ### 🔥 Funcionalidades Principais do Website
 
 - Exploração Interativa: Mapa dinâmico para localização visual e geográfica do património nacional.
@@ -78,3 +165,9 @@ Militares, Edifícios Religiosos, Monumentos Civis, etc).
 - Backend: Python, Flask.
 
 - Frontend: HTML, JavaScript, CSS, W3.CSS.
+
+### 📈 Conclusão e Trabalho Futuro
+
+O desenvolvimento deste projeto permitiu consolidar com sucesso os conceitos de modelação e processamento de conhecimento lecionados na Unidade Curricular de RPCW. A transição de dados para um formato semântico provou ser vantajosa, permitindo criar relações explícitas entre entidades geográficas e arquitetónicas.
+
+Como trabalho futuro, perspetiva-se a integração da ontologia com repositórios de dados abertos interligados globais (como a DBpedia), o que permite expandir o conhecimento do portal para incluir dados biográficos dos reis ou arquitetos associados a cada monumento de forma automática.
