@@ -50,24 +50,24 @@ O projeto encontra-se organizado na seguinte árvore de diretorias:
 Os resultados foram estruturados em ficheiros .json independentes dentro da pasta [`datasets_finished`](https://github.com/Guilhermepp4/RPCW2026/tree/main/Projecto2026/datasets_finished).
 
 ### Fase 2: Enriquecimento de Dados
-[`scrapingM2.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/src/scrapingM2.py): Realizou um varrimento secundário com o objetivo de obter informações muito mais profundas (coordenadas geográficas exatas, contextualização histórica e descrições). Esta informação estruturada foi compilada em monumentosDescricao.json. (Nota: Estes metadados detalhados apenas se encontravam disponíveis para Portugal Continental).
+[`scrapingM2.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/src/scrapingM2.py): Realizou um scraping secundário com o objetivo de obter mais informações (sub-nomes descrições). Esta informação estruturada foi compilada em [`monumentosDescricao.json`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/datasets_finished/monumentosDescricao.json). (Nota: Estes metadados detalhados apenas se encontravam disponíveis para Portugal Continental).
 
 ### Fase 3: Triplificação e Modelagem Semântica
-Através do script de tratamento e injeção de dados ([`injectData.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/src/injectData.py) / [`tratarMonumentos.py`]((https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/src/tratarMonumentos.py))), a informação crua guardada em JSON foi processada, convertida em triplos RDF de acordo com o esquema da ontologia e guardada em formato Turtle (.ttl) dentro da pasta Ontologias/. O resultado final consolidado está refletido no ficheiro [`finalmonumentosPt_atualizada.ttl`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/Ontologias/finalmonumentosPT_atualizada.ttl).
+Através do script de tratamento e injeção de dados ([`injectData.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/src/injectData.py) / [`tratarMonumentos.py`]((https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/src/tratarMonumentos.py))), a informação crua guardada em JSON foi processada, convertida em triplos RDF de acordo com o esquema da ontologia e guardada em formato Turtle (.ttl) dentro da pasta [`Ontologias/`](https://github.com/Guilhermepp4/RPCW2026/tree/main/Projecto2026/Ontologias). O resultado final consolidado está refletido no ficheiro [`finalmonumentosPt_atualizada.ttl`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/Ontologias/finalmonumentosPT_atualizada.ttl).
 
 ### Fase 4: Desenvolvimento da Aplicação Web
-[`mquery.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/mquery.py): Centraliza a lógica de comunicação SPARQL, executando consultas em cima da ontologia criada.
+[`mquery.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/mquery.py): Centraliza a lógica de comunicação SPARQL.
 
 [`app.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/app.py): Servidor Flask que escuta os pedidos do utilizador, interage com o [`mquery.py`](https://github.com/Guilhermepp4/RPCW2026/blob/main/Projecto2026/mquery.py) para obter os dados em formato semântico, e renderiza as páginas do frontend localizadas em [`templates/`](https://github.com/Guilhermepp4/RPCW2026/tree/main/Projecto2026/templates).
 
 ### 🔥 Funcionalidades Principais do Website
 
-- Exploração Interativa: Integração com mapa dinâmico para localização visual e geográfica do património nacional.
+- Exploração Interativa: Mapa dinâmico para localização visual e geográfica do património nacional.
 
-- Filtros Avançados: Segmentação eficaz de monumentos por Regiões Administrativas e por Tipologia de Local (ex: Estruturas
-Militares, Edifícios Religiosos, Monumentos Civis).
+- Filtros Avançados: Segmentação eficaz de monumentos por Regiões e por Tipo de Monumento (ex: Estruturas
+Militares, Edifícios Religiosos, Monumentos Civis, etc).
 
-- Painel Independente de Favoritos: Zona fixa gerida via localStorage e JavaScript que permite guardar monumentos para consulta futura. Os botões de estado sincronizam-se em tempo real, mantendo-se estáticos mesmo após novas filtragens ou paginações no servidor.
+- Painel Independente de Favoritos: Zona fixa gerida via que permite guardar monumentos para consulta futura.
 
 - Escrita de Conhecimento: Permite aos utilizadores enriquecer a base de dados em tempo real através do formulário de submissão, mantendo a ontologia em constante evolução.
 
@@ -75,6 +75,6 @@ Militares, Edifícios Religiosos, Monumentos Civis).
 
 - Modelagem Semântica: Protégé, RDF, Turtle (.ttl), SPARQL.
 
-- Backend: Python 3, Flask.
+- Backend: Python, Flask.
 
-- Frontend: HTML5, JavaScript (ES6), Tailwind CSS, W3.CSS, Font-Awesome Icons, Leaflet.js (Mapas).
+- Frontend: HTML, JavaScript, CSS, W3.CSS.
