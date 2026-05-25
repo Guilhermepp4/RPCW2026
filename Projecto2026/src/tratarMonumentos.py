@@ -36,20 +36,17 @@ def limpar_uri(txt):
 def obter_classe_monumento(categoria_json):
     cat = categoria_json.lower()
     
-    # Mapeamento de palavras-chave para as tuas Classes da Ontologia
     mapeamento = {
         "mista": "ArquiteturaMista",
-        "religios": "EdificioReligioso", # apanha 'Religiosa' e 'Religioso'
+        "religios": "EdificioReligioso",
         "militar": "EstruturaMilitar",
         "arqueo": "SitioArqueologico",
         "escul": "SitioArqueologico"
     }
     
-    # Verificação para categorias que têm múltiplas palavras-chave (civil, industrial, etc)
     if any(palavra in cat for palavra in ["civil", "industrial", "teatro"]):
         return "MonumentoCivil"
     
-    # Procura no dicionário pelas outras chaves
     for chave, classe in mapeamento.items():
         if chave in cat:
             return classe

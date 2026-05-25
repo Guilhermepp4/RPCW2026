@@ -6,8 +6,6 @@ import re
 g = Graph()
 g.parse("../Ontologias/finalmonumentosPT.ttl", format="turtle") 
 
-# 2. Definir o Namespace da tua ontologia (tem de ser EXATAMENTE igual ao teu PREFIX)
-# Repara na barra / ou cardinal # no fim. Usa o que definiu na ontologia.
 PREFIX_URI = "http://www.semanticweb.org/guilhermepinho/ontologies/2026/3/monumentosPT/"
 NS = Namespace(PREFIX_URI)
 
@@ -17,7 +15,7 @@ prop_outros_nomes = NS.temOutrosNomes
 print("A injetar dados na ontologia...")
 
 with open("../datasets_finished/monumentosDescricao.json", "r", encoding='utf-8') as f:
-    dados = json.load(f) # Carrega o ficheiro inteiro de uma vez
+    dados = json.load(f)
 
 contagem = 0
 
