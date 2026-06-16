@@ -413,7 +413,7 @@
 
     <footer class="w3-container w3-padding-32 bg-gray-900 text-gray-400 text-center">
         <p class="text-sm">Desenvolvido para fins académicos - <b>UC</b> Representação e Processamento de Conhecimento na Web</p>
-        <div class="mt-4 text-xs opacity-50">&copy; 2026 Guilherme Pinho PG60263 & Rodrigo</div>
+        <div class="mt-4 text-xs opacity-50">&copy; 2026 Guilherme Pinho PG60263 & Rodrigo Sousa PG60302</div>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -474,7 +474,7 @@
         }
 
         let paginaAtual = 1;
-        const itensPorPagina = 12;
+        const itensPorPagina = 9;
 
         const todosOsCards = document.querySelectorAll('.monumento-card'); 
         const totalPaginas = Math.ceil(todosOsCards.length / itensPorPagina);
@@ -487,7 +487,6 @@
             const inicio = (paginaAtual - 1) * itensPorPagina;
             const fim = inicio + itensPorPagina;
 
-            // Esconder todos os cards e mostrar apenas os 10 desta página
             todosOsCards.forEach((card, index) => {
                 if (index >= inicio && index < fim) {
                     card.classList.remove('hidden'); // Mostra
@@ -496,13 +495,11 @@
                 }
             });
 
-            // Atualizar o texto do contador (ex: "Página 1 de 14 | 135 monumentos")
             const contador = document.getElementById('contador-paginas');
             if (contador) {
                 contador.innerHTML = `<i class="fa fa-folder-open mr-2"></i> Página ${paginaAtual} de ${totalPaginas || 1} (${todosOsCards.length} locais)`;
             }
 
-            // Ativar/Desativar os botões conforme a página
             document.getElementById('btn-anterior').disabled = (paginaAtual === 1);
             document.getElementById('btn-seguinte').disabled = (paginaAtual === totalPaginas || totalPaginas === 0);
         }
